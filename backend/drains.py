@@ -115,7 +115,8 @@ def status():
         "counts": counts,
         "length_km": {k: round(v / 1000, 1) for k, v in length.items()},
         "total_km": round(sum(length.values()) / 1000, 1),
-        "source_provides": ["geometry", "class", "length", "source id", "reference name"],
+        "source_provides": ["geometry", "class", "length", "source id"],
+        "empty_in_source": ["reference name"],
         "derived_fields": DERIVED_FIELDS,
         "note": (
             "The published network is geometry only. Hydraulic attributes are "
