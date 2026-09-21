@@ -236,8 +236,8 @@
   // ---- map -------------------------------------------------------------------------------------
   const style = {
     version: 8,
-    sources: { base: { type: "raster", tileSize: 256, maxzoom: 19, attribution: "&copy; OpenStreetMap contributors",
-      tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"] } },
+    sources: { base: { type: "raster", tileSize: 256, maxzoom: 19, attribution: "&copy; MapTiler &copy; OpenStreetMap contributors",
+      tiles: ["https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=I0LPEFzv35BSYCFAYSJp"] } },
     layers: [
       { id: "bg", type: "background", paint: { "background-color": "#e8edf0" } },
       { id: "base", type: "raster", source: "base", paint: { "raster-opacity": 0.8, "raster-saturation": -0.75 } },
