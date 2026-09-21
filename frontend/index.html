@@ -236,11 +236,11 @@
   // ---- map -------------------------------------------------------------------------------------
   const style = {
     version: 8,
-    sources: { base: { type: "raster", tileSize: 256, attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
-      tiles: ["a", "b", "c"].map((s) => "https://" + s + ".basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png") } },
+    sources: { base: { type: "raster", tileSize: 256, maxzoom: 19, attribution: "&copy; OpenStreetMap contributors",
+      tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"] } },
     layers: [
       { id: "bg", type: "background", paint: { "background-color": "#e8edf0" } },
-      { id: "base", type: "raster", source: "base", paint: { "raster-opacity": 0.85 } },
+      { id: "base", type: "raster", source: "base", paint: { "raster-opacity": 0.8, "raster-saturation": -0.75 } },
     ],
   };
   const wide = window.innerWidth > 860;
