@@ -25,6 +25,7 @@ from PIL import Image
 from config import BBOX, LEADS, COLOR_SCALE, MODE_THRESHOLD_CM, FLOODED_CM, GRID, ROADS_SOURCE
 from mock_physics import load_depth_cube        # <- swap for your real depth loader later
 from network import load_drain_network, network_summary
+from roads_osm import load_osm_roads
 from routing import Router
 from drains import router as drains_router
 from terrain import router as terrain_router
@@ -34,7 +35,9 @@ app = FastAPI(title="RealTimers Urban Flood Nowcast")
 
 CUBE = load_depth_cube()
 NETWORK = load_drain_network()
-ROUTER = Router(CUBE, NETWORK)
+ROUTER = Router(CUBE, NETWORK)          # drain corridors: flood list, map depths
+_ROADS = load_osm_roads()
+ROAD_ROUTER = Router(CUBE, _ROADS) if _ROADS else None   # OSM streets: routing only
 ISSUED_AT = datetime.now(timezone.utc)
 _png_cache = {}
 
@@ -61,6 +64,8 @@ def _rgba(depth_cm):
 @app.get("/api/meta")
 def meta():
     return {"bbox": BBOX, "leads": LEADS, "grid": GRID, "roads_source": ROADS_SOURCE,
+            "routing": ROAD_ROUTER is not None,
+            "road_edges": len(ROAD_ROUTER.edges) if ROAD_ROUTER else 0,
             "issued_at": ISSUED_AT.isoformat(), "flooded_cm": FLOODED_CM,
             "mode_threshold_cm": MODE_THRESHOLD_CM,
             "color_scale": [{"cm": c, "hex": h, "alpha": a} for c, h, a in COLOR_SCALE],
@@ -108,17 +113,16 @@ def route(from_lat: float, from_lon: float, to_lat: float, to_lon: float,
     if mode not in MODE_THRESHOLD_CM:
         raise HTTPException(422, f"mode must be one of {list(MODE_THRESHOLD_CM)}")
     _lead(lead)
-    # The network is BBMP's drain linework, not a road graph: it is topologically
-    # disconnected and you cannot drive down a drain. Routing returns once a real
-    # road network is ingested (tools/ingest_roads.py). Saying so is better than
-    # returning a path along stormwater drains.
-    raise HTTPException(
-        501,
-        "Routing needs a road network. The map currently carries BBMP's drain "
-        "network, which is not routable. Run tools/ingest_roads.py to add OSM "
-        "roads, then this endpoint returns flood-safe routes.",
-    )
-
+    if ROAD_ROUTER is None:
+        raise HTTPException(
+            501,
+            "Routing needs the road network. Run tools/ingest_roads.py once, commit "
+            "data/roads.geojson and push; routing then runs on real OpenStreetMap streets.",
+        )
+    res = ROAD_ROUTER.route(from_lat, from_lon, to_lat, to_lon, mode, lead)
+    if "error" in res:
+        raise HTTPException(404, res["error"])
+    return res
 
 # Serve the dashboard from the same server (keep this LAST so /api/* wins).
 # Real BBMP stormwater drain network. Must be registered before the

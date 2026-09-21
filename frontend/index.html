@@ -156,14 +156,8 @@
       <button data-mode="car" aria-pressed="true"><b>Car</b><span>under 30 cm</span></button>
       <button data-mode="emergency" aria-pressed="false"><b>Ambulance, bus</b><span>under 45 cm</span></button>
     </div>
-    <p class="steps" id="steps">Routing is waiting on a road network.</p>
-    <div id="route-out"><p class="verdict" style="line-height:1.45">
-      The map now shows BBMP&rsquo;s published <b>drain</b> network, which is not a
-      travel network &mdash; its segments form 800-odd disconnected pieces, so no
-      path exists between most points. Vehicle depth limits above are live and
-      already drive the colour scale. Run <code>tools/ingest_roads.py</code> to add
-      the OSM road network, and this panel routes on real streets.
-    </p></div>
+    <p class="steps" id="steps">Click the map to set the start.</p>
+    <div id="route-out"></div>
   </div>
 </aside>
 
@@ -183,6 +177,11 @@
 <script>
 (async () => {
   const meta = await (await fetch("/api/meta")).json();
+  if (!meta.routing) {
+    $("steps").textContent = "Routing is waiting on the road network.";
+    $("route-out").innerHTML = '<p class="verdict" style="line-height:1.45">Flood-safe routing runs on OpenStreetMap streets. ' +
+      'Run <code>tools/ingest_roads.py</code> once, commit <code>data/roads.geojson</code> and push, and this panel routes on real roads.</p>';
+  }
   const [W, S, E, N] = meta.bbox;
   const LEADS = meta.leads;
   const state = { i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
@@ -241,7 +240,7 @@
       tiles: ["a", "b", "c"].map((s) => "https://" + s + ".basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png") } },
     layers: [
       { id: "bg", type: "background", paint: { "background-color": "#e8edf0" } },
-      { id: "base", type: "raster", source: "base", layout: { visibility: meta.roads_source === "osm" ? "visible" : "none" } },
+      { id: "base", type: "raster", source: "base", paint: { "raster-opacity": 0.85 } },
     ],
   };
   const wide = window.innerWidth > 860;

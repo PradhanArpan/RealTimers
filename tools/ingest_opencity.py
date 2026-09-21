@@ -27,7 +27,7 @@ MANIFEST = {
     "00fb1229": ("bengaluru", "flood_prone_locations",
                  "BBMP flood-prone locations (70 points)", []),
     "8e87a2fc": ("bengaluru", "lowlying_locations",
-                 "BBMP low-lying locations (129 points)", []),
+                 "BBMP low-lying locations (128 of 129 have valid coordinates)", []),
     "dae235c7": ("bengaluru", "lakes_streams",
                  "BBMP lakes master list and stream network", None),
     "8e04a22c": ("bengaluru", "ksrsac_natural_drainage",

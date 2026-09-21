@@ -19,3 +19,6 @@ data/ee/
 # Full-resolution terrain rasters -- for QGIS, not needed by the server.
 # The server uses streams/catchments GeoJSON, terrain_grid.npz and the HAND PNG.
 data/terrain/*/rasters/
+
+# osmnx download cache (written by tools/ingest_roads.py)
+cache/

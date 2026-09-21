@@ -84,7 +84,7 @@
     "kb": 6427
   },
   "bengaluru/lowlying_locations": {
-    "description": "BBMP low-lying locations (129 points)",
+    "description": "BBMP low-lying locations (128 of 129 have valid coordinates)",
     "features": 128,
     "geometry": {
       "Point": 128

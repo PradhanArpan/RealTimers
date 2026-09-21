@@ -40,33 +40,34 @@ def main() -> int:
     except TypeError:
         g = ox.graph_from_bbox(n, s, e, w, network_type="drive")      # osmnx 1.x
 
-    nodes = {int(i): (float(d["y"]), float(d["x"])) for i, d in g.nodes(data=True)}
+    nodes = {int(i): (round(float(d["y"]), 6), round(float(d["x"]), 6)) for i, d in g.nodes(data=True)}
     feats = []
     unnamed = 0
-    for u, v, d in g.edges(data=True):
+    seen = set()
+    for u, v, k, d in g.edges(keys=True, data=True):
+        oneway = bool(d.get("oneway", False))
+        # osmnx stores a two-way street as u->v and v->u; keep one, flag it two-way
+        key = (u, v, k) if oneway else (min(u, v), max(u, v), k)
+        if key in seen:
+            continue
+        seen.add(key)
         if "geometry" in d:
-            coords = [[float(x), float(y)] for x, y in d["geometry"].coords]
+            coords = [[round(float(x), 6), round(float(y), 6)] for x, y in d["geometry"].coords]
         else:
-            coords = [[nodes[int(u)][1], nodes[int(u)][0]],
-                      [nodes[int(v)][1], nodes[int(v)][0]]]
+            coords = [[nodes[int(u)][1], nodes[int(u)][0]], [nodes[int(v)][1], nodes[int(v)][0]]]
         name = d.get("name", "")
         if isinstance(name, list):
             name = name[0] if name else ""
         if not name:
             unnamed += 1
-            name = d.get("highway", "road")
-            if isinstance(name, list):
-                name = name[0]
-            name = f"unnamed {name}"
+            hw = d.get("highway", "road")
+            name = f"unnamed {hw[0] if isinstance(hw, list) else hw}"
         feats.append({
             "type": "Feature",
             "geometry": {"type": "LineString", "coordinates": coords},
-            "properties": {
-                "u": int(u), "v": int(v),
-                "length_m": round(float(d.get("length", 1.0)), 1),
-                "name": str(name),
-                "oneway": bool(d.get("oneway", False)),
-            },
+            "properties": {"u": int(u), "v": int(v),
+                           "length_m": round(float(d.get("length", 1.0)), 1),
+                           "name": str(name), "oneway": oneway},
         })
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -83,7 +84,7 @@ def main() -> int:
     print(f"{unnamed:,} edges have no name in OSM and are labelled by road class.")
     if mb > 20:
         print("Over 20 MB. Consider narrowing BBOX in backend/config.py.")
-    print("\nNext: point the Router at this file, and re-enable /api/route.")
+    print("\nCommit data/roads.geojson and push; the server picks it up and routing switches on.")
     return 0
 
 
