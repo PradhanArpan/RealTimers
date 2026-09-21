@@ -120,6 +120,12 @@
     .clock .lead { font-size: 26px; }
     .maplibregl-ctrl-bottom-right, .maplibregl-ctrl-bottom-left { margin-bottom: 108px; }
   }
+  /* short screens (laptops with display scaling): compact depth scale so it clears the timeline */
+  @media (min-width: 861px) and (max-height: 760px) {
+    .gauge { top: 176px; padding: 10px 12px 8px; }
+    .gauge .scale { height: 150px; }
+    .gauge .hint { display: none; }
+  }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
 </head>
