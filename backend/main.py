@@ -28,6 +28,7 @@ from network import load_drain_network, network_summary
 from routing import Router
 from drains import router as drains_router
 from terrain import router as terrain_router
+from opencity import router as opencity_router
 
 app = FastAPI(title="RealTimers Urban Flood Nowcast")
 
@@ -124,5 +125,6 @@ def route(from_lat: float, from_lon: float, to_lat: float, to_lon: float,
 # static mount below, which swallows every unmatched path.
 app.include_router(drains_router)
 app.include_router(terrain_router)
+app.include_router(opencity_router)
 
 app.mount("/", StaticFiles(directory=Path(__file__).parent.parent / "frontend", html=True), name="ui")

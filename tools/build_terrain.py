@@ -75,6 +75,8 @@ CITIES = {
 BURN_M = {"Primary": 12.0, "Secondary": 8.0, "Tertiary": 4.0}
 MAJOR_ORDER = 3
 WATER_BURN_M = {80: 4.0, 90: 2.0}          # WorldCover: permanent water, wetland
+LAKE_BURN_M = 4.0                           # BBMP lake master list: the real outfalls
+STREAM_BURN_M = 8.0                         # BBMP natural stream network
 
 # WorldCover class -> imperviousness. Planning-level assumptions, stated as such.
 IMPERV = {10: 0.05, 20: 0.10, 30: 0.15, 40: 0.20, 50: 0.85, 60: 0.40,
@@ -136,10 +138,11 @@ def jump(start, stop_mask):
     return t
 
 
-def build(city: str, threshold_ha: float, out_grid: int) -> dict:
+def build(city: str, threshold_ha: float, out_grid: int, lakes: bool = True,
+          streams: bool = False, out_dir: str | None = None) -> dict:
     t0 = time.time()
     ee = ROOT / "data" / "ee"
-    out = ROOT / "data" / "terrain" / city
+    out = Path(out_dir) if out_dir else ROOT / "data" / "terrain" / city
     rdir = out / "rasters"
     rdir.mkdir(parents=True, exist_ok=True)
     bbox = CITIES[city]
@@ -176,6 +179,27 @@ def build(city: str, threshold_ha: float, out_grid: int) -> dict:
         burn = rasterize(pairs, out_shape=(h, w), transform=ref["transform"],
                          fill=0.0, all_touched=True, dtype="float32")
         drains_used = len(pairs)
+    # BBMP lakes (polygons) and natural streams (lines), if ingested.
+    lakes_used = streams_used = 0
+    lpath = ROOT / "data" / "opencity" / city / "lakes_streams.geojson"
+    if (lakes or streams) and lpath.exists():
+        lfe = json.loads(lpath.read_text())["features"]
+        crs_s = ref["crs"].to_string()
+        if lakes:
+            lk = [(transform_geom("EPSG:4326", crs_s, f["geometry"]), LAKE_BURN_M) for f in lfe
+                  if f["geometry"]["type"] in ("Polygon", "MultiPolygon")]
+            if lk:
+                burn = np.maximum(burn, rasterize(lk, out_shape=(h, w), transform=ref["transform"],
+                                                  fill=0.0, dtype="float32"))
+                lakes_used = len(lk)
+        if streams:
+            sk = [(transform_geom("EPSG:4326", crs_s, f["geometry"]), STREAM_BURN_M) for f in lfe
+                  if "LineString" in f["geometry"]["type"]]
+            if sk:
+                burn = np.maximum(burn, rasterize(sk, out_shape=(h, w), transform=ref["transform"],
+                                                  fill=0.0, all_touched=True, dtype="float32"))
+                streams_used = len(sk)
+        log(f"burned {lakes_used} BBMP lakes and {streams_used} BBMP streams")
     on_drain = burn > 0
     for code, depth in WATER_BURN_M.items():
         burn = np.where(wc == code, np.maximum(burn, depth), burn)
@@ -384,7 +408,7 @@ def build(city: str, threshold_ha: float, out_grid: int) -> dict:
         for ch in range(4):
             rgba[..., ch] = np.interp(hv, stops[:, 0], stops[:, ch + 1])
         rgba[~np.isfinite(hand_ll), 3] = 0
-        png = ROOT / "frontend" / "terrain" / f"{city}_hand.png"
+        png = (out / "hand.png") if out_dir else ROOT / "frontend" / "terrain" / f"{city}_hand.png"
         png.parent.mkdir(parents=True, exist_ok=True)
         Image.fromarray(rgba, "RGBA").save(png, optimize=True)
     except ImportError:
@@ -431,6 +455,8 @@ def build(city: str, threshold_ha: float, out_grid: int) -> dict:
         "drain_alignment_by_length": alignment,
         "burn_depths_m": BURN_M,
         "drains_burned": drains_used,
+        "lakes_burned": lakes_used,
+        "streams_burned": streams_used,
         "hand_m": {"p10": round(float(np.percentile(Hv, 10)), 2),
                    "p50": round(float(np.percentile(Hv, 50)), 2),
                    "p90": round(float(np.percentile(Hv, 90)), 2)},
@@ -446,6 +472,7 @@ def build(city: str, threshold_ha: float, out_grid: int) -> dict:
             "land_cover": "ESA WorldCover v200, 10 m",
             "buildings": "Google Open Buildings 2.5D Temporal, 2023, 10 m",
             "drains": "BBMP stormwater drains via OpenCity (KSRSAC)" if drains_used else None,
+            "lakes": "BBMP lakes master list via OpenCity" if lakes_used else None,
         },
         "caveats": [
             "GLO-30 is a surface model: buildings are already in it, smeared to 30 m, "
@@ -469,7 +496,11 @@ if __name__ == "__main__":
     ap.add_argument("--city", default="bengaluru", choices=sorted(CITIES))
     ap.add_argument("--threshold-ha", type=float, default=4.0,
                     help="contributing area that starts a stream, hectares")
+    ap.add_argument("--no-lakes", action="store_true", help="do not burn BBMP lake polygons")
+    ap.add_argument("--streams", action="store_true", help="also burn the BBMP natural stream network")
+    ap.add_argument("--out", default=None, help="write here instead of data/terrain/<city>")
     ap.add_argument("--grid", type=int, default=240,
                     help="size of the lat/lon grid handed to the depth model")
     a = ap.parse_args()
-    print(json.dumps(build(a.city, a.threshold_ha, a.grid), indent=2))
+    print(json.dumps(build(a.city, a.threshold_ha, a.grid, lakes=not a.no_lakes,
+                           streams=a.streams, out_dir=a.out), indent=2))

@@ -1,0 +1,145 @@
+{
+  "bengaluru/flood_prone_locations": {
+    "description": "BBMP flood-prone locations (70 points)",
+    "features": 70,
+    "geometry": {
+      "Point": 70
+    },
+    "source_id": "00fb1229-dcfd-4f59-813f-885e0c629add",
+    "kb": 9
+  },
+  "chennai/dss_buckingham_canal": {
+    "description": "Chennai basin DSS: Buckingham canal",
+    "features": 5,
+    "geometry": {
+      "LineString": 2,
+      "MultiLineString": 3
+    },
+    "source_id": "1bb30ede-f309-4c16-8ab1-3c1fd211697f",
+    "kb": 10
+  },
+  "chennai/dss_micro_drains": {
+    "description": "Chennai basin DSS: micro drains",
+    "features": 37,
+    "geometry": {
+      "LineString": 35,
+      "MultiLineString": 2
+    },
+    "source_id": "4d6437e5-0869-4d0a-80ae-2e4f493425fe",
+    "kb": 81
+  },
+  "bengaluru/gba_boundary": {
+    "description": "Greater Bengaluru Authority boundary",
+    "features": 1,
+    "geometry": {
+      "Polygon": 1
+    },
+    "source_id": "53329777-285d-43d6-b2cf-dd54900d4dc6",
+    "kb": 64
+  },
+  "bengaluru/corporations_c2": {
+    "description": "Layer published as 'wards'; 5 polygons",
+    "features": 5,
+    "geometry": {
+      "Polygon": 5
+    },
+    "source_id": "632f5209-dfe1-4e0e-9fa9-d11c21028e55",
+    "kb": 189
+  },
+  "bengaluru/flood_vulnerable_locations": {
+    "description": "BBMP flood-vulnerable locations (200 points)",
+    "features": 200,
+    "geometry": {
+      "Point": 200
+    },
+    "source_id": "6b3c63b0-f461-4e9c-a2c2-006f734c5b41",
+    "kb": 47
+  },
+  "bengaluru/corporations": {
+    "description": "GBA corporations (5), from 19 July 2025",
+    "features": 5,
+    "geometry": {
+      "Polygon": 5
+    },
+    "source_id": "790f6df1-45dc-4096-b4ed-53a4c3743d58",
+    "kb": 218
+  },
+  "chennai/dss_macro_drains": {
+    "description": "Chennai basin DSS: macro drains",
+    "features": 15,
+    "geometry": {
+      "LineString": 15
+    },
+    "source_id": "80b07b87-0497-46c6-9168-0452cc67693c",
+    "kb": 49
+  },
+  "bengaluru/ksrsac_natural_drainage": {
+    "description": "KSRSAC Bengaluru Urban natural drainage",
+    "features": 2193,
+    "geometry": {
+      "LineString": 2136,
+      "MultiLineString": 57
+    },
+    "source_id": "8e04a22c-9f39-47ba-961d-bee051f1e58f",
+    "kb": 6427
+  },
+  "bengaluru/lowlying_locations": {
+    "description": "BBMP low-lying locations (129 points)",
+    "features": 128,
+    "geometry": {
+      "Point": 128
+    },
+    "source_id": "8e87a2fc-e014-4c6e-81f1-d5cb4db57a46",
+    "kb": 16
+  },
+  "chennai/dss_rivers_streams": {
+    "description": "Chennai basin DSS: rivers and streams",
+    "features": 876,
+    "geometry": {
+      "LineString": 854,
+      "MultiLineString": 22
+    },
+    "source_id": "9434de03-2238-4d31-9da1-ea3e466c0ca2",
+    "kb": 2074
+  },
+  "chennai/dss_krishna_canal": {
+    "description": "Chennai basin DSS: Krishna water canal",
+    "features": 1,
+    "geometry": {
+      "MultiLineString": 1
+    },
+    "source_id": "b5264c56-9c1a-49e3-9f7d-eb8f9b4fb414",
+    "kb": 3
+  },
+  "chennai/gcc_stormwater_drains": {
+    "description": "Greater Chennai Corporation stormwater drains",
+    "features": 10255,
+    "geometry": {
+      "LineString": 10240,
+      "MultiLineString": 15
+    },
+    "source_id": "c4907fed-934b-4342-a3f4-74226853719d",
+    "kb": 9428
+  },
+  "bengaluru/lakes_streams": {
+    "description": "BBMP lakes master list and stream network",
+    "features": 4108,
+    "geometry": {
+      "Polygon": 181,
+      "LineString": 3919,
+      "MultiLineString": 8
+    },
+    "source_id": "dae235c7-89a9-48de-be2c-5c19621b1ecb",
+    "kb": 1226
+  },
+  "bengaluru/zones": {
+    "description": "GBA zones within corporations",
+    "features": 10,
+    "geometry": {
+      "MultiPolygon": 1,
+      "Polygon": 9
+    },
+    "source_id": "e7ad0eac-7fa9-435f-822d-752be486e726",
+    "kb": 374
+  }
+}

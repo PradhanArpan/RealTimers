@@ -1,0 +1,51 @@
+{
+  "what": "terrain susceptibility vs BBMP-listed flood locations; not forecast skill",
+  "background": "20,000 random cells; 'built_up' = imperviousness >= 0.5",
+  "sets": {
+    "vulnerable": {
+      "n_in_pilot": 56,
+      "median_valley_hand_m": 2.18,
+      "auc_vs_area": 0.735,
+      "auc_vs_built_up": 0.757,
+      "p_value": 1.3616170690955443e-11,
+      "share_within_2m": 0.5
+    },
+    "flood_prone": {
+      "n_in_pilot": 29,
+      "median_valley_hand_m": 3.83,
+      "auc_vs_area": 0.619,
+      "auc_vs_built_up": 0.636,
+      "p_value": 0.005671612452715635,
+      "share_within_2m": 0.414
+    },
+    "low_lying": {
+      "n_in_pilot": 36,
+      "median_valley_hand_m": 5.61,
+      "auc_vs_area": 0.641,
+      "auc_vs_built_up": 0.659,
+      "p_value": 0.00046708426089026034,
+      "share_within_2m": 0.25
+    }
+  },
+  "all": {
+    "n_in_pilot": 121,
+    "skipped_bad_coordinates": 0,
+    "median_valley_hand_m": 3.26,
+    "median_built_up_m": 8.48,
+    "auc_vs_area": 0.679,
+    "auc_vs_built_up": 0.699,
+    "p_value": 1.9815336302136596e-14,
+    "auc_local_hand_vs_built_up": 0.607,
+    "share_within_2m": 0.405,
+    "built_up_share_within_2m": 0.162,
+    "lowest20_built_up_threshold_m": 2.74,
+    "lowest20_holds_share_of_spots": 0.438,
+    "capture_curve": {
+      "10%": 0.281,
+      "20%": 0.438,
+      "30%": 0.595,
+      "50%": 0.793,
+      "70%": 0.909
+    }
+  }
+}

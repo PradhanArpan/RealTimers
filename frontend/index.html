@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RealTimers flood nowcast</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2308306b%27/%3E%3Cpath d=%27M4 19c3 0 3-3 6-3s3 3 6 3 3-3 6-3 3 3 6 3%27 stroke=%27%236baed6%27 stroke-width=%272.6%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
                  border: 1px solid var(--blocked); color: var(--blocked); border-radius: 2px; }
 
   /* staff gauge legend */
-  .gauge { left: 16px; top: 268px; padding: 12px 14px 10px; width: 184px; }
+  .gauge { left: 16px; top: 268px; padding: 12px 14px 10px; width: 196px; }
   .gauge h2 { margin: 0 0 10px; font: 600 15px/1 var(--cond); letter-spacing: 0.02em; }
   .gauge .scale { position: relative; height: 230px; margin-left: 30px; }
   .gauge .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; border: 1px solid var(--ink); }
@@ -111,6 +112,7 @@
     .gauge .scale { height: 120px; margin-left: 26px; }
     .gauge .hint, .gauge .notch { display: none; }
     .panel { left: 16px; right: 16px; width: auto; top: auto; bottom: 116px; max-height: 40vh; }
+    .panel.collapsed { top: auto; bottom: 116px; }   /* collapsed: sit above the timeline, not over the title */
     .timeline { grid-template-columns: 48px 1fr; grid-template-rows: auto auto; height: 88px; row-gap: 2px; padding: 6px 12px; }
     .count { display: none; }
     .track { grid-column: 1 / 3; }
@@ -242,14 +244,20 @@
     fitBoundsOptions: { padding: { top: 40, bottom: 120, left: wide ? 220 : 20, right: wide ? 370 : 20 } },
     attributionControl: { compact: true },
   });
+  // A flood image superseded by a faster slider move is aborted on purpose; don't report it.
+  map.on("error", (e) => {
+    if (e && e.error && e.error.name === "AbortError") return;
+    console.error(e && e.error ? e.error : e);
+  });
   const coords = [[W, N], [E, N], [E, S], [W, S]];
   const empty = { type: "FeatureCollection", features: [] };
   const depthColor = ["interpolate", ["linear"], ["get", "max_depth_cm"], ...vis.flatMap((s) => [s.cm, s.hex])];
 
   await new Promise((r) => map.on("load", r));
   map.fitBounds([[meta.bbox[0], meta.bbox[1]], [meta.bbox[2], meta.bbox[3]]],
-                { padding: { top: 40, bottom: 120, left: 380, right: 360 }, duration: 0 });
-  const drains = DrainLayer.attach(map);
+                { padding: wide ? { top: 40, bottom: 120, left: 380, right: 360 }
+                                : { top: 100, bottom: 130, left: 20, right: 20 }, duration: 0 });
+  const drains = DrainLayer.attach(map, { chip: false });
   map.addSource("roads", { type: "geojson", data: "/api/roads" });
   map.addLayer({ id: "roads", type: "line", source: "roads", paint: { "line-color": "#9fb0ba", "line-width": 1.5 } });
   map.addSource("flood", { type: "image", url: "/api/flood/0.png", coordinates: coords });

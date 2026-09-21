@@ -40,6 +40,9 @@ def status():
     except HTTPException:
         return {"built": False, "depth_model_terrain": mock_physics.TERRAIN_SOURCE}
     s["built"] = True
+    v = DIR / "validation.json"
+    if v.exists():
+        s["validation"] = json.loads(v.read_text())["all"]
     s["depth_model_terrain"] = mock_physics.TERRAIN_SOURCE
     return s
 

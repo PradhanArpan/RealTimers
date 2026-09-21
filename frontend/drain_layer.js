@@ -22,7 +22,7 @@ const DrainLayer = (() => {
 
   let visible = true;
 
-  async function attach(map, { api = '' } = {}) {
+  async function attach(map, { api = '', chip: showChip = true } = {}) {
     let geojson;
     try {
       const res = await fetch(`${api}/v1/drains`);
@@ -30,7 +30,7 @@ const DrainLayer = (() => {
       geojson = await res.json();
     } catch (err) {
       console.warn('drain network unavailable:', err);
-      chip(map, null);
+      if (showChip) chip(map, null);
       return;
     }
 
@@ -85,10 +85,9 @@ const DrainLayer = (() => {
     }
 
     try {
-      const status = await (await fetch(`${api}/v1/drains/status`)).json();
-      chip(map, status);
+      if (showChip) chip(map, await (await fetch(`${api}/v1/drains/status`)).json());
     } catch (err) {
-      chip(map, null);
+      if (showChip) chip(map, null);
     }
 
     return {
