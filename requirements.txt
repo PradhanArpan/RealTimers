@@ -1,0 +1,11 @@
+# Pinned so Render builds what you tested. Bump deliberately, not by accident.
+fastapi==0.141.1
+uvicorn==0.53.0
+numpy==2.5.3
+scipy==1.18.1
+pillow==12.3.0
+networkx==3.6.1
+
+# Only needed for ROADS_SOURCE = "osm". Leave commented unless you use it —
+# osmnx pulls geopandas and friends and will slow the Render build a lot.
+# osmnx==2.0.6

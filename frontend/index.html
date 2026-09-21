@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RealTimers flood nowcast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+  :root {
+    --paper: #edf1f3;
+    --panel: #f7f9fa;
+    --ink: #12222e;
+    --slate: #4a5c68;
+    --rule: #c5d0d6;
+    --safe: #0e8f6b;
+    --blocked: #7a0c1e;
+    --sans: "Barlow", "Helvetica Neue", Arial, sans-serif;
+    --cond: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font-family: var(--sans); color: var(--ink); background: var(--paper); }
+  #map { position: fixed; inset: 0; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .float { position: fixed; z-index: 5; background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; }
+
+  /* brand */
+  .brand { left: 16px; top: 16px; padding: 12px 16px; max-width: 340px; }
+  .brand h1 { margin: 0; font: 700 26px/1.05 var(--cond); letter-spacing: 0.01em; }
+  .brand p { margin: 4px 0 0; font-size: 14px; color: var(--slate); }
+  .brand .demo { display: inline-block; margin-top: 8px; padding: 2px 8px; font-size: 12.5px; font-weight: 500;
+                 border: 1px solid var(--blocked); color: var(--blocked); border-radius: 2px; }
+
+  /* staff gauge legend */
+  .gauge { left: 16px; top: 146px; padding: 12px 14px 10px; width: 184px; }
+  .gauge h2 { margin: 0 0 10px; font: 600 15px/1 var(--cond); letter-spacing: 0.02em; }
+  .gauge .scale { position: relative; height: 230px; margin-left: 30px; }
+  .gauge .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; border: 1px solid var(--ink); }
+  .gauge .tick { position: absolute; left: -30px; width: 30px; transform: translateY(50%); font: 500 12px/1 var(--cond); color: var(--slate); text-align: right; padding-right: 6px; }
+  .gauge .tick::after { content: ""; position: absolute; right: -1px; top: 50%; width: 5px; height: 1px; background: var(--ink); }
+  .gauge .notch { position: absolute; left: 22px; transform: translateY(50%); font: 500 12px/1 var(--sans); color: var(--ink); white-space: nowrap; padding-left: 12px; }
+  .gauge .notch::before { content: ""; position: absolute; left: 0; top: 50%; width: 8px; height: 2px; background: var(--ink); }
+  .gauge .reading { position: absolute; left: -30px; right: 0; height: 0; border-top: 2px solid var(--ink); display: none; }
+  .gauge .reading span { position: absolute; left: 0; bottom: 2px; padding: 0 4px; font: 700 20px/1 var(--cond); background: var(--panel); }
+  .gauge .hint { margin: 10px 0 0; font-size: 12.5px; color: var(--slate); line-height: 1.35; }
+
+  /* right panel */
+  .panel { right: 16px; top: 16px; bottom: 104px; width: 328px; display: flex; flex-direction: column; overflow: hidden; }
+  .tabs { display: flex; border-bottom: 1px solid var(--rule); }
+  .tabs button { flex: 1; padding: 11px 8px 9px; background: none; border: 0; border-bottom: 3px solid transparent;
+                 font: 600 17px/1 var(--cond); color: var(--slate); }
+  .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+  .view { flex: 1; overflow: auto; padding: 12px 14px 14px; }
+  .view[hidden] { display: none; }
+  .panel.collapsed .view { display: none; }
+  .panel.collapsed { bottom: auto; }
+
+  .alert { display: grid; grid-template-columns: 62px 1fr; gap: 12px; align-items: center; width: 100%; text-align: left;
+           padding: 9px 0; background: none; border: 0; border-bottom: 1px solid var(--rule); }
+  .alert:last-child { border-bottom: 0; }
+  .alert .num { font: 700 34px/1 var(--cond); text-align: right; padding-bottom: 3px; border-bottom: 4px solid var(--rule); }
+  .alert .num small { font: 500 14px/1 var(--cond); margin-left: 2px; color: var(--slate); }
+  .alert .name { font-weight: 600; font-size: 15px; }
+  .alert .when { font-size: 13px; color: var(--slate); margin-top: 2px; line-height: 1.3; }
+  .empty { color: var(--slate); font-size: 14px; line-height: 1.4; }
+
+  .seg { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--ink); border-radius: 3px; overflow: hidden; margin-bottom: 12px; }
+  .seg button { padding: 7px 4px 6px; background: none; border: 0; border-right: 1px solid var(--ink); text-align: center; line-height: 1.15; }
+  .seg button:last-child { border-right: 0; }
+  .seg button b { display: block; font: 600 15px/1.1 var(--cond); }
+  .seg button span { font-size: 12px; color: var(--slate); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .seg button[aria-pressed="true"] span { color: #c9d5dc; }
+  .steps { margin: 0 0 12px; font-size: 14px; color: var(--slate); line-height: 1.4; }
+  .route-row { display: grid; grid-template-columns: 10px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--rule); }
+  .route-row i { display: block; width: 10px; border-radius: 1px; }
+  .route-row b { font: 600 17px/1.1 var(--cond); }
+  .route-row div div { font-size: 13.5px; color: var(--slate); margin-top: 3px; line-height: 1.35; }
+  .verdict { margin: 10px 0 0; font-size: 14px; font-weight: 500; line-height: 1.35; }
+  .clear { margin-top: 12px; padding: 6px 12px; background: none; border: 1px solid var(--ink); border-radius: 3px; font-weight: 500; font-size: 14px; }
+
+  /* timeline */
+  .timeline { left: 16px; right: 16px; bottom: 16px; height: 76px; display: grid; grid-template-columns: 56px 170px 1fr 200px; gap: 16px; align-items: center; padding: 0 18px 0 12px; }
+  .play { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--ink); background: none; font-size: 15px; }
+  .clock .lead { font: 700 34px/1 var(--cond); }
+  .clock .at { font-size: 13.5px; color: var(--slate); margin-top: 2px; }
+  #slider { width: 100%; margin: 0; accent-color: var(--ink); }
+  .marks { display: flex; justify-content: space-between; font: 500 12px/1 var(--cond); color: var(--slate); margin-top: 4px; }
+  .count { text-align: right; }
+  .count .n { font: 700 34px/1 var(--cond); }
+  .count .l { font-size: 13.5px; color: var(--slate); margin-top: 2px; }
+
+  .pin { width: 16px; height: 16px; border: 3px solid #fff; box-shadow: 0 0 0 1.5px var(--ink); background: var(--ink); }
+  .pin.start { border-radius: 50%; }
+  .pin.end { border-radius: 2px; background: var(--safe); box-shadow: 0 0 0 1.5px var(--safe); }
+  .maplibregl-popup-content { padding: 8px 12px; font-family: var(--sans); border-radius: 3px; }
+  .pp b { font: 700 24px/1 var(--cond); }
+  .maplibregl-ctrl-bottom-right, .maplibregl-ctrl-bottom-left { margin-bottom: 96px; }
+  .maplibregl-ctrl-attrib { font-size: 11px; }
+
+  @media (max-width: 860px) {
+    .brand { max-width: calc(100vw - 32px); padding: 8px 12px; }
+    .brand h1 { font-size: 21px; }
+    .brand p { display: none; }
+    .brand .demo { margin-top: 4px; }
+    .gauge { top: 96px; width: 150px; padding: 8px 10px; }
+    .gauge .scale { height: 120px; margin-left: 26px; }
+    .gauge .hint, .gauge .notch { display: none; }
+    .panel { left: 16px; right: 16px; width: auto; top: auto; bottom: 116px; max-height: 40vh; }
+    .timeline { grid-template-columns: 48px 1fr; grid-template-rows: auto auto; height: 88px; row-gap: 2px; padding: 6px 12px; }
+    .count { display: none; }
+    .track { grid-column: 1 / 3; }
+    .clock .at { display: none; }
+    .clock .lead { font-size: 26px; }
+    .maplibregl-ctrl-bottom-right, .maplibregl-ctrl-bottom-left { margin-bottom: 108px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<header class="float brand">
+  <h1>RealTimers flood nowcast</h1>
+  <p>Street-level water depth, next 3 hours</p>
+  <span class="demo">Demo data, not a forecast</span>
+</header>
+
+<section class="float gauge" aria-label="Water depth scale">
+  <h2>Water depth, cm</h2>
+  <div class="scale" id="scale"><div class="reading" id="reading"><span></span></div></div>
+  <p class="hint" id="hint">Click the map to read the depth at a point.</p>
+</section>
+
+<aside class="float panel" id="panel">
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-alerts" aria-selected="true" aria-controls="view-alerts">Worst streets</button>
+    <button role="tab" id="tab-route" aria-selected="false" aria-controls="view-route">Safe route</button>
+  </div>
+  <div class="view" id="view-alerts" role="tabpanel"></div>
+  <div class="view" id="view-route" role="tabpanel" hidden>
+    <div class="seg" id="modes">
+      <button data-mode="twowheeler" aria-pressed="false"><b>Two-wheeler</b><span>under 15 cm</span></button>
+      <button data-mode="car" aria-pressed="true"><b>Car</b><span>under 30 cm</span></button>
+      <button data-mode="emergency" aria-pressed="false"><b>Ambulance, bus</b><span>under 45 cm</span></button>
+    </div>
+    <p class="steps" id="steps">Click the map to set the start.</p>
+    <div id="route-out"></div>
+  </div>
+</aside>
+
+<footer class="float timeline">
+  <button class="play" id="play" aria-label="Play forecast">&#9654;</button>
+  <div class="clock"><div class="lead" id="lead">T+0 min</div><div class="at" id="at"></div></div>
+  <div class="track">
+    <input type="range" id="slider" min="0" max="12" step="1" value="0" aria-label="Forecast lead time">
+    <div class="marks" id="marks"></div>
+  </div>
+  <div class="count"><div class="n" id="count">0</div><div class="l">streets at 10 cm or deeper</div></div>
+</footer>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="drain_layer.js"></script>
+<script>
+(async () => {
+  const meta = await (await fetch("/api/meta")).json();
+  const [W, S, E, N] = meta.bbox;
+  const LEADS = meta.leads;
+  const state = { i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
+  const $ = (id) => document.getElementById(id);
+
+  // ---- colour helpers (one scale, served by the backend) ------------------------------
+  const vis = meta.color_scale.filter((s) => s.alpha > 0);
+  const hexRgb = (h) => [1, 3, 5].map((k) => parseInt(h.slice(k, k + 2), 16));
+  function colorFor(cm) {
+    if (cm <= vis[0].cm) return vis[0].hex;
+    for (let k = 1; k < vis.length; k++) {
+      if (cm <= vis[k].cm) {
+        const t = (cm - vis[k - 1].cm) / (vis[k].cm - vis[k - 1].cm);
+        const a = hexRgb(vis[k - 1].hex), b = hexRgb(vis[k].hex);
+        return "rgb(" + a.map((v, j) => Math.round(v + (b[j] - v) * t)).join(",") + ")";
+      }
+    }
+    return vis[vis.length - 1].hex;
+  }
+
+  // ---- staff-gauge legend ------------------------------------------------------------------
+  const G_MAX = 90;
+  const scale = $("scale");
+  const stops = [["#cfe3f5", 0], ...vis.map((s) => [s.hex, s.cm])].map(([c, cm]) => c + " " + (cm / G_MAX * 100) + "%");
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  bar.style.background = "linear-gradient(to top, " + stops.join(", ") + ", " + vis[vis.length - 1].hex + " 100%)";
+  scale.appendChild(bar);
+  for (let cm = 0; cm <= G_MAX; cm += 10) {
+    const t = document.createElement("div");
+    t.className = "tick"; t.textContent = cm; t.style.bottom = (cm / G_MAX * 100) + "%";
+    scale.appendChild(t);
+  }
+  const names = { twowheeler: "two-wheeler limit", car: "car limit", emergency: "ambulance, bus limit" };
+  Object.entries(meta.mode_threshold_cm).forEach(([m, cm]) => {
+    const n = document.createElement("div");
+    n.className = "notch"; n.textContent = names[m]; n.style.bottom = (cm / G_MAX * 100) + "%";
+    scale.appendChild(n);
+  });
+  function showReading(cm) {
+    const r = $("reading");
+    r.style.display = "block";
+    r.style.bottom = (Math.min(cm, G_MAX) / G_MAX * 100) + "%";
+    r.querySelector("span").textContent = Math.round(cm);
+  }
+
+  // ---- timeline ------------------------------------------------------------------------------
+  $("slider").max = LEADS.length - 1;
+  $("marks").innerHTML = LEADS.filter((l) => l % 60 === 0).map((l) => "<span>+" + (l / 60) + " h</span>").join("");
+  const issued = new Date(meta.issued_at);
+
+  // ---- map -------------------------------------------------------------------------------------
+  const style = {
+    version: 8,
+    sources: { base: { type: "raster", tileSize: 256, attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+      tiles: ["a", "b", "c"].map((s) => "https://" + s + ".basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png") } },
+    layers: [
+      { id: "bg", type: "background", paint: { "background-color": "#e8edf0" } },
+      { id: "base", type: "raster", source: "base", layout: { visibility: meta.roads_source === "osm" ? "visible" : "none" } },
+    ],
+  };
+  const wide = window.innerWidth > 860;
+  const map = new maplibregl.Map({
+    container: "map", style, bounds: [[W, S], [E, N]],
+    fitBoundsOptions: { padding: { top: 40, bottom: 120, left: wide ? 220 : 20, right: wide ? 370 : 20 } },
+    attributionControl: { compact: true },
+  });
+  const coords = [[W, N], [E, N], [E, S], [W, S]];
+  const empty = { type: "FeatureCollection", features: [] };
+  const depthColor = ["interpolate", ["linear"], ["get", "max_depth_cm"], ...vis.flatMap((s) => [s.cm, s.hex])];
+
+  await new Promise((r) => map.on("load", r));
+  DrainLayer.attach(map);
+  map.addSource("roads", { type: "geojson", data: "/api/roads" });
+  map.addLayer({ id: "roads", type: "line", source: "roads", paint: { "line-color": "#9fb0ba", "line-width": 1.5 } });
+  map.addSource("flood", { type: "image", url: "/api/flood/0.png", coordinates: coords });
+  map.addLayer({ id: "flood", type: "raster", source: "flood", paint: { "raster-fade-duration": 0 } });
+  map.addSource("flooded", { type: "geojson", data: empty });
+  map.addLayer({ id: "flooded-casing", type: "line", source: "flooded", paint: { "line-color": "#12222e", "line-width": 6.5, "line-opacity": 0.55 } });
+  map.addLayer({ id: "flooded", type: "line", source: "flooded", paint: { "line-color": depthColor, "line-width": 4 } });
+  map.addSource("normal", { type: "geojson", data: empty });
+  map.addSource("avoided", { type: "geojson", data: empty });
+  map.addSource("safe", { type: "geojson", data: empty });
+  map.addLayer({ id: "normal", type: "line", source: "normal", paint: { "line-color": "#4a5c68", "line-width": 4, "line-dasharray": [2, 1.5] } });
+  map.addLayer({ id: "avoided", type: "line", source: "avoided", paint: { "line-color": "#7a0c1e", "line-width": 7 } });
+  map.addLayer({ id: "safe", type: "line", source: "safe", paint: { "line-color": "#0e8f6b", "line-width": 5 }, layout: { "line-cap": "round" } });
+
+  // ---- lead time -------------------------------------------------------------------------------
+  async function setLead(i) {
+    state.i = i;
+    const lead = LEADS[i];
+    $("slider").value = i;
+    $("lead").textContent = "T+" + lead + " min";
+    const t = new Date(issued.getTime() + lead * 60000);
+    $("at").textContent = t.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png", coordinates: coords });
+    const fc = await (await fetch("/api/roads/flooded?lead=" + lead)).json();
+    map.getSource("flooded").setData(fc);
+    $("count").textContent = fc.features.filter((f) => f.properties.max_depth_cm >= meta.flooded_cm).length;
+    if (state.start && state.end) findRoute();
+    if (state.probe) probe(state.probe);
+  }
+  $("slider").addEventListener("input", (e) => setLead(+e.target.value));
+  const setPlayIcon = (playing) => { $("play").innerHTML = playing ? "&#10074;&#10074;" : "&#9654;"; };
+  $("play").addEventListener("click", () => {
+    if (state.timer) { clearInterval(state.timer); state.timer = null; setPlayIcon(false); return; }
+    setPlayIcon(true);
+    if (state.i >= LEADS.length - 1) setLead(0);
+    state.timer = setInterval(() => {
+      if (state.i >= LEADS.length - 1) { clearInterval(state.timer); state.timer = null; setPlayIcon(false); return; }
+      setLead(state.i + 1);
+    }, 800);
+  });
+
+  // ---- read the depth at a point ---------------------------------------------------------------
+  let popup;
+  const inside = (ll) => ll.lng >= W && ll.lng <= E && ll.lat >= S && ll.lat <= N;
+  async function probe(ll) {
+    if (!inside(ll)) return;
+    state.probe = ll;
+    const lead = LEADS[state.i];
+    const d = await (await fetch("/api/point?lat=" + ll.lat + "&lon=" + ll.lng + "&lead=" + lead)).json();
+    showReading(d.depth_cm);
+    $("hint").textContent = "Reading at your last click, T+" + lead + " min.";
+    if (popup) popup.remove();
+    popup = new maplibregl.Popup({ closeButton: false, offset: 8 }).setLngLat(ll)
+      .setHTML('<div class="pp"><b>' + Math.round(d.depth_cm) + " cm</b> at T+" + lead + " min</div>").addTo(map);
+  }
+
+  // ---- worst streets tab ---------------------------------------------------------------------------
+  async function loadAlerts() {
+    state.alerts = await (await fetch("/api/alerts")).json();
+    const v = $("view-alerts");
+    if (!state.alerts.length) {
+      v.innerHTML = '<p class="empty">No street is expected to reach ' + meta.flooded_cm + " cm in the next 3 hours.</p>";
+      return;
+    }
+    v.innerHTML = state.alerts.map((a, k) =>
+      '<button class="alert" data-k="' + k + '"><div class="num" style="border-bottom-color:' + colorFor(a.peak_cm) + '">' +
+      Math.round(a.peak_cm) + '<small>cm</small></div><div><div class="name">' + a.name +
+      '</div><div class="when">Floods from T+' + a.onset_min + " min, peaks at T+" + a.peak_min + " min</div></div></button>").join("");
+    v.querySelectorAll(".alert").forEach((b) => b.addEventListener("click", () => {
+      const a = state.alerts[+b.dataset.k];
+      map.flyTo({ center: [a.lon, a.lat], zoom: Math.max(map.getZoom(), 15.5) });
+      setLead(LEADS.indexOf(a.peak_min));
+    }));
+  }
+
+  // ---- safe route tab -----------------------------------------------------------------------------
+  function pin(cls, ll) {
+    const el = document.createElement("div");
+    el.className = "pin " + cls;
+    return new maplibregl.Marker({ element: el }).setLngLat(ll).addTo(map);
+  }
+  function clearRoute() {
+    ["normal", "avoided", "safe"].forEach((s) => map.getSource(s).setData(empty));
+    if (state.marker.s) state.marker.s.remove();
+    if (state.marker.e) state.marker.e.remove();
+    state.start = state.end = state.marker.s = state.marker.e = null;
+    $("steps").textContent = "Click the map to set the start.";
+    $("route-out").innerHTML = "";
+  }
+  function setRoutePoint(ll) {
+    if (!inside(ll)) return;
+    if (state.start && state.end) clearRoute();
+    if (!state.start) {
+      state.start = ll; state.marker.s = pin("start", ll);
+      $("steps").textContent = "Click the map to set the destination.";
+    } else {
+      state.end = ll; state.marker.e = pin("end", ll);
+      $("steps").textContent = "The route updates when you move the time slider or change vehicle.";
+      findRoute();
+    }
+  }
+  async function findRoute() {
+    const q = new URLSearchParams({ from_lat: state.start.lat, from_lon: state.start.lng, to_lat: state.end.lat, to_lon: state.end.lng,
+      mode: state.mode, lead: LEADS[state.i] });
+    const res = await fetch("/api/route?" + q);
+    const out = $("route-out");
+    if (!res.ok) {
+      out.innerHTML = '<p class="verdict">' + (await res.json()).detail + '</p><button class="clear" id="clr">Clear points</button>';
+      $("clr").onclick = clearRoute;
+      return;
+    }
+    const r = await res.json();
+    const feat = (g) => ({ type: "Feature", geometry: g, properties: {} });
+    map.getSource("normal").setData(feat(r.normal.geometry));
+    map.getSource("avoided").setData(r.avoided);
+    map.getSource("safe").setData(r.safe ? feat(r.safe.geometry) : empty);
+    const km = (m) => (m / 1000).toFixed(1) + " km";
+    const row = (color, title, x, note) => '<div class="route-row"><i style="background:' + color + '"></i><div><b>' + title + "</b><div>" +
+      km(x.length_m) + ", about " + Math.round(x.eta_min) + " min. Deepest water on the way: " + Math.round(x.max_depth_cm) + " cm. " + note + "</div></div></div>";
+    out.innerHTML =
+      row("#4a5c68", "Normal route", r.normal, r.normal.floods ? "Too deep for this vehicle." : "Stays clear.") +
+      (r.safe ? row("#0e8f6b", "Flood-safe route", r.safe, "Below " + r.threshold_cm + " cm the whole way.") : "") +
+      '<p class="verdict">' + r.message + '</p><button class="clear" id="clr">Clear points</button>';
+    $("clr").onclick = clearRoute;
+  }
+  $("modes").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+    state.mode = b.dataset.mode;
+    $("modes").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    if (state.start && state.end) findRoute();
+  }));
+
+  // ---- tabs --------------------------------------------------------------------------------------------
+  function selectTab(name) {
+    const panel = $("panel");
+    if (state.tab === name) { panel.classList.toggle("collapsed"); return; }   // tap the open tab again to fold the panel
+    state.tab = name;
+    panel.classList.remove("collapsed");
+    ["alerts", "route"].forEach((n) => {
+      $("tab-" + n).setAttribute("aria-selected", String(n === name));
+      $("view-" + n).hidden = n !== name;
+    });
+  }
+  $("tab-alerts").onclick = () => selectTab("alerts");
+  $("tab-route").onclick = () => selectTab("route");
+  if (!wide) $("panel").classList.add("collapsed");
+
+  map.on("click", (e) => (state.tab === "route" ? setRoutePoint(e.lngLat) : probe(e.lngLat)));
+
+  await loadAlerts();
+  await setLead(0);
+})();
+</script>
+</body>
+</html>

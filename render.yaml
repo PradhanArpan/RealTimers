@@ -1,0 +1,17 @@
+# Render blueprint. Commit this, then in Render: New > Blueprint > pick the repo.
+# Everything below is set from the file, so there is no settings page to get wrong.
+services:
+  - type: web
+    name: realtimers
+    runtime: python
+    # "free" spins down after 15 min idle and takes ~1 min to wake.
+    # Switch to "starter" for the pitch window, then switch back.
+    plan: free
+    region: singapore          # closest Render region to Bengaluru
+    rootDir: backend
+    buildCommand: pip install -r ../requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /v1/drains/status
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"

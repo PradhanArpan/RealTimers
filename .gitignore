@@ -1,0 +1,14 @@
+# Source data — too big for git, and re-downloadable from OpenCity.
+data/*.kml
+data/*.zip
+
+# Derived data IS committed (data/drains.geojson) so Render never has to
+# run the ingester at build time. Delete that line from here if you change
+# your mind, but then add ingestion to the build command.
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
