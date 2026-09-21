@@ -18,6 +18,11 @@ def cell_of(lat, lon):
     return row, col
 
 
+# Spacing of depth samples along each road or drain segment, metres. The depth
+# grid cell is ~55 m; 6 m sampling tracks a 2 m reference closely (tested).
+SAMPLE_STEP_M = 6.0
+
+
 class Router:
     def __init__(self, cube, roads):
         self.cube = cube
@@ -30,29 +35,54 @@ class Router:
 
     # ---- street depths -------------------------------------------------
     def _sample_edges(self):
-        """depth[lead_idx, edge_idx] = max depth (cm) along that street segment."""
-        self.depth = np.zeros((len(LEADS), len(self.edges)), dtype=np.float32)
-        for k, ed in enumerate(self.edges):
-            pts = np.array(ed["coords"])                      # (lon, lat)
-            seg = np.hypot(np.diff(pts[:, 0]) * _m_per_deg_lon(pts[0, 1]),
-                           np.diff(pts[:, 1]) * M_PER_DEG_LAT)
-            cum = np.concatenate([[0], np.cumsum(seg)])
-            total = max(cum[-1], 1e-6)
-            m = max(2, int(total / 12) + 1)                   # a sample about every 12 m
-            t = np.linspace(0, total, m)
-            lon = np.interp(t, cum, pts[:, 0])
-            lat = np.interp(t, cum, pts[:, 1])
-            cols = np.clip(((lon - W) / (E - W) * GRID).astype(int), 0, GRID - 1)
-            rows = np.clip(((N - lat) / (N - S) * GRID).astype(int), 0, GRID - 1)
-            self.depth[:, k] = self.cube[:, rows, cols].max(axis=1)
+        """depth[lead_idx, edge_idx] = max depth (cm) along each segment.
+
+        Vectorised: every segment is cut into steps of at most STEP_M metres
+        and all sample points are looked up in the depth cube at once, then
+        reduced per edge. Same samples as a per-edge loop, but seconds faster
+        on a network of 80,000 road segments -- which matters on a small
+        server where startup time is what a visitor waits through.
+        """
+        STEP_M = SAMPLE_STEP_M
+        L = len(self.edges)
+        self.depth = np.zeros((len(LEADS), L), dtype=np.float32)
+        if L == 0:
+            return
+        counts = np.fromiter((len(ed["coords"]) for ed in self.edges), dtype=np.int64, count=L)
+        flat = np.fromiter((v for ed in self.edges for pt in ed["coords"] for v in pt[:2]),
+                           dtype=np.float64, count=int(counts.sum()) * 2).reshape(-1, 2)
+        start = np.concatenate([[0], np.cumsum(counts)[:-1]])
+        # segments: consecutive vertex pairs inside each edge
+        seg_edge = np.repeat(np.arange(L), counts - 1)
+        seg_a = np.concatenate([np.arange(s0, s0 + c - 1) for s0, c in zip(start, counts)])
+        p0, p1 = flat[seg_a], flat[seg_a + 1]
+        mx = _m_per_deg_lon(float(np.mean(flat[:, 1])))
+        seg_len = np.hypot((p1[:, 0] - p0[:, 0]) * mx, (p1[:, 1] - p0[:, 1]) * M_PER_DEG_LAT)
+        n = np.maximum(1, np.ceil(seg_len / STEP_M).astype(np.int64))
+        # sample each segment at 0, 1/n, ..., (n-1)/n, plus every edge's last vertex
+        rep = np.repeat(np.arange(len(n)), n)
+        frac = np.arange(len(rep)) - np.repeat(np.cumsum(n) - n, n)
+        frac = frac / n[rep]
+        lon = np.concatenate([p0[rep, 0] + (p1[rep, 0] - p0[rep, 0]) * frac, flat[start + counts - 1, 0]])
+        lat = np.concatenate([p0[rep, 1] + (p1[rep, 1] - p0[rep, 1]) * frac, flat[start + counts - 1, 1]])
+        owner = np.concatenate([seg_edge[rep], np.arange(L)])
+        cols = np.clip(((lon - W) / (E - W) * GRID).astype(np.int64), 0, GRID - 1)
+        rows = np.clip(((N - lat) / (N - S) * GRID).astype(np.int64), 0, GRID - 1)
+        vals = self.cube[:, rows, cols]                      # (leads, samples)
+        order = np.argsort(owner, kind="stable")
+        owner_sorted = owner[order]
+        first = np.searchsorted(owner_sorted, np.arange(L))
+        self.depth[:] = np.maximum.reduceat(vals[:, order], first, axis=1)
 
     def _build_graph(self):
-        self.g = nx.DiGraph()
+        best = {}
         for k, ed in enumerate(self.edges):
-            u, v = ed["u"], ed["v"]
-            if self.g.has_edge(u, v) and self.g[u][v]["length"] <= ed["length"]:
-                continue
-            self.g.add_edge(u, v, eid=k, length=ed["length"])
+            key = (ed["u"], ed["v"])
+            if key not in best or ed["length"] < self.edges[best[key]]["length"]:
+                best[key] = k
+        self.g = nx.DiGraph()
+        self.g.add_edges_from((u, v, {"eid": k, "length": self.edges[k]["length"]})
+                              for (u, v), k in best.items())
 
     def lead_index(self, lead):
         if lead < LEADS[0] or lead > LEADS[-1]:
