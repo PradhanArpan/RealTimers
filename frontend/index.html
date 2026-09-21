@@ -36,7 +36,7 @@
                  border: 1px solid var(--blocked); color: var(--blocked); border-radius: 2px; }
 
   /* staff gauge legend */
-  .gauge { left: 16px; top: 146px; padding: 12px 14px 10px; width: 184px; }
+  .gauge { left: 16px; top: 268px; padding: 12px 14px 10px; width: 184px; }
   .gauge h2 { margin: 0 0 10px; font: 600 15px/1 var(--cond); letter-spacing: 0.02em; }
   .gauge .scale { position: relative; height: 230px; margin-left: 30px; }
   .gauge .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; border: 1px solid var(--ink); }
@@ -126,19 +126,19 @@
 
 <header class="float brand">
   <h1>RealTimers flood nowcast</h1>
-  <p>Street-level water depth, next 3 hours</p>
+  <p>Water depth on BBMP drain corridors, next 3 hours</p>
   <span class="demo">Demo data, not a forecast</span>
 </header>
 
 <section class="float gauge" aria-label="Water depth scale">
   <h2>Water depth, cm</h2>
   <div class="scale" id="scale"><div class="reading" id="reading"><span></span></div></div>
-  <p class="hint" id="hint">Click the map to read the depth at a point.</p>
+  <p class="hint" id="hint">Click the map to read modelled depth at a point.</p>
 </section>
 
 <aside class="float panel" id="panel">
   <div class="tabs" role="tablist">
-    <button role="tab" id="tab-alerts" aria-selected="true" aria-controls="view-alerts">Worst streets</button>
+    <button role="tab" id="tab-alerts" aria-selected="true" aria-controls="view-alerts">Worst corridors</button>
     <button role="tab" id="tab-route" aria-selected="false" aria-controls="view-route">Safe route</button>
   </div>
   <div class="view" id="view-alerts" role="tabpanel"></div>
@@ -148,8 +148,14 @@
       <button data-mode="car" aria-pressed="true"><b>Car</b><span>under 30 cm</span></button>
       <button data-mode="emergency" aria-pressed="false"><b>Ambulance, bus</b><span>under 45 cm</span></button>
     </div>
-    <p class="steps" id="steps">Click the map to set the start.</p>
-    <div id="route-out"></div>
+    <p class="steps" id="steps">Routing is waiting on a road network.</p>
+    <div id="route-out"><p class="verdict" style="line-height:1.45">
+      The map now shows BBMP&rsquo;s published <b>drain</b> network, which is not a
+      travel network &mdash; its segments form 800-odd disconnected pieces, so no
+      path exists between most points. Vehicle depth limits above are live and
+      already drive the colour scale. Run <code>tools/ingest_roads.py</code> to add
+      the OSM road network, and this panel routes on real streets.
+    </p></div>
   </div>
 </aside>
 
@@ -160,11 +166,12 @@
     <input type="range" id="slider" min="0" max="12" step="1" value="0" aria-label="Forecast lead time">
     <div class="marks" id="marks"></div>
   </div>
-  <div class="count"><div class="n" id="count">0</div><div class="l">streets at 10 cm or deeper</div></div>
+  <div class="count"><div class="n" id="count">0</div><div class="l">drain corridors at 10 cm or deeper</div></div>
 </footer>
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script src="drain_layer.js"></script>
+<script src="terrain_layer.js"></script>
 <script>
 (async () => {
   const meta = await (await fetch("/api/meta")).json();
@@ -240,7 +247,9 @@
   const depthColor = ["interpolate", ["linear"], ["get", "max_depth_cm"], ...vis.flatMap((s) => [s.cm, s.hex])];
 
   await new Promise((r) => map.on("load", r));
-  DrainLayer.attach(map);
+  map.fitBounds([[meta.bbox[0], meta.bbox[1]], [meta.bbox[2], meta.bbox[3]]],
+                { padding: { top: 40, bottom: 120, left: 380, right: 360 }, duration: 0 });
+  const drains = DrainLayer.attach(map);
   map.addSource("roads", { type: "geojson", data: "/api/roads" });
   map.addLayer({ id: "roads", type: "line", source: "roads", paint: { "line-color": "#9fb0ba", "line-width": 1.5 } });
   map.addSource("flood", { type: "image", url: "/api/flood/0.png", coordinates: coords });
@@ -254,6 +263,7 @@
   map.addLayer({ id: "normal", type: "line", source: "normal", paint: { "line-color": "#4a5c68", "line-width": 4, "line-dasharray": [2, 1.5] } });
   map.addLayer({ id: "avoided", type: "line", source: "avoided", paint: { "line-color": "#7a0c1e", "line-width": 7 } });
   map.addLayer({ id: "safe", type: "line", source: "safe", paint: { "line-color": "#0e8f6b", "line-width": 5 }, layout: { "line-cap": "round" } });
+  TerrainLayer.attach(map, { drains });
 
   // ---- lead time -------------------------------------------------------------------------------
   async function setLead(i) {

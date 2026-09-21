@@ -1,10 +1,12 @@
 """Pilot-area settings. Change these first."""
 
 # Pilot bounding box (west, south, east, north) in WGS84.
-# Placeholder: ~2 km x 2 km around Bellandur, Bengaluru. Replace with your pilot area.
-BBOX = (77.6700, 12.9210, 77.6884, 12.9390)
+# ~13 x 13 km over Koramangala, HSR, Silk Board, Agara and Bellandur -- chosen
+# because the published BBMP drain network is dense here and several of BBMP's
+# own vulnerable-location list sit inside it.
+BBOX = (77.5800, 12.8800, 77.7000, 13.0000)
 
-GRID = 200                       # mock depth grid is GRID x GRID cells (~10 m each)
+GRID = 240                       # mock depth grid is GRID x GRID cells (~55 m each here)
 LEADS = list(range(0, 181, 15))  # forecast lead times in minutes: 0, 15, ... 180
 
 # Depth (cm) above which each vehicle should not be routed. Tunable assumptions.
@@ -12,9 +14,9 @@ MODE_THRESHOLD_CM = {"twowheeler": 15, "car": 30, "emergency": 45}
 FLOODED_CM = 10                  # a street counts as "flooded" at or above this depth
 AVG_SPEED_KMPH = 22              # crude ETA only
 
-# "synthetic" = built-in grid of streets (always works, offline)
-# "osm"       = real streets via osmnx (needs `pip install osmnx` and internet)
-ROADS_SOURCE = "synthetic"
+# The map network is now the REAL BBMP drain network (backend/network.py).
+# The synthetic grid in roads.py is dead code, kept only for reference.
+ROADS_SOURCE = "drains"
 
 # One colour scale used by the map overlay AND the frontend gauge legend: (depth cm, hex, opacity)
 COLOR_SCALE = [

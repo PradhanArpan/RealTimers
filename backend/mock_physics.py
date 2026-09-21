@@ -7,9 +7,40 @@ Contract to keep when you replace it:
 
 The real version just reads the depth rasters written by the surrogate (Phase E).
 """
+from pathlib import Path
+
 import numpy as np
-from scipy.ndimage import gaussian_filter
-from config import GRID, LEADS
+from scipy.ndimage import gaussian_filter, zoom
+from config import BBOX, GRID, LEADS
+
+TERRAIN = Path(__file__).resolve().parent.parent / "data" / "terrain" / "bengaluru" / "terrain_grid.npz"
+
+# Which terrain fed the last cube -- reported by /v1/terrain/status so the
+# dashboard can say whether it is showing real ground or the synthetic stand-in.
+TERRAIN_SOURCE = "synthetic"
+
+
+def _real_terrain():
+    """
+    REAL terrain from tools/build_terrain.py: valley HAND (height above the
+    nearest Strahler 3+ stream) and imperviousness from WorldCover plus
+    buildings. Returns None if the file is missing or built for another box.
+    """
+    if not TERRAIN.exists():
+        return None
+    z = np.load(TERRAIN)
+    if not np.allclose(z["bbox"], BBOX, atol=1e-4):
+        return None
+    hv, hl, imp = z["hand_valley"], z["hand"], z["imperv"]
+    if hv.shape != (GRID, GRID):
+        f = GRID / hv.shape[0]
+        hv, hl, imp = (zoom(np.nan_to_num(a, nan=np.nanmedian(a)), f, order=1) for a in (hv, hl, imp))
+    hv = np.nan_to_num(hv, nan=30.0)          # not reaching a major stream = not low-lying
+    hl = np.nan_to_num(hl, nan=10.0)
+    imp = np.nan_to_num(imp, nan=float(np.nanmean(imp)))
+    # Valley position dominates; local ponding adds a little.
+    lowness = np.clip(np.exp(-hv / 2.5) + 0.25 * np.exp(-hl / 0.8), 0, 1.3)
+    return lowness, np.clip(imp, 0.05, 0.98)
 
 
 def _terrain(rng):
@@ -27,26 +58,40 @@ def _terrain(rng):
 
 
 def load_depth_cube():
+    global TERRAIN_SOURCE
     rng = np.random.default_rng(7)
     x, y, lowness = _terrain(rng)
     imperv = 0.78 - 0.30 * np.exp(-(((x - 0.7) ** 2 + (y - 0.25) ** 2) / (2 * 0.08 ** 2)))
-    cap = np.full((GRID, GRID), 32.0)                                     # drain capacity (mm)
+    real = _real_terrain()
+    if real is not None:
+        lowness, imperv = real
+        TERRAIN_SOURCE = "real"
+    else:
+        TERRAIN_SOURCE = "synthetic"
+    cap = np.full((GRID, GRID), 32.0)                                     # drain drawdown rate (mm/h)
     for bx, by in [(0.35, 0.62), (0.62, 0.55), (0.45, 0.20)]:             # blocked drains
         cap -= 24 * np.exp(-(((x - bx) ** 2 + (y - by) ** 2) / (2 * 0.04 ** 2)))
 
     minutes = np.arange(0, LEADS[-1] + 1, 5)
-    acc = np.full((GRID, GRID), 22.0)                                     # rain already fallen (mm)
-    acc_at = {}
+    dt_h = 5 / 60
+
+    # Surface storage balance, in mm. Rain that the drains cannot take away
+    # accumulates; once the cell passes, the drains draw it down again. This is
+    # what makes depth peak and then recede instead of climbing forever.
+    # `cap` is read as a drawdown RATE in mm/h, reduced where drains are blocked.
+    storage = np.zeros((GRID, GRID))
+    depth_at = {}
     for t in minutes:
         cx, cy = 0.15 + 0.70 * t / 180, 0.55 + 0.05 * np.sin(t / 40)      # storm cell drifts east
         g = np.exp(-(((x - cx) ** 2 + (y - cy) ** 2) / (2 * 0.22 ** 2)))
-        intensity = 5 + 75 * g * np.exp(-((t - 70) / 70) ** 2)             # mm/h
-        acc = acc + intensity * (5 / 60)
-        acc_at[t] = acc.copy()
+        intensity = 6 + 145 * g * np.exp(-((t - 70) / 70) ** 2)             # mm/h
+        inflow = intensity * imperv * dt_h
+        outflow = cap * dt_h
+        storage = np.maximum(0.0, storage + inflow - outflow)
+        depth_at[t] = storage.copy()
 
     cube = []
     for lead in LEADS:
-        excess = np.maximum(0, acc_at[lead] * imperv - cap)                # mm of surface water
-        depth_cm = excess * 0.42 * (0.12 + 2.0 * lowness ** 1.3)
+        depth_cm = depth_at[lead] * 0.42 * (0.12 + 2.0 * lowness ** 1.3)
         cube.append(gaussian_filter(depth_cm, 1.2))
     return np.clip(np.array(cube, dtype=np.float32), 0, 150)

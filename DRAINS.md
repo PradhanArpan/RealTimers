@@ -89,6 +89,33 @@ drift from the data.
 The frontend reads `/v1/drains/status` to draw its provenance chip, so the
 caveat appears on screen without anyone having to remember it.
 
+## The flood layer is the drain network
+
+The synthetic street grid is gone. `backend/network.py` builds the routable
+network straight from `data/drains.geojson`: it clips to the pilot box, splits
+long trunks into ~260 m segments and snaps endpoints into nodes. Inside the
+pilot box that gives **1,344 real drains, 2,113 segments, 445 km**.
+
+Depth is sampled from the mock cube onto those real segments, so the worst list
+now names actual BBMP ids in actual places.
+
+Three things to say out loud, because they are the questions a judge will ask:
+
+- **Drain corridors, not carriageways.** Depth is modelled at the drain, which
+  in Bengaluru usually runs alongside the road. Do not say "street" yet.
+- **Locality labels are computed.** The source has no drain names at all, so
+  "near Koramangala" is nearest-neighbour against a small gazetteer, not a
+  published name.
+- **Routing is off.** BBMP's drain linework is topologically disconnected --
+  around 800 separate pieces in the pilot box -- and you cannot drive down a
+  drain. `/api/route` returns 501 with that explanation. Run
+  `tools/ingest_roads.py` once with internet to add the OSM road network, and
+  routing comes back on real streets.
+
+The mock physics also changed: it now runs a surface storage balance, so water
+accumulates while rain outpaces the drains and recedes once the cell passes.
+Depth peaks around T+120 instead of climbing to the end of the window.
+
 ## Next piece
 
 Deriving the directed graph from this geometry: snapping endpoints into nodes,

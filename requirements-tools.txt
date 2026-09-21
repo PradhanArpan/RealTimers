@@ -1,0 +1,7 @@
+# Only for rebuilding the terrain on a laptop (tools/build_terrain.py).
+# The Render server does not need any of these beyond requirements.txt.
+-r requirements.txt
+rasterio
+pysheds
+shapely
+pyproj

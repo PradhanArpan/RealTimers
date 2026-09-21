@@ -12,3 +12,10 @@ __pycache__/
 venv/
 .env
 .DS_Store
+
+# Earth Engine exports -- inputs, 29 MB, re-exportable with the script in TERRAIN.md
+data/ee/
+
+# Full-resolution terrain rasters -- for QGIS, not needed by the server.
+# The server uses streams/catchments GeoJSON, terrain_grid.npz and the HAND PNG.
+data/terrain/*/rasters/

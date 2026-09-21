@@ -105,8 +105,9 @@ const DrainLayer = (() => {
   function chip(map, status) {
     const el = document.createElement('div');
     el.style.cssText =
-      'position:absolute;left:12px;top:12px;z-index:5;background:#151C23;color:#E9EEF2;' +
-      'border:1px solid #28323C;border-radius:7px;padding:9px 11px;max-width:280px;' +
+      'position:absolute;left:16px;top:150px;z-index:6;background:#151C23;color:#E9EEF2;' +
+      'border:1px solid #28323C;border-radius:4px;padding:10px 12px;width:312px;' +
+      'box-sizing:border-box;' +
       'font:11px/1.55 ui-monospace,SFMono-Regular,monospace';
 
     if (!status || !status.loaded) {
