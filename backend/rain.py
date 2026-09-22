@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -27,9 +28,17 @@ ATTRIBUTION = "Weather data by Open-Meteo.com (CC BY 4.0)"
 
 def _fetch(lat: float, lon: float) -> dict:
     q = urllib.parse.urlencode({"latitude": f"{lat:.4f}", "longitude": f"{lon:.4f}", "hourly": "precipitation",
-                                "past_hours": 6, "forecast_hours": 6, "timezone": "Asia/Kolkata"})
-    with urllib.request.urlopen(f"https://api.open-meteo.com/v1/forecast?{q}", timeout=6) as r:
+                                "past_days": 1, "forecast_days": 2, "timezone": "Asia/Kolkata"})
+    req = urllib.request.Request(f"https://api.open-meteo.com/v1/forecast?{q}",
+                                 headers={"User-Agent": "RealTimers-SIH26085/1.0 (realtimers.onrender.com)"})
+    with urllib.request.urlopen(req, timeout=10) as r:
         return json.load(r)
+
+
+def _ist_hour() -> str:
+    """The current hour in India, as Open-Meteo labels it with timezone=Asia/Kolkata."""
+    from datetime import datetime, timedelta, timezone
+    return (datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)).strftime("%Y-%m-%dT%H:00")
 
 
 @router.get("/now")
@@ -44,12 +53,21 @@ def rain_now(city: str = Query(DEFAULT_CITY)):
     try:
         d = _fetch((S + N) / 2, (W + E) / 2)
         times, mm = d["hourly"]["time"], [v or 0.0 for v in d["hourly"]["precipitation"]]
-        i = min(6, len(times))          # past_hours=6: the series starts six hours before now
+        now = _ist_hour()
+        i = next((k for k, t in enumerate(times) if t >= now), len(times) - 1)
         out = {"available": True, "city": key, "source": "Open-Meteo forecast, hourly, pilot-box centre",
                "attribution": ATTRIBUTION, "past_6h_mm": round(sum(mm[max(0, i - 6):i]), 1),
-               "next_6h_mm": round(sum(mm[i:i + 6]), 1), "series": [{"time": t, "mm": v} for t, v in zip(times, mm)],
+               "next_6h_mm": round(sum(mm[i:i + 6]), 1),
+               "series": [{"time": t, "mm": v} for t, v in zip(times[max(0, i - 6):i + 6], mm[max(0, i - 6):i + 6])],
                "note": "Weather-model rain at kilometre scale -- not radar or a gauge; not yet driving the depth model."}
-    except Exception as e:                     # no network, rate limit, schema change: say so, don't break the page
+    except urllib.error.HTTPError as e:        # Open-Meteo refused: keep its code and message
+        try:
+            msg = json.load(e).get("reason", "")
+        except Exception:
+            msg = ""
+        out = {"available": False, "reason": f"HTTP {e.code} {msg}".strip(), "attribution": ATTRIBUTION}
+    except Exception as e:                     # no network, timeout, schema change: say so, don't break the page
         out = {"available": False, "reason": type(e).__name__, "attribution": ATTRIBUTION}
-    _cache[key] = (time.time(), out)
+    # a success is kept 15 minutes; a failure only 1, so a fix shows up quickly
+    _cache[key] = (time.time() - (0 if out["available"] else 840), out)
     return out

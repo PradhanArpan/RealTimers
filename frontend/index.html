@@ -210,13 +210,29 @@
     }
   }
   // Real rain beside the demonstration: Open-Meteo forecast at the pilot centre.
-  fetch("/v1/rain/now?" + Q).then((r) => r.json()).then((r) => {
-    if (!r.available) return;
-    const el = $("rain-now");
-    el.innerHTML = "<b>Rain, real forecast:</b> " + r.past_6h_mm + " mm in the last 6 h \u00b7 " + r.next_6h_mm +
-      " mm in the next 6 h <span style='color:#5a6b78'>(Open-Meteo model, kilometre scale; not yet driving the depths)</span>";
-    el.style.display = "block"; clearOfBrand();
-  }).catch(() => {});
+  // Fetched by the browser first -- each visitor's own address, so a shared
+  // server address can't use up the free limit -- with the server as fallback.
+  (async () => {
+    const [bw, bs, be, bn] = meta.bbox;
+    const showRain = (past, next) => {
+      const el = $("rain-now");
+      el.innerHTML = "<b>Rain, real forecast:</b> " + past + " mm in the last 6 h \u00b7 " + next +
+        " mm in the next 6 h <span style='color:#5a6b78'>(Open-Meteo model, kilometre scale; not yet driving the depths)</span>";
+      el.style.display = "block"; clearOfBrand();
+    };
+    try {
+      const u = "https://api.open-meteo.com/v1/forecast?latitude=" + ((bs + bn) / 2).toFixed(4) + "&longitude=" + ((bw + be) / 2).toFixed(4) +
+                "&hourly=precipitation&past_days=1&forecast_days=2&timezone=Asia%2FKolkata";
+      const d = await (await fetch(u)).json();
+      const times = d.hourly.time, mm = d.hourly.precipitation.map((v) => v || 0);
+      const now = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 13) + ":00";   // the hour in India
+      let i = times.findIndex((x) => x >= now); if (i < 0) i = times.length - 1;
+      const sum = (arr) => Math.round(arr.reduce((a, v) => a + v, 0) * 10) / 10;
+      showRain(sum(mm.slice(Math.max(0, i - 6), i)), sum(mm.slice(i, i + 6)));
+    } catch (e) {
+      try { const r = await (await fetch("/v1/rain/now?" + Q)).json(); if (r.available) showRain(r.past_6h_mm, r.next_6h_mm); } catch (e2) {}
+    }
+  })();
   clearOfBrand();
   window.addEventListener("resize", clearOfBrand);
   window.__clearOfBrand = clearOfBrand;
