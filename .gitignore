@@ -25,3 +25,9 @@ cache/
 
 # SWMM binary results -- regenerate with tools/build_swmm_chennai.py
 data/swmm/*/*.out
+
+# NASA Earthdata login files -- personal, never commit
+.dodsrc
+.netrc
+_netrc
+.urs_cookies
