@@ -172,7 +172,7 @@ const TerrainLayer = (() => {
             new maplibregl.Popup({ closeButton: false }).setLngLat(e.lngLat).setHTML(
               `<b>SWMM junction ${p.node}</b> \u00b7 near ${p.near}<br>${Number(p.volume_ml).toFixed(2)} million litres over ${Number(p.hours).toFixed(1)} h` +
               (p.bad_drain === true || p.bad_drain === 'true' ? '<br>next to a drain the register marks Bad' : '') +
-              '<br><i>100 mm in 2 h \u00b7 not yet validated</i>').addTo(map);
+              '<br><i>100 mm in 2 h \u00b7 tested against GCC flood records: no better than chance</i>').addTo(map);
           });
         }
         map.setLayoutProperty('swmm-pts', 'visibility', on ? 'visible' : 'none');
@@ -247,7 +247,7 @@ const TerrainLayer = (() => {
       ['spots', 'BBMP flood spots', false],
       ['lakes', 'Lakes', false],
       ['admin', 'Corporations and zones', false],
-      ['swmm', 'SWMM flooded junctions', false],
+      ['swmm', 'SWMM flooded junctions (tested: no skill yet)', false],
     ].filter(([k]) => toggles[k]);
 
     const v = status.validation;
