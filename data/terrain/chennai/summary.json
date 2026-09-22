@@ -1,0 +1,67 @@
+{
+  "city": "chennai",
+  "bbox": [
+    80.17,
+    12.93,
+    80.29,
+    13.05
+  ],
+  "crs": "EPSG:32644",
+  "cell_m": 10.0,
+  "grid": [
+    1307,
+    1332
+  ],
+  "stream_threshold_ha": 4.0,
+  "stream_links": 1969,
+  "micro_catchments": 1989,
+  "max_strahler": 5,
+  "strahler_links": {
+    "1": 1094,
+    "2": 491,
+    "3": 265,
+    "4": 98,
+    "5": 21
+  },
+  "stream_km": 534.0,
+  "streams_on_drains_share": 0.0,
+  "drain_alignment_by_length": {},
+  "burn_depths_m": {
+    "Primary": 12.0,
+    "Secondary": 8.0,
+    "Tertiary": 4.0
+  },
+  "drains_burned": 0,
+  "lakes_burned": 0,
+  "streams_burned": 0,
+  "hand_m": {
+    "p10": 0.0,
+    "p50": 1.65,
+    "p90": 5.52
+  },
+  "share_within_2m_hand": 0.56,
+  "valley_hand_m": {
+    "reference": "Strahler 3+ streams",
+    "p10": 0.05,
+    "p50": 3.42,
+    "p90": 9.08
+  },
+  "share_within_2m_valley_hand": 0.334,
+  "mean_imperviousness": 0.604,
+  "sea_masked_share": 0.166,
+  "sources": {
+    "dem": "Copernicus GLO-30 (surface model), resampled 30 m -> 10 m",
+    "land_cover": "ESA WorldCover v200, 10 m",
+    "buildings": "Google Open Buildings 2.5D Temporal, 2023, 10 m",
+    "drains": null,
+    "lakes": null
+  },
+  "caveats": [
+    "GLO-30 is a surface model: buildings are already in it, smeared to 30 m, lifting built-up cells by roughly 0.3 to 0.9 m. FABDEM is the bare-earth fix.",
+    "Resampling 30 m to 10 m aligns layers; it does not add terrain detail.",
+    "Imperviousness per land-cover class is a planning assumption.",
+    "Strahler order is a descriptor here: the network runs through an engineered drain and tank cascade, not a natural dendritic basin."
+  ],
+  "hand_png": "terrain/chennai_hand.png",
+  "build_seconds": 12.6
+}

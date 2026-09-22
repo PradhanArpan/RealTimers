@@ -36,7 +36,7 @@ M_PER_DEG_LAT = 110_570.0
 
 # Well-known localities, used only to make a drain id readable. Straight-line
 # nearest, reported as "near X" because that is all it is.
-LOCALITIES = [
+_BLR = [
     ("Koramangala", 12.9352, 77.6245), ("HSR Layout", 12.9116, 77.6389),
     ("Bellandur", 12.9260, 77.6762), ("BTM Layout", 12.9166, 77.6101),
     ("Silk Board", 12.9172, 77.6229), ("Madiwala", 12.9220, 77.6190),
@@ -52,6 +52,22 @@ LOCALITIES = [
     ("Begur", 12.8730, 77.6280), ("Varthur", 12.9400, 77.7480),
 ]
 
+# Well-known places in the other pilot boxes, only to make an ID readable.
+# Straight-line nearest, shown as "near X" because that is all it is.
+_CHN = [("Velachery", 12.9791, 80.2210), ("Adyar", 13.0063, 80.2574), ("Guindy", 13.0067, 80.2206),
+        ("T. Nagar", 13.0418, 80.2341), ("Saidapet", 13.0213, 80.2231), ("Pallikaranai", 12.9349, 80.2137),
+        ("Taramani", 12.9863, 80.2432), ("Thiruvanmiyur", 12.9830, 80.2594), ("Kotturpuram", 13.0170, 80.2410),
+        ("Madipakkam", 12.9623, 80.1986), ("Perungudi", 12.9654, 80.2461), ("Mylapore", 13.0339, 80.2619)]
+_MUM = [("Kurla", 19.0726, 72.8845), ("BKC", 19.0660, 72.8680), ("Andheri East", 19.1136, 72.8697),
+        ("Sion", 19.0390, 72.8619), ("Dharavi", 19.0380, 72.8538), ("Bandra", 19.0544, 72.8406),
+        ("Chembur", 19.0522, 72.9005), ("Ghatkopar", 19.0860, 72.9081), ("Powai", 19.1176, 72.9060),
+        ("Santacruz", 19.0810, 72.8410), ("Mahim", 19.0390, 72.8400), ("Vile Parle", 19.0990, 72.8440)]
+_DEL = [("Connaught Place", 28.6315, 77.2167), ("ITO", 28.6280, 77.2410), ("Minto Bridge", 28.6340, 77.2270),
+        ("Pragati Maidan", 28.6180, 77.2440), ("Karol Bagh", 28.6519, 77.1909), ("Paharganj", 28.6448, 77.2167),
+        ("Rajghat", 28.6406, 77.2495), ("Kashmere Gate", 28.6675, 77.2280), ("India Gate", 28.6129, 77.2295),
+        ("Lodhi Road", 28.5910, 77.2270), ("Chandni Chowk", 28.6506, 77.2303)]
+LOCALITIES = {"bengaluru": _BLR, "chennai": _CHN, "mumbai": _MUM, "delhi": _DEL}
+
 
 def _m_per_deg_lon(lat: float) -> float:
     return 111_320.0 * math.cos(math.radians(lat))
@@ -62,9 +78,9 @@ def _dist_m(lon1, lat1, lon2, lat2) -> float:
     return math.hypot((lon2 - lon1) * mx, (lat2 - lat1) * M_PER_DEG_LAT)
 
 
-def _nearest_locality(lon: float, lat: float) -> str:
+def _nearest_locality(lon: float, lat: float, city: str = "bengaluru") -> str:
     best, bd = "", 1e18
-    for name, la, lo in LOCALITIES:
+    for name, la, lo in LOCALITIES.get(city, _BLR):
         d = _dist_m(lon, lat, lo, la)
         if d < bd:
             best, bd = name, d
@@ -108,14 +124,36 @@ def _chunk(line, target_m):
     return pieces
 
 
-def load_drain_network(bbox=None) -> dict:
+def _corridor_features(city: str, corridors: str):
+    """Yield (feature, kind, id, label) for the city's corridor source."""
+    root = DATA.parent
+    if corridors == "bbmp":
+        src = DATA
+    elif corridors == "gcc":
+        src = root / "opencity" / "chennai" / "gcc_stormwater_drains.geojson"
+    else:
+        src = root / "terrain" / city / "streams.geojson"
+    if not src.exists():
+        raise FileNotFoundError(f"{src} missing for {city}")
+    feats = json.loads(src.read_text())["features"]
+    for i, f in enumerate(feats):
+        p = f["properties"]
+        if corridors == "bbmp":
+            yield f, p["type"], p["id"], f"{p['type']} drain {p['id']}"
+        elif corridors == "gcc":
+            kind = (p.get("DRAIN_TYPE") or "Drain").strip()
+            did = str(p.get("DRAIN_ID") or f"GCC-{i + 1:05d}").strip()
+            readable = {"SWD": "stormwater drain"}.get(kind.upper(), kind.lower())
+            yield f, kind, did, f"GCC {readable} {did}"
+        else:
+            order = int(p.get("strahler", 1))
+            if order < 2:          # order 1 is mostly hillslope; leave it out
+                continue
+            yield f, f"Order {order} flow path", p["id"], f"Flow path {p['id']} (order {order})"
+
+
+def load_drain_network(bbox=None, city: str = "bengaluru", corridors: str = "bbmp") -> dict:
     box = bbox or BBOX
-    if not DATA.exists():
-        raise FileNotFoundError(
-            f"{DATA} missing. Run tools/ingest_drains.py on the OpenCity KML."
-        )
-    with DATA.open() as fh:
-        data = json.load(fh)
 
     cell = SNAP_M / M_PER_DEG_LAT  # snapping grid in degrees
     node_of: dict[tuple[int, int], int] = {}
@@ -130,9 +168,7 @@ def load_drain_network(bbox=None) -> dict:
         return node_of[key]
 
     edges = []
-    for feat in data["features"]:
-        props = feat["properties"]
-        kind, did = props["type"], props["id"]
+    for feat, kind, did, label in _corridor_features(city, corridors):
         for raw in _lines_of(feat):
             for run in _clip(raw, box):
                 for piece in _chunk(run, SEGMENT_M):
@@ -149,7 +185,7 @@ def load_drain_network(bbox=None) -> dict:
                     if u == v:
                         continue
                     mid = piece[len(piece) // 2]
-                    name = f"{kind} drain {did} · near {_nearest_locality(mid[0], mid[1])}"
+                    name = f"{label} · near {_nearest_locality(mid[0], mid[1], city)}"
                     fwd = [(float(x), float(y)) for x, y in piece]
                     edges.append({"u": u, "v": v, "length": length,
                                   "coords": fwd, "name": name,

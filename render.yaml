@@ -15,3 +15,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.12.7"
+      # MapTiler basemap key. Set its value in the Render dashboard
+      # (Environment tab), never in this file. Without it the map falls back
+      # to OpenStreetMap's own tiles.
+      - key: MAPTILER_KEY
+        sync: false

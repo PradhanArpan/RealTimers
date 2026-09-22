@@ -12,10 +12,12 @@
 const TerrainLayer = (() => {
   const BLUES = ['#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b'];
 
-  async function attach(map, { drains } = {}) {
+  async function attach(map, { drains, city = 'bengaluru' } = {}) {
+    const Q = `city=${encodeURIComponent(city)}`;
+    const BLR = city === 'bengaluru';
     let status;
     try {
-      status = await (await fetch('/v1/terrain/status')).json();
+      status = await (await fetch(`/v1/terrain/status?${Q}`)).json();
     } catch (err) {
       console.warn('terrain status unavailable', err);
       return;
@@ -38,7 +40,7 @@ const TerrainLayer = (() => {
 
     // Streams by Strahler order. Order 1 is left out by default: it is mostly
     // hillslope flow paths and clutters the view.
-    map.addSource('streams', { type: 'geojson', data: '/v1/terrain/streams?min_order=2' });
+    map.addSource('streams', { type: 'geojson', data: `/v1/terrain/streams?min_order=2&${Q}` });
     map.addLayer({
       id: 'streams', type: 'line', source: 'streams',
       layout: { visibility: 'none', 'line-cap': 'round', 'line-join': 'round' },
@@ -54,7 +56,7 @@ const TerrainLayer = (() => {
     function ensureCatchments() {
       if (catchmentsLoaded) return;
       catchmentsLoaded = true;
-      map.addSource('catchments', { type: 'geojson', data: '/v1/terrain/catchments' });
+      map.addSource('catchments', { type: 'geojson', data: `/v1/terrain/catchments?${Q}` });
       map.addLayer({
         id: 'catchments-fill', type: 'fill', source: 'catchments',
         paint: { 'fill-color': '#2171b5', 'fill-opacity': 0.0 },
@@ -168,9 +170,9 @@ const TerrainLayer = (() => {
         }
       },
       hand: (on) => map.setLayoutProperty('hand', 'visibility', on ? 'visible' : 'none'),
-      spots: (on) => { if (on) ensureSpots(); setVis(SPOTS.map(([sl]) => `spots-${sl}`), on); },
-      lakes: (on) => { if (on) ensureLakes(); setVis(['lakes-fill', 'lakes-line'], on); },
-      admin: (on) => { if (on) ensureAdmin(); setVis(['corporations', 'zones'], on); },
+      spots: !BLR ? null : (on) => { if (on) ensureSpots(); setVis(SPOTS.map(([sl]) => `spots-${sl}`), on); },
+      lakes: !BLR ? null : (on) => { if (on) ensureLakes(); setVis(['lakes-fill', 'lakes-line'], on); },
+      admin: !BLR ? null : (on) => { if (on) ensureAdmin(); setVis(['corporations', 'zones'], on); },
     });
   }
 
@@ -269,6 +271,7 @@ const TerrainLayer = (() => {
     document.body.appendChild(el);
 
     // Drain provenance lives here now, instead of a separate floating chip.
+    if (status.city !== 'bengaluru') return;   // BBMP drains exist only there
     fetch('/v1/drains/status').then((r) => r.json()).then((d) => {
       if (!d || !d.loaded) return;
       const c = d.counts || {};

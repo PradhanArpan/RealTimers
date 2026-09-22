@@ -160,6 +160,11 @@ def build(city: str, threshold_ha: float, out_grid: int, lakes: bool = True,
     dem = read_on_grid(ee / f"{city}_dem_glo30.tif", 1, ref, Resampling.bilinear)
     pres = read_on_grid(ee / f"{city}_buildings_2023.tif", 1, ref, Resampling.nearest)
     valid &= np.isfinite(dem)
+    # The sea is the lowest, flattest ground in a coastal box: left in, it grows
+    # "streams" across open water and floods in the depth model. Mask open water
+    # at or below 1 m. Rivers, lakes and marshes above that stay in.
+    sea = (wc == 80) & np.isfinite(dem) & (dem <= 1.0)
+    valid &= ~sea
     dem = fill_nan_nearest(dem).astype("float64")
     pres = np.nan_to_num(pres, nan=0.0)
 
@@ -467,6 +472,7 @@ def build(city: str, threshold_ha: float, out_grid: int, lakes: bool = True,
                           "p90": round(float(np.percentile(Hm, 90)), 2)},
         "share_within_2m_valley_hand": round(float((Hm <= 2).mean()), 3),
         "mean_imperviousness": round(float(imperv[V].mean()), 3),
+        "sea_masked_share": round(float(sea.mean()), 3),
         "sources": {
             "dem": "Copernicus GLO-30 (surface model), resampled 30 m -> 10 m",
             "land_cover": "ESA WorldCover v200, 10 m",

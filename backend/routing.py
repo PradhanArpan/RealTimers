@@ -4,7 +4,7 @@ import numpy as np
 import networkx as nx
 from config import BBOX, GRID, LEADS, MODE_THRESHOLD_CM, FLOODED_CM, AVG_SPEED_KMPH
 
-W, S, E, N = BBOX
+W, S, E, N = BBOX          # default box; each Router may carry its own
 M_PER_DEG_LAT = 111_320.0
 
 
@@ -12,7 +12,8 @@ def _m_per_deg_lon(lat):
     return 111_320.0 * math.cos(math.radians(lat))
 
 
-def cell_of(lat, lon):
+def cell_of(lat, lon, box=None):
+    W, S, E, N = box or BBOX
     col = int(np.clip((lon - W) / (E - W) * GRID, 0, GRID - 1))
     row = int(np.clip((N - lat) / (N - S) * GRID, 0, GRID - 1))
     return row, col
@@ -24,7 +25,8 @@ SAMPLE_STEP_M = 6.0
 
 
 class Router:
-    def __init__(self, cube, roads):
+    def __init__(self, cube, roads, bbox=None):
+        self.bbox = tuple(bbox) if bbox else tuple(BBOX)
         self.cube = cube
         self.nodes = roads["nodes"]
         self.edges = roads["edges"]
@@ -32,6 +34,12 @@ class Router:
         self.node_xy = np.array([[self.nodes[i][0], self.nodes[i][1]] for i in self.node_ids])
         self._sample_edges()
         self._build_graph()
+        # A junction with no roads attached can't start or end a route; keep the
+        # nearest-junction search to ones the graph actually contains.
+        keep = [i for i in self.node_ids if i in self.g]
+        if len(keep) < len(self.node_ids):
+            self.node_ids = keep
+            self.node_xy = np.array([[self.nodes[i][0], self.nodes[i][1]] for i in keep])
 
     # ---- street depths -------------------------------------------------
     def _sample_edges(self):
@@ -43,13 +51,19 @@ class Router:
         on a network of 80,000 road segments -- which matters on a small
         server where startup time is what a visitor waits through.
         """
-        STEP_M = SAMPLE_STEP_M
         L = len(self.edges)
         self.depth = np.zeros((len(LEADS), L), dtype=np.float32)
-        if L == 0:
-            return
-        counts = np.fromiter((len(ed["coords"]) for ed in self.edges), dtype=np.int64, count=L)
-        flat = np.fromiter((v for ed in self.edges for pt in ed["coords"] for v in pt[:2]),
+        # In batches: one pass over 80,000 road segments creates ~1M sample points,
+        # and the temporary arrays alone would push a 512 MB server to the edge.
+        BATCH = 8000
+        for lo in range(0, L, BATCH):
+            self.depth[:, lo:min(L, lo + BATCH)] = self._sample_batch(self.edges[lo:lo + BATCH])
+
+    def _sample_batch(self, edges):
+        STEP_M = SAMPLE_STEP_M
+        L = len(edges)
+        counts = np.fromiter((len(ed["coords"]) for ed in edges), dtype=np.int64, count=L)
+        flat = np.fromiter((v for ed in edges for pt in ed["coords"] for v in pt[:2]),
                            dtype=np.float64, count=int(counts.sum()) * 2).reshape(-1, 2)
         start = np.concatenate([[0], np.cumsum(counts)[:-1]])
         # segments: consecutive vertex pairs inside each edge
@@ -66,13 +80,14 @@ class Router:
         lon = np.concatenate([p0[rep, 0] + (p1[rep, 0] - p0[rep, 0]) * frac, flat[start + counts - 1, 0]])
         lat = np.concatenate([p0[rep, 1] + (p1[rep, 1] - p0[rep, 1]) * frac, flat[start + counts - 1, 1]])
         owner = np.concatenate([seg_edge[rep], np.arange(L)])
+        W, S, E, N = self.bbox
         cols = np.clip(((lon - W) / (E - W) * GRID).astype(np.int64), 0, GRID - 1)
         rows = np.clip(((N - lat) / (N - S) * GRID).astype(np.int64), 0, GRID - 1)
         vals = self.cube[:, rows, cols]                      # (leads, samples)
         order = np.argsort(owner, kind="stable")
         owner_sorted = owner[order]
         first = np.searchsorted(owner_sorted, np.arange(L))
-        self.depth[:] = np.maximum.reduceat(vals[:, order], first, axis=1)
+        return np.maximum.reduceat(vals[:, order], first, axis=1)
 
     def _build_graph(self):
         best = {}
@@ -91,7 +106,7 @@ class Router:
 
     # ---- queries ---------------------------------------------------------
     def depth_at(self, lat, lon, lead):
-        r, c = cell_of(lat, lon)
+        r, c = cell_of(lat, lon, self.bbox)
         return float(self.cube[self.lead_index(lead), r, c])
 
     def flooded_geojson(self, lead, min_cm=5):

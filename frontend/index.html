@@ -132,10 +132,18 @@
 <body>
 <div id="map"></div>
 
+<style>
+  .mt-logo { position: fixed; left: 16px; bottom: 118px; z-index: 5; line-height: 0; display: none; }
+  .mt-logo img { height: 22px; width: auto; }
+  @media (max-width: 860px) { .mt-logo { bottom: 170px; } }
+</style>
+<a class="mt-logo" id="mt-logo" href="https://www.maptiler.com" target="_blank" rel="noopener"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
 <header class="float brand">
   <h1>RealTimers flood nowcast</h1>
-  <p>Water depth on BBMP drain corridors, next 3 hours</p>
+  <p id="subtitle">Water depth on drain corridors, next 3 hours</p>
+  <nav id="cities" aria-label="City" style="display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 8px"></nav>
   <span class="demo">Demo data, not a forecast</span>
+  <p id="city-note" style="margin:8px 0 0;font-size:12px;line-height:1.4;color:#5a6b78"></p>
 </header>
 
 <section class="float gauge" aria-label="Water depth scale">
@@ -176,16 +184,40 @@
 <script src="terrain_layer.js"></script>
 <script>
 (async () => {
-  const meta = await (await fetch("/api/meta")).json();
-  if (!meta.routing) {
-    $("steps").textContent = "Routing is waiting on the road network.";
-    $("route-out").innerHTML = '<p class="verdict" style="line-height:1.45">Flood-safe routing runs on OpenStreetMap streets. ' +
-      'Run <code>tools/ingest_roads.py</code> once, commit <code>data/roads.geojson</code> and push, and this panel routes on real roads.</p>';
+  const $ = (id) => document.getElementById(id);
+  const CITY = (new URLSearchParams(location.search).get("city") || "bengaluru").toLowerCase();
+  const Q = "city=" + encodeURIComponent(CITY);
+  const meta = await (await fetch("/api/meta?" + Q)).json();
+  document.title = "RealTimers flood nowcast · " + meta.label;
+  $("subtitle").textContent = meta.subtitle;
+  $("city-note").textContent = meta.note;
+  $("cities").innerHTML = meta.cities.map((c) => c.id === meta.city
+    ? '<b style="font-size:13px;padding:3px 9px;border-radius:12px;background:#123e6b;color:#fff">' + c.label + '</b>'
+    : '<a href="?city=' + c.id + '" style="font-size:13px;padding:3px 9px;border-radius:12px;border:1px solid #b8c7d6;color:#123e6b;text-decoration:none">' + c.label + '</a>').join("");
+  // The title card's height now varies (switcher, city note, screen width).
+  // Push anything that sits under it -- the depth scale, the Layers card --
+  // down until it clears, instead of trusting fixed positions per screen.
+  function clearOfBrand() {
+    const br = document.querySelector(".brand").getBoundingClientRect();
+    for (const el of document.querySelectorAll(".gauge, .rt-layers")) {
+      el.style.top = "";
+      const r = el.getBoundingClientRect();
+      if (r.left < br.right && r.right > br.left && r.top < br.bottom + 8) el.style.top = (br.bottom + 12) + "px";
+    }
   }
+  clearOfBrand();
+  window.addEventListener("resize", clearOfBrand);
+  window.__clearOfBrand = clearOfBrand;
+  if (!meta.routing) {
+    $("steps").textContent = meta.city === "bengaluru" ? "Routing is waiting on the road network." : "Routing runs for Bengaluru only.";
+    $("route-out").innerHTML = '<p class="verdict" style="line-height:1.45">' + (meta.city === "bengaluru"
+      ? 'Flood-safe routing runs on OpenStreetMap streets. Run <code>tools/ingest_roads.py</code> once, commit <code>data/roads.geojson</code> and push, and this panel routes on real roads.'
+      : 'Flood-safe routing needs each city\'s road network in memory, and this server has room for one. Switch to Bengaluru to see it.') + '</p>';
+  }
+  if (meta.maptiler_key) $("mt-logo").style.display = "block";
   const [W, S, E, N] = meta.bbox;
   const LEADS = meta.leads;
   const state = { i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
-  const $ = (id) => document.getElementById(id);
 
   // ---- colour helpers (one scale, served by the backend) ------------------------------
   const vis = meta.color_scale.filter((s) => s.alpha > 0);
@@ -236,8 +268,13 @@
   // ---- map -------------------------------------------------------------------------------------
   const style = {
     version: 8,
-    sources: { base: { type: "raster", tileSize: 256, maxzoom: 19, attribution: "<a href='https://www.maptiler.com/copyright/' target='_blank'>&copy; MapTiler</a> <a href='https://www.openstreetmap.org/copyright' target='_blank'>&copy; OpenStreetMap contributors</a>",
-      tiles: ["https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=I0LPEFzv35BSYCFAYSJp"] } },
+    sources: { base: meta.maptiler_key
+      ? { type: "raster", tileSize: 256, maxzoom: 19,
+          attribution: "<a href='https://www.maptiler.com/copyright/' target='_blank'>&copy; MapTiler</a> <a href='https://www.openstreetmap.org/copyright' target='_blank'>&copy; OpenStreetMap contributors</a>",
+          tiles: ["https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=" + meta.maptiler_key] }
+      : { type: "raster", tileSize: 256, maxzoom: 19,
+          attribution: "<a href='https://www.openstreetmap.org/copyright' target='_blank'>&copy; OpenStreetMap contributors</a>",
+          tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"] } },
     layers: [
       { id: "bg", type: "background", paint: { "background-color": "#e8edf0" } },
       { id: "base", type: "raster", source: "base", paint: { "raster-opacity": 0.8, "raster-saturation": -0.75 } },
@@ -262,10 +299,10 @@
   map.fitBounds([[meta.bbox[0], meta.bbox[1]], [meta.bbox[2], meta.bbox[3]]],
                 { padding: wide ? { top: 40, bottom: 120, left: 380, right: 360 }
                                 : { top: 100, bottom: 130, left: 20, right: 20 }, duration: 0 });
-  const drains = DrainLayer.attach(map, { chip: false });
-  map.addSource("roads", { type: "geojson", data: "/api/roads" });
+  const drains = CITY === "bengaluru" ? DrainLayer.attach(map, { chip: false }) : null;
+  map.addSource("roads", { type: "geojson", data: "/api/roads?" + Q });
   map.addLayer({ id: "roads", type: "line", source: "roads", paint: { "line-color": "#9fb0ba", "line-width": 1.5 } });
-  map.addSource("flood", { type: "image", url: "/api/flood/0.png", coordinates: coords });
+  map.addSource("flood", { type: "image", url: "/api/flood/0.png?" + Q, coordinates: coords });
   map.addLayer({ id: "flood", type: "raster", source: "flood", paint: { "raster-fade-duration": 0 } });
   map.addSource("flooded", { type: "geojson", data: empty });
   map.addLayer({ id: "flooded-casing", type: "line", source: "flooded", paint: { "line-color": "#12222e", "line-width": 6.5, "line-opacity": 0.55 } });
@@ -276,7 +313,7 @@
   map.addLayer({ id: "normal", type: "line", source: "normal", paint: { "line-color": "#4a5c68", "line-width": 4, "line-dasharray": [2, 1.5] } });
   map.addLayer({ id: "avoided", type: "line", source: "avoided", paint: { "line-color": "#7a0c1e", "line-width": 7 } });
   map.addLayer({ id: "safe", type: "line", source: "safe", paint: { "line-color": "#0e8f6b", "line-width": 5 }, layout: { "line-cap": "round" } });
-  TerrainLayer.attach(map, { drains });
+  TerrainLayer.attach(map, { drains, city: CITY }).then(() => clearOfBrand());
 
   // ---- lead time -------------------------------------------------------------------------------
   async function setLead(i) {
@@ -286,8 +323,8 @@
     $("lead").textContent = "T+" + lead + " min";
     const t = new Date(issued.getTime() + lead * 60000);
     $("at").textContent = t.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
-    map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png", coordinates: coords });
-    const fc = await (await fetch("/api/roads/flooded?lead=" + lead)).json();
+    map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png?" + Q, coordinates: coords });
+    const fc = await (await fetch("/api/roads/flooded?lead=" + lead + "&" + Q)).json();
     map.getSource("flooded").setData(fc);
     $("count").textContent = fc.features.filter((f) => f.properties.max_depth_cm >= meta.flooded_cm).length;
     if (state.start && state.end) findRoute();
@@ -312,7 +349,7 @@
     if (!inside(ll)) return;
     state.probe = ll;
     const lead = LEADS[state.i];
-    const d = await (await fetch("/api/point?lat=" + ll.lat + "&lon=" + ll.lng + "&lead=" + lead)).json();
+    const d = await (await fetch("/api/point?lat=" + ll.lat + "&lon=" + ll.lng + "&lead=" + lead + "&" + Q)).json();
     showReading(d.depth_cm);
     $("hint").textContent = "Reading at your last click, T+" + lead + " min.";
     if (popup) popup.remove();
@@ -322,7 +359,7 @@
 
   // ---- worst streets tab ---------------------------------------------------------------------------
   async function loadAlerts() {
-    state.alerts = await (await fetch("/api/alerts")).json();
+    state.alerts = await (await fetch("/api/alerts?" + Q)).json();
     const v = $("view-alerts");
     if (!state.alerts.length) {
       v.innerHTML = '<p class="empty">No street is expected to reach ' + meta.flooded_cm + " cm in the next 3 hours.</p>";
@@ -368,7 +405,7 @@
   async function findRoute() {
     const q = new URLSearchParams({ from_lat: state.start.lat, from_lon: state.start.lng, to_lat: state.end.lat, to_lon: state.end.lng,
       mode: state.mode, lead: LEADS[state.i] });
-    const res = await fetch("/api/route?" + q);
+    const res = await fetch("/api/route?" + q + "&" + Q);
     const out = $("route-out");
     if (!res.ok) {
       out.innerHTML = '<p class="verdict">' + (await res.json()).detail + '</p><button class="clear" id="clr">Clear points</button>';
@@ -416,11 +453,5 @@
   await setLead(0);
 })();
 </script>
-<style>
-  .mt-logo { position: fixed; left: 16px; bottom: 118px; z-index: 5; line-height: 0; }
-  .mt-logo img { height: 22px; width: auto; }
-  @media (max-width: 860px) { .mt-logo { bottom: 170px; } }
-</style>
-<a class="mt-logo" href="https://www.maptiler.com" target="_blank" rel="noopener"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
 </body>
 </html>
