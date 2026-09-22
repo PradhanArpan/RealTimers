@@ -15,6 +15,7 @@ which way a two-wheeler, car or ambulance can still get through.
 | Drain networks — BBMP's 6,839 drains; Chennai corporation register, 10,255 | ✅ real, public |
 | Terrain for all four cities — streams, micro-catchments, height above drainage | ✅ real, 10 m |
 | Bengaluru terrain vs BBMP's own flood spots | ✅ **AUC 0.70** |
+| Same test, unchanged, on 499 Chennai GCC records | ✅ **AUC 0.58** — weaker in a flat city, still far from chance |
 | Flood-safe routing on 81,003 OpenStreetMap road segments | ✅ live, Bengaluru |
 | Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
 | EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 850 GCC records: **no location skill yet**, see `SWMM.md` |
@@ -47,6 +48,7 @@ python tools/downhill_test.py                           # declared test, run onc
 python tools/fetch_rain_event.py --city chennai --start 2023-12-03 --end 2023-12-04
 python tools/build_swmm_chennai.py --hyetograph data/rain/chennai_2023-12-03_2023-12-04.csv
 python tools/validate_swmm_chennai.py                   # needs the GCC flood KMLs, see the script
+python tools/validate_terrain_city.py --city chennai     # the Bengaluru terrain test on Chennai's records
 ```
 
 ## API

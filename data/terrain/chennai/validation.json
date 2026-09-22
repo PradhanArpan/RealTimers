@@ -1,0 +1,49 @@
+{
+  "all": {
+    "city": "chennai",
+    "source": "Greater Chennai Corporation flood records via OpenCity",
+    "unique_points_in_box": 570,
+    "n_in_pilot": 499,
+    "median_valley_hand_m": 2.91,
+    "median_built_up_m": 3.63,
+    "auc_vs_built_up": 0.578,
+    "p_value": 1.0251079818651133e-09,
+    "share_within_2m": 0.379,
+    "built_up_share_within_2m": 0.287,
+    "lowest20_built_up_threshold_m": 1.33,
+    "lowest20_holds_share_of_spots": 0.273,
+    "capture_curve": {
+      "10%": 0.138,
+      "20%": 0.273,
+      "30%": 0.387,
+      "50%": 0.615,
+      "70%": 0.814
+    },
+    "exploratory_by_file": {
+      "chennaidss_gis_flood_hotspots_gcc_flood_hotspots_2015": {
+        "n": 136,
+        "auc": 0.557
+      },
+      "chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015": {
+        "n": 6,
+        "auc": 0.427
+      },
+      "chennaidss_gis_flood_hotspots_gcc_flood_hotspots_nem_2020_withlabel": {
+        "n": 28,
+        "auc": 0.635
+      },
+      "chennai_flood_inundation_inches": {
+        "n": 136,
+        "auc": 0.624
+      },
+      "chennai_water_stagnation_locations_2015__chennai_2015_points": {
+        "n": 188,
+        "auc": 0.561
+      },
+      "chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel": {
+        "n": 5,
+        "auc": 0.434
+      }
+    }
+  }
+}

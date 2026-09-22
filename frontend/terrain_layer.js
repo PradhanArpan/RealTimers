@@ -265,7 +265,7 @@ const TerrainLayer = (() => {
         `<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px">` +
         `<span style="width:9px;height:9px;border-radius:50%;background:${c}"></span>${t}</span>`).join('') +
       `</div>` +
-      (v ? `<p class="rt-note" style="color:inherit"><b>Checked against ${v.n_in_pilot} BBMP flood spots:</b> ` +
+      (v ? `<p class="rt-note" style="color:inherit"><b>Checked against ${v.n_in_pilot} ${status.city === 'chennai' ? 'GCC' : 'BBMP'} flood records:</b> ` +
            `AUC ${v.auc_vs_built_up.toFixed(2)}. The lowest-lying 20% of built-up land holds ` +
            `${Math.round(v.lowest20_holds_share_of_spots * 100)}% of them.</p>` : '') +
       `<p class="rt-note" id="rt-drains-note"></p>` +

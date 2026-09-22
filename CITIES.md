@@ -7,7 +7,7 @@ with the buttons in the title card, or add `?city=` to the address:
 | City | Pilot area | Corridors | Terrain | Validation | Routing |
 |---|---|---|---|---|---|
 | Bengaluru | Koramangala – HSR – Silk Board – Bellandur | 1,344 BBMP drains | ✅ | AUC 0.70 | ✅ OpenStreetMap |
-| Chennai | Velachery – Pallikaranai – Adyar | 4,228 GCC drains | ✅ sea masked | — | — |
+| Chennai | Velachery – Pallikaranai – Adyar | 4,228 GCC drains | ✅ sea masked | AUC 0.58 (499 GCC records) | — |
 | Mumbai | Mithi river: Kurla – BKC – Andheri | 910 terrain flow paths | ✅ sea masked | — | — |
 | Delhi | Minto Bridge – ITO – Yamuna | 942 terrain flow paths | ✅ | — | — |
 
@@ -32,3 +32,9 @@ would need a larger plan.
 list of well-known places per city, not published names.
 
 Rebuild a city's terrain with `python tools/build_terrain.py --city chennai`.
+
+**Validation in two cities.** The Bengaluru terrain test was run unchanged on
+499 Greater Chennai Corporation flood records (`tools/validate_terrain_city.py`):
+AUC 0.58, p ≈ 10⁻⁹, against 0.70 in Bengaluru. Chennai is flat — built-up land
+sits a median 3.6 m above its drainage, against 8.5 m in Bengaluru — so terrain
+explains less, and rivers, backwater and tide explain more.
