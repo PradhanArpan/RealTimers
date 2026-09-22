@@ -30,8 +30,43 @@ the SWMM report, and `flooding.json` with every flooded junction.
 - By locality: Madipakkam, Saidapet, Perungudi, Mylapore, T. Nagar, Velachery,
   Pallikaranai, Guindy.
 
-That list reads like Chennai's known flood areas, but it is **not validated** —
-there is no Chennai flood-spot list in the repo yet to score against.
+That list reads like Chennai's known flood areas — but tested, it is not.
+
+## Validation against the corporation's records
+
+Declared before any Chennai flood data was seen, run once
+(`tools/validate_swmm_chennai.py`): a junction counts as flooded in reality if
+a GCC-reported point lies within 150 m; junctions are scored by SWMM flood
+volume; drain density alone is the baseline to beat.
+
+| Against 850 GCC flooding, stagnation and hotspot points | AUC |
+|---|---:|
+| SWMM flood volume | **0.497 — chance** |
+| Drain density alone | 0.542 |
+
+29% of SWMM's flooded junctions lie near a reported flood, against 31% of all
+junctions. **Where SWMM floods says nothing yet about where Chennai floods.**
+
+The likely reason is structural, as in Bengaluru: Chennai's worst floods come
+from rivers and canals backing up, and this network ends in 3,041 free
+outfalls, as if every drain emptied into open air. The records also mix river
+inundation, underpass stagnation and cyclone hotspots, while the model here is
+pipe capacity under uniform rain.
+
+## Cyclone Michaung, on real rain
+
+`tools/fetch_rain_event.py` gives 245.4 mm over 3–4 December 2023 from the
+ERA5 archive, wettest hour 16.5 mm. SWMM floods only 75 junctions, with
+continuity error 0.59%. That is right for the rain it was given, and shows the
+archive's weakness: at 25 km and hourly it smooths a cyclone's bursts. Observed
+rain — NASA IMERG, MOSDAC, KSNDMC gauges — is needed for real storms.
+
+## What the two cities say together
+
+Terrain is the validated signal (AUC 0.70 in Bengaluru). Pipe capacity alone
+found floods no better than chance in both cities. Surface flow and river
+backwater decide where streets flood — which is what HEC-RAS 2D and connecting
+the drains to the canals address.
 
 ## Three findings about the data
 

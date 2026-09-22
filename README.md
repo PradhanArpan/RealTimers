@@ -17,7 +17,7 @@ which way a two-wheeler, car or ambulance can still get through.
 | Bengaluru terrain vs BBMP's own flood spots | ✅ **AUC 0.70** |
 | Flood-safe routing on 81,003 OpenStreetMap road segments | ✅ live, Bengaluru |
 | Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
-| EPA SWMM on Chennai's real drains | ✅ continuity error 0.13% — not yet validated, see `SWMM.md` |
+| EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 850 GCC records: **no location skill yet**, see `SWMM.md` |
 | Real rain: Open-Meteo forecast shown live; past storms for the models | ✅ model rain, not radar |
 | **Depths on the map** | ⚠️ **a demonstration storm over real ground — labelled on screen** |
 | Radar nowcast, HEC-RAS 2D, surrogate model | planned |
