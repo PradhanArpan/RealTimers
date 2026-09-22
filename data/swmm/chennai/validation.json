@@ -1,0 +1,9 @@
+{
+  "reported_points": 850,
+  "junctions": 7145,
+  "junctions_near_reports": 2215,
+  "auc_swmm_volume": 0.497,
+  "auc_density_only": 0.542,
+  "flooded_junctions_near_reports": "131 of 449",
+  "all_junctions_near_reports": "2215 of 7145"
+}

@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel" id="chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="sl" type="int"></SimpleField>
+	<SimpleField name="name_municipality" type="string"></SimpleField>
+	<SimpleField name="details" type="string"></SimpleField>
+	<SimpleField name="vulnerability" type="string"></SimpleField>
+	<SimpleField name="name_region" type="string"></SimpleField>
+	<SimpleField name="latitude" type="float"></SimpleField>
+	<SimpleField name="longitude" type="float"></SimpleField>
+</Schema>
+<Folder><name>chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel</name>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="sl">1</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Thirumullaivoyal-I    VazhaiKuttai,Annai Theresa Nagar,Ettiyamman Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.138654</SimpleData>
+		<SimpleData name="longitude">80.13367</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.13367,13.138654</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="sl">2</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Thirumullaivoyal-I MGR Nagar,Thenral Nagar,Ambedkar Nagar,Murthy Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.131973</SimpleData>
+		<SimpleData name="longitude">80.129948</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.129948,13.131973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="sl">3</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Thirumullaivoyal-I Saraswathi Nagar,Indira Nagar,Thamarai Nagar,Sabari Ayyappan Nagar,Sivasakthi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.135052</SimpleData>
+		<SimpleData name="longitude">80.143224</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.143224,13.135052</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="sl">4</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Muthapudupet - Ellaiyamman Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.141194</SimpleData>
+		<SimpleData name="longitude">80.057097</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0570969999999,13.141194</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="sl">5</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Muthapudupet-ICF Colony</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.152309</SimpleData>
+		<SimpleData name="longitude">80.059271</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.059271,13.152309</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">6</SimpleData>
+		<SimpleData name="sl">6</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Mittanamallee</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.153134</SimpleData>
+		<SimpleData name="longitude">80.064759</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0647589999999,13.153134</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">7</SimpleData>
+		<SimpleData name="sl">7</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Paruthipattu</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Paruthipattu</SimpleData>
+		<SimpleData name="latitude">13.091499</SimpleData>
+		<SimpleData name="longitude">80.105168</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.105168,13.091499</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">8</SimpleData>
+		<SimpleData name="sl">8</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Koilpadagai - Rajiv Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.14535</SimpleData>
+		<SimpleData name="longitude">80.104524</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.104524,13.14535</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">9</SimpleData>
+		<SimpleData name="sl">9</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Avadi TNHB</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Paruthipattu</SimpleData>
+		<SimpleData name="latitude">13.114176</SimpleData>
+		<SimpleData name="longitude">80.102376</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1023759999999,13.114176</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">10</SimpleData>
+		<SimpleData name="sl">10</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Koilpadagai -Brindavan Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thirumullaivoyal Town Panchayat</SimpleData>
+		<SimpleData name="latitude">13.14571</SimpleData>
+		<SimpleData name="longitude">80.08911</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0891099999999,13.14571</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">11</SimpleData>
+		<SimpleData name="sl">11</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Paleripattu Pudunagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Palerippattu</SimpleData>
+		<SimpleData name="latitude">13.100513</SimpleData>
+		<SimpleData name="longitude">80.098885</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0988849999999,13.100513</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">12</SimpleData>
+		<SimpleData name="sl">12</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Paleripattu -  Anand Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Palerippattu</SimpleData>
+		<SimpleData name="latitude">13.101658</SimpleData>
+		<SimpleData name="longitude">80.096267</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.096267,13.101658</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">13</SimpleData>
+		<SimpleData name="sl">13</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Paleripattur Periyar Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Palerippattu</SimpleData>
+		<SimpleData name="latitude">13.103838</SimpleData>
+		<SimpleData name="longitude">80.102027</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.102027,13.103838</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">14</SimpleData>
+		<SimpleData name="sl">14</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Vilinjiyambakkam - Vettakarapalayam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vilinjiyambakkam</SimpleData>
+		<SimpleData name="latitude">13.116377</SimpleData>
+		<SimpleData name="longitude">80.085619</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.085619,13.116377</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">15</SimpleData>
+		<SimpleData name="sl">15</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Vilinjiyambakkam - Nandavanamettur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vilinjiyambakkam</SimpleData>
+		<SimpleData name="latitude">13.115908</SimpleData>
+		<SimpleData name="longitude">80.091903</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0919029999999,13.115908</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">16</SimpleData>
+		<SimpleData name="sl">16</SimpleData>
+		<SimpleData name="name_municipality">Avadi Municipality</SimpleData>
+		<SimpleData name="details">Vilinjiyambakkam - Kavarapalyam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vilinjiyambakkam</SimpleData>
+		<SimpleData name="latitude">13.121295</SimpleData>
+		<SimpleData name="longitude">80.08542</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0854199999999,13.121295</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">17</SimpleData>
+		<SimpleData name="sl">17</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">Amma Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.047261</SimpleData>
+		<SimpleData name="longitude">80.094531</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.094531,13.047261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">18</SimpleData>
+		<SimpleData name="sl">18</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">Ambethkar Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.01171</SimpleData>
+		<SimpleData name="longitude">80.177742</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.177742,13.01171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">19</SimpleData>
+		<SimpleData name="sl">19</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">sandhiya Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.0337</SimpleData>
+		<SimpleData name="longitude">80.23057</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.23057,13.0337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">20</SimpleData>
+		<SimpleData name="sl">20</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">Panayathaman Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.104866</SimpleData>
+		<SimpleData name="longitude">80.168577</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.168577,13.104866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">21</SimpleData>
+		<SimpleData name="sl">21</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">Bababee Dharga</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.047261</SimpleData>
+		<SimpleData name="longitude">80.094531</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.094531,13.047261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">22</SimpleData>
+		<SimpleData name="sl">22</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">Amman Koil Street</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.04353</SimpleData>
+		<SimpleData name="longitude">80.113013</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.113013,13.04353</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">23</SimpleData>
+		<SimpleData name="sl">23</SimpleData>
+		<SimpleData name="name_municipality">Poonamallee Municipality</SimpleData>
+		<SimpleData name="details">MGR Nagar,K K Nagar,Amman Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Poonamalli</SimpleData>
+		<SimpleData name="latitude">13.030971</SimpleData>
+		<SimpleData name="longitude">80.11307</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.11307,13.030971</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">24</SimpleData>
+		<SimpleData name="sl">24</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-7</SimpleData>
+		<SimpleData name="details">Lakshmi Ammal Nagar 1st to 11th Street</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ambathur</SimpleData>
+		<SimpleData name="latitude">13.15421</SimpleData>
+		<SimpleData name="longitude">80.19818</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1981799999999,13.15421</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">25</SimpleData>
+		<SimpleData name="sl">25</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-7</SimpleData>
+		<SimpleData name="details">Banu Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ambathur</SimpleData>
+		<SimpleData name="latitude">13.133523</SimpleData>
+		<SimpleData name="longitude">80.161</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.161,13.133523</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">26</SimpleData>
+		<SimpleData name="sl">26</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-7</SimpleData>
+		<SimpleData name="details">Vijayalakshmipuram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ambathur</SimpleData>
+		<SimpleData name="latitude">13.125403</SimpleData>
+		<SimpleData name="longitude">80.156674</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.156674,13.125403</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">27</SimpleData>
+		<SimpleData name="sl">27</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-7</SimpleData>
+		<SimpleData name="details">Venkateswar Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Ambathur</SimpleData>
+		<SimpleData name="latitude">13.129506</SimpleData>
+		<SimpleData name="longitude">80.149138</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.149138,13.129506</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">28</SimpleData>
+		<SimpleData name="sl">28</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-8</SimpleData>
+		<SimpleData name="details">Ambattur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ambathur</SimpleData>
+		<SimpleData name="latitude">13.114317</SimpleData>
+		<SimpleData name="longitude">80.148055</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.148055,13.114317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">29</SimpleData>
+		<SimpleData name="sl">29</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-9</SimpleData>
+		<SimpleData name="details">Korattur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Korattur</SimpleData>
+		<SimpleData name="latitude">13.115678</SimpleData>
+		<SimpleData name="longitude">80.181062</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.181062,13.115678</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">30</SimpleData>
+		<SimpleData name="sl">30</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-10</SimpleData>
+		<SimpleData name="details">Mugappair Eri Scheme</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Mugappair</SimpleData>
+		<SimpleData name="latitude">13.076402</SimpleData>
+		<SimpleData name="longitude">80.175649</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.175649,13.076402</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ambathur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">31</SimpleData>
+		<SimpleData name="sl">31</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-7</SimpleData>
+		<SimpleData name="details">Redhills Road</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Oragadam</SimpleData>
+		<SimpleData name="latitude">13.138314</SimpleData>
+		<SimpleData name="longitude">80.178184</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.178184,13.138314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">32</SimpleData>
+		<SimpleData name="sl">32</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Rajaji Nagar</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.173464</SimpleData>
+		<SimpleData name="longitude">80.292756</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.292756,13.173464</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">33</SimpleData>
+		<SimpleData name="sl">33</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">CPCL Nagar,MGR Nagar</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Manali</SimpleData>
+		<SimpleData name="latitude">13.173459</SimpleData>
+		<SimpleData name="longitude">80.255132</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2551319999999,13.173459</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">34</SimpleData>
+		<SimpleData name="sl">34</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">MGR Nagar,Basin Road,Periyar Road</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.159474</SimpleData>
+		<SimpleData name="longitude">80.301944</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.301944,13.159474</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">35</SimpleData>
+		<SimpleData name="sl">35</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kalaigner Nagar,Labbai Medu</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Manali</SimpleData>
+		<SimpleData name="latitude">13.168945</SimpleData>
+		<SimpleData name="longitude">80.293733</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.293733,13.168945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">36</SimpleData>
+		<SimpleData name="sl">36</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Sadayankuppam</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Sadayankuppam</SimpleData>
+		<SimpleData name="latitude">13.168945</SimpleData>
+		<SimpleData name="longitude">80.293733</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.293733,13.168945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">37</SimpleData>
+		<SimpleData name="sl">37</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Kadapakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.159474</SimpleData>
+		<SimpleData name="longitude">80.301944</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.301944,13.159474</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">38</SimpleData>
+		<SimpleData name="sl">38</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kargil Nagar</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.172617</SimpleData>
+		<SimpleData name="longitude">80.29231</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.29231,13.172617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">39</SimpleData>
+		<SimpleData name="sl">39</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Adhi Dravidar Colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ernavur</SimpleData>
+		<SimpleData name="latitude">13.127717</SimpleData>
+		<SimpleData name="longitude">80.292162</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.292162,13.127717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">40</SimpleData>
+		<SimpleData name="sl">40</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Ramanathan Puram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ernavur</SimpleData>
+		<SimpleData name="latitude">13.182493</SimpleData>
+		<SimpleData name="longitude">80.305293</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.305293,13.182493</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">41</SimpleData>
+		<SimpleData name="sl">41</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">SVM Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kathivakkam</SimpleData>
+		<SimpleData name="latitude">13.1797</SimpleData>
+		<SimpleData name="longitude">80.299924</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.299924,13.1797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">42</SimpleData>
+		<SimpleData name="sl">42</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">J.J. Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kathivakkam</SimpleData>
+		<SimpleData name="latitude">13.177525</SimpleData>
+		<SimpleData name="longitude">80.294877</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.294877,13.177525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">43</SimpleData>
+		<SimpleData name="sl">43</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Tiruvalluvar Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kathivakkam</SimpleData>
+		<SimpleData name="latitude">13.176949</SimpleData>
+		<SimpleData name="longitude">80.309472</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.309472,13.176949</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">44</SimpleData>
+		<SimpleData name="sl">44</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Valluvar Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kathivakkam</SimpleData>
+		<SimpleData name="latitude">12.500575</SimpleData>
+		<SimpleData name="longitude">78.558277</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>78.558276999991,12.5005749999998</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">45</SimpleData>
+		<SimpleData name="sl">45</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kadapakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.158869</SimpleData>
+		<SimpleData name="longitude">80.295955</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.295955,13.158869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">46</SimpleData>
+		<SimpleData name="sl">46</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kadapakkam colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.158869</SimpleData>
+		<SimpleData name="longitude">80.295955</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.295955,13.158869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">47</SimpleData>
+		<SimpleData name="sl">47</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kanniyamman Pettai</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.158869</SimpleData>
+		<SimpleData name="longitude">80.295955</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.295955,13.158869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">48</SimpleData>
+		<SimpleData name="sl">48</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kamarajar Puram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.11845</SimpleData>
+		<SimpleData name="longitude">80.285102</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.285102,13.11845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">49</SimpleData>
+		<SimpleData name="sl">49</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Sivasakthi Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.138905</SimpleData>
+		<SimpleData name="longitude">80.29521</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.29521,13.138905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">50</SimpleData>
+		<SimpleData name="sl">50</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Rajiv Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.183747</SimpleData>
+		<SimpleData name="longitude">80.314869</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.314869,13.183747</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">51</SimpleData>
+		<SimpleData name="sl">51</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Kulakkarai</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.183747</SimpleData>
+		<SimpleData name="longitude">80.314869</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.314869,13.183747</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">52</SimpleData>
+		<SimpleData name="sl">52</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Andarkuppam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.194473</SimpleData>
+		<SimpleData name="longitude">80.264191</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.264191,13.194473</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">53</SimpleData>
+		<SimpleData name="sl">53</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Ariyalur Colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ariyalur</SimpleData>
+		<SimpleData name="latitude">13.194473</SimpleData>
+		<SimpleData name="longitude">80.264191</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.264191,13.194473</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">54</SimpleData>
+		<SimpleData name="sl">54</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 2</SimpleData>
+		<SimpleData name="details">Andarkuppam Redhills rd</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ariyalur</SimpleData>
+		<SimpleData name="latitude">13.19089</SimpleData>
+		<SimpleData name="longitude">80.251289</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.251289,13.19089</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">55</SimpleData>
+		<SimpleData name="sl">55</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Raja Shanmugam Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.172476</SimpleData>
+		<SimpleData name="longitude">80.299782</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.299782,13.172476</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">56</SimpleData>
+		<SimpleData name="sl">56</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Glass Factory Anna Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.079458</SimpleData>
+		<SimpleData name="longitude">80.217472</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.217472,13.079458</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">57</SimpleData>
+		<SimpleData name="sl">57</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Siva Sakthi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.138905</SimpleData>
+		<SimpleData name="longitude">80.29521</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.29521,13.138905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">58</SimpleData>
+		<SimpleData name="sl">58</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Kirubai Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.163786</SimpleData>
+		<SimpleData name="longitude">80.298392</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.298392,13.163786</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">59</SimpleData>
+		<SimpleData name="sl">59</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Radha Krishnan Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Thiruvottiyur</SimpleData>
+		<SimpleData name="latitude">13.159633</SimpleData>
+		<SimpleData name="longitude">80.3039</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.3039,13.159633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">60</SimpleData>
+		<SimpleData name="sl">60</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Jothi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Ernavur</SimpleData>
+		<SimpleData name="latitude">13.179606</SimpleData>
+		<SimpleData name="longitude">80.300472</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.300472,13.179606</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">61</SimpleData>
+		<SimpleData name="sl">61</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - 1</SimpleData>
+		<SimpleData name="details">Nehru Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Kathivakkam</SimpleData>
+		<SimpleData name="latitude">13.164859</SimpleData>
+		<SimpleData name="longitude">80.291362</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.291362,13.164859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">62</SimpleData>
+		<SimpleData name="sl">62</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Krishnan Street</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinnasekkadu</SimpleData>
+		<SimpleData name="latitude">13.163811</SimpleData>
+		<SimpleData name="longitude">80.301877</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.301877,13.163811</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">63</SimpleData>
+		<SimpleData name="sl">63</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Kakkan Puram,Balji Palayam,Velu Street,Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinnasekkadu</SimpleData>
+		<SimpleData name="latitude">13.151606</SimpleData>
+		<SimpleData name="longitude">80.261404</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.261404,13.151606</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">64</SimpleData>
+		<SimpleData name="sl">64</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Devarajan Street</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinnasekkadu</SimpleData>
+		<SimpleData name="latitude">13.16159</SimpleData>
+		<SimpleData name="longitude">80.260295</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.260295,13.16159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">65</SimpleData>
+		<SimpleData name="sl">65</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Balakrishnan Naidu Colony</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.153245</SimpleData>
+		<SimpleData name="longitude">80.295194</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.295194,13.153245</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">66</SimpleData>
+		<SimpleData name="sl">66</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Periyar Nagar,Theeyambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Theeyambakkam</SimpleData>
+		<SimpleData name="latitude">13.167815</SimpleData>
+		<SimpleData name="longitude">80.303552</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.303552,13.167815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">67</SimpleData>
+		<SimpleData name="sl">67</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Udaya Suriyan St</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.120535</SimpleData>
+		<SimpleData name="longitude">80.249365</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.249365,13.120535</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">68</SimpleData>
+		<SimpleData name="sl">68</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.178084</SimpleData>
+		<SimpleData name="longitude">80.311213</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.311213,13.178084</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">69</SimpleData>
+		<SimpleData name="sl">69</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">Varadha Rajan St</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.148567</SimpleData>
+		<SimpleData name="longitude">80.292577</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.292577,13.148567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">70</SimpleData>
+		<SimpleData name="sl">70</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 2</SimpleData>
+		<SimpleData name="details">YMCA, Sathumanagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sathangadu</SimpleData>
+		<SimpleData name="latitude">13.145733</SimpleData>
+		<SimpleData name="longitude">80.292479</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.292479,13.145733</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">71</SimpleData>
+		<SimpleData name="sl">71</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                   Zone - 1</SimpleData>
+		<SimpleData name="details">Gandhi Nagar,Theeyambakkam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Theeyambakkam</SimpleData>
+		<SimpleData name="latitude">13.178084</SimpleData>
+		<SimpleData name="longitude">80.311213</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.311213,13.178084</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">72</SimpleData>
+		<SimpleData name="sl">72</SimpleData>
+		<SimpleData name="name_municipality">NaravarikuppamTown Panchayat</SimpleData>
+		<SimpleData name="details">Naravarikuppam
+</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">NaravarikuppamTown Panchayat</SimpleData>
+		<SimpleData name="latitude">13.193368</SimpleData>
+		<SimpleData name="longitude">80.161</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.161,13.193368</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">73</SimpleData>
+		<SimpleData name="sl">73</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-2</SimpleData>
+		<SimpleData name="details">Vilakkupatu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Greater Chennai Corporation,            Zone-2</SimpleData>
+		<SimpleData name="latitude">13.147819</SimpleData>
+		<SimpleData name="longitude">80.230986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.230986,13.147819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">74</SimpleData>
+		<SimpleData name="sl">74</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-2</SimpleData>
+		<SimpleData name="details">Chettimedu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Greater Chennai Corporation,            Zone-3</SimpleData>
+		<SimpleData name="latitude">13.165002</SimpleData>
+		<SimpleData name="longitude">80.22028</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.22028,13.165002</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">75</SimpleData>
+		<SimpleData name="sl">75</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-2</SimpleData>
+		<SimpleData name="details">Manjambakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Manjambakkam</SimpleData>
+		<SimpleData name="latitude">13.155819</SimpleData>
+		<SimpleData name="longitude">80.222372</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.222372,13.155819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">76</SimpleData>
+		<SimpleData name="sl">76</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,            Zone-2</SimpleData>
+		<SimpleData name="details">Kosapur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Kosapur</SimpleData>
+		<SimpleData name="latitude">13.170949</SimpleData>
+		<SimpleData name="longitude">80.220693</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2206929999999,13.170949</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">77</SimpleData>
+		<SimpleData name="sl">77</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation - Zone 3</SimpleData>
+		<SimpleData name="details">Madhavaram I</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Madhavaram</SimpleData>
+		<SimpleData name="latitude">13.147819</SimpleData>
+		<SimpleData name="longitude">80.230986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.230986,13.147819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">78</SimpleData>
+		<SimpleData name="sl">78</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation - Zone 3</SimpleData>
+		<SimpleData name="details">Puthagaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Puthagaram</SimpleData>
+		<SimpleData name="latitude">13.147819</SimpleData>
+		<SimpleData name="longitude">80.230986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.230986,13.147819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">79</SimpleData>
+		<SimpleData name="sl">79</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation - Zone 3</SimpleData>
+		<SimpleData name="details">Surapet</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Surapet</SimpleData>
+		<SimpleData name="latitude">13.136498</SimpleData>
+		<SimpleData name="longitude">80.181709</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.181709,13.136498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">80</SimpleData>
+		<SimpleData name="sl">80</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation - Zone 4</SimpleData>
+		<SimpleData name="details">Thanikachalam Nagar</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Madhavaram</SimpleData>
+		<SimpleData name="latitude">13.136498</SimpleData>
+		<SimpleData name="longitude">80.181709</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.181709,13.136498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">81</SimpleData>
+		<SimpleData name="sl">81</SimpleData>
+		<SimpleData name="name_municipality">Sholavaram</SimpleData>
+		<SimpleData name="details">Nallur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Nallur</SimpleData>
+		<SimpleData name="latitude">9.674532</SimpleData>
+		<SimpleData name="longitude">80.029444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.029444,9.67453200000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">82</SimpleData>
+		<SimpleData name="sl">82</SimpleData>
+		<SimpleData name="name_municipality">Sholavaram</SimpleData>
+		<SimpleData name="details">Ambal Nagar Nallur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Nallur</SimpleData>
+		<SimpleData name="latitude">9.667802</SimpleData>
+		<SimpleData name="longitude">80.039662</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0396619999999,9.66780199999998</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">83</SimpleData>
+		<SimpleData name="sl">83</SimpleData>
+		<SimpleData name="name_municipality">Sholavaram</SimpleData>
+		<SimpleData name="details">Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Attanthangal</SimpleData>
+		<SimpleData name="latitude">13.139283</SimpleData>
+		<SimpleData name="longitude">80.134833</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.134833,13.139283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">84</SimpleData>
+		<SimpleData name="sl">84</SimpleData>
+		<SimpleData name="name_municipality">Sholavaram</SimpleData>
+		<SimpleData name="details">Alamathi</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Alamathi</SimpleData>
+		<SimpleData name="latitude">13.203076</SimpleData>
+		<SimpleData name="longitude">80.154023</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1540229999999,13.203076</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">85</SimpleData>
+		<SimpleData name="sl">85</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">A.Reddypalayam</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Aladu</SimpleData>
+		<SimpleData name="latitude">13.25523</SimpleData>
+		<SimpleData name="longitude">80.274706</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.274706,13.25523</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">86</SimpleData>
+		<SimpleData name="sl">86</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Thathamanji</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Thathamanji</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">87</SimpleData>
+		<SimpleData name="sl">87</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Sirupazhaverkadu Colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Sirupazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">88</SimpleData>
+		<SimpleData name="sl">88</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Kadapakkam Colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kadapakkam</SimpleData>
+		<SimpleData name="latitude">13.25551</SimpleData>
+		<SimpleData name="longitude">80.274743</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.274743,13.25551</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">89</SimpleData>
+		<SimpleData name="sl">89</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Karungali</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Karungali</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">90</SimpleData>
+		<SimpleData name="sl">90</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Kalanji</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kalanji</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">91</SimpleData>
+		<SimpleData name="sl">91</SimpleData>
+		<SimpleData name="name_municipality">Kattur</SimpleData>
+		<SimpleData name="details">Kattupalli</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kattupalli</SimpleData>
+		<SimpleData name="latitude">13.312891</SimpleData>
+		<SimpleData name="longitude">80.32551</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.32551,13.312891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">92</SimpleData>
+		<SimpleData name="sl">92</SimpleData>
+		<SimpleData name="name_municipality">Kolur</SimpleData>
+		<SimpleData name="details">Annamalaicherry</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Annamalaicherry</SimpleData>
+		<SimpleData name="latitude">13.463629</SimpleData>
+		<SimpleData name="longitude">80.249848</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.249848,13.463629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">93</SimpleData>
+		<SimpleData name="sl">93</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Perumbedukuppam</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Perumbedukuppam</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">94</SimpleData>
+		<SimpleData name="sl">94</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Vanjivakkam</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Vanjivakkam</SimpleData>
+		<SimpleData name="latitude">13.390517</SimpleData>
+		<SimpleData name="longitude">80.25923</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.25923,13.3905169999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">95</SimpleData>
+		<SimpleData name="sl">95</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Senjiyamman Nagar,</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Pazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">96</SimpleData>
+		<SimpleData name="sl">96</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Kulathumedu,</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Pazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.345383</SimpleData>
+		<SimpleData name="longitude">80.195177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1951769999999,13.345383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">97</SimpleData>
+		<SimpleData name="sl">97</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Rajarathinam Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Pazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.345383</SimpleData>
+		<SimpleData name="longitude">80.195177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1951769999999,13.345383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">98</SimpleData>
+		<SimpleData name="sl">98</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Kallukadaimedu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Pazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.345383</SimpleData>
+		<SimpleData name="longitude">80.195177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1951769999999,13.345383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">99</SimpleData>
+		<SimpleData name="sl">99</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">MGR Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Tirupalaivanam</SimpleData>
+		<SimpleData name="latitude">13.32989</SimpleData>
+		<SimpleData name="longitude">80.191914</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1919139999999,13.32989</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">100</SimpleData>
+		<SimpleData name="sl">100</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Andarmadam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Andarmadam</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">101</SimpleData>
+		<SimpleData name="sl">101</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Thangalperumpulam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Thangalperumpulam</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">102</SimpleData>
+		<SimpleData name="sl">102</SimpleData>
+		<SimpleData name="name_municipality">Thirupalaivanam</SimpleData>
+		<SimpleData name="details">Pazhaverkadu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Pazhaverkadu</SimpleData>
+		<SimpleData name="latitude">13.345383</SimpleData>
+		<SimpleData name="longitude">80.195177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1951769999999,13.345383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">103</SimpleData>
+		<SimpleData name="sl">103</SimpleData>
+		<SimpleData name="name_municipality">Arani</SimpleData>
+		<SimpleData name="details">Chinnambedu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinnambedu</SimpleData>
+		<SimpleData name="latitude">13.299913</SimpleData>
+		<SimpleData name="longitude">80.15762</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.15762,13.299913</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">104</SimpleData>
+		<SimpleData name="sl">104</SimpleData>
+		<SimpleData name="name_municipality">Arani</SimpleData>
+		<SimpleData name="details">Peravallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Peravallur</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">105</SimpleData>
+		<SimpleData name="sl">105</SimpleData>
+		<SimpleData name="name_municipality">Arani</SimpleData>
+		<SimpleData name="details">Arani</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Arani</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">106</SimpleData>
+		<SimpleData name="sl">106</SimpleData>
+		<SimpleData name="name_municipality">Minjur</SimpleData>
+		<SimpleData name="details">Manali New Town</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Nappalayam</SimpleData>
+		<SimpleData name="latitude">13.191722</SimpleData>
+		<SimpleData name="longitude">80.271585</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.271585,13.191722</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">107</SimpleData>
+		<SimpleData name="sl">107</SimpleData>
+		<SimpleData name="name_municipality">Minjur</SimpleData>
+		<SimpleData name="details">Nappalayam</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Nappalayam</SimpleData>
+		<SimpleData name="latitude">13.220676</SimpleData>
+		<SimpleData name="longitude">80.275618</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2756179999999,13.220676</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">108</SimpleData>
+		<SimpleData name="sl">108</SimpleData>
+		<SimpleData name="name_municipality">Minjur</SimpleData>
+		<SimpleData name="details">Ennore Creek</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Ennore</SimpleData>
+		<SimpleData name="latitude">13.217598</SimpleData>
+		<SimpleData name="longitude">80.321572</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.321572,13.217598</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">109</SimpleData>
+		<SimpleData name="sl">109</SimpleData>
+		<SimpleData name="name_municipality">Minjur</SimpleData>
+		<SimpleData name="details">Athipattu Pudhu Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Athipattu</SimpleData>
+		<SimpleData name="latitude">13.261379</SimpleData>
+		<SimpleData name="longitude">80.289068</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2890679999999,13.261379</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">110</SimpleData>
+		<SimpleData name="sl">110</SimpleData>
+		<SimpleData name="name_municipality">Gnayiru</SimpleData>
+		<SimpleData name="details">Vichoor</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Vichoor</SimpleData>
+		<SimpleData name="latitude">13.255551</SimpleData>
+		<SimpleData name="longitude">80.274743</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.274743,13.255551</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">111</SimpleData>
+		<SimpleData name="sl">111</SimpleData>
+		<SimpleData name="name_municipality">Gnayiru</SimpleData>
+		<SimpleData name="details">Pasuvanpalaym</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Gnayiru</SimpleData>
+		<SimpleData name="latitude">13.286788</SimpleData>
+		<SimpleData name="longitude">80.22892</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.22892,13.286788</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">112</SimpleData>
+		<SimpleData name="sl">112</SimpleData>
+		<SimpleData name="name_municipality">Gnayiru</SimpleData>
+		<SimpleData name="details">Vellivoyal</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vellivoyal</SimpleData>
+		<SimpleData name="latitude">13.235992</SimpleData>
+		<SimpleData name="longitude">80.30599</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.30599,13.235992</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">113</SimpleData>
+		<SimpleData name="sl">113</SimpleData>
+		<SimpleData name="name_municipality">Gnayiru</SimpleData>
+		<SimpleData name="details">Seemavaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Seemavaram</SimpleData>
+		<SimpleData name="latitude">13.26539</SimpleData>
+		<SimpleData name="longitude">80.262309</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.262309,13.26539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">114</SimpleData>
+		<SimpleData name="sl">114</SimpleData>
+		<SimpleData name="name_municipality">Ponneri</SimpleData>
+		<SimpleData name="details">Aladu (Manopuram)</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Aladu</SimpleData>
+		<SimpleData name="latitude">13.342584</SimpleData>
+		<SimpleData name="longitude">80.220977</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.220977,13.342584</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">115</SimpleData>
+		<SimpleData name="sl">115</SimpleData>
+		<SimpleData name="name_municipality">Ponneri</SimpleData>
+		<SimpleData name="details">Ponneri I</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Ponneri</SimpleData>
+		<SimpleData name="latitude">13.33783</SimpleData>
+		<SimpleData name="longitude">80.192901</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.192901,13.33783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">116</SimpleData>
+		<SimpleData name="sl">116</SimpleData>
+		<SimpleData name="name_municipality">Ponneri</SimpleData>
+		<SimpleData name="details">Ponneri II</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Ponneri</SimpleData>
+		<SimpleData name="latitude">11.400365</SimpleData>
+		<SimpleData name="longitude">79.240823</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.2408229999984,11.400365</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">117</SimpleData>
+		<SimpleData name="sl">117</SimpleData>
+		<SimpleData name="name_municipality">Ponneri</SimpleData>
+		<SimpleData name="details">Poonthotta Colony</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Aladu</SimpleData>
+		<SimpleData name="latitude">13.342714</SimpleData>
+		<SimpleData name="longitude">80.215259</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2152589999999,13.342714</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ponneri</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">118</SimpleData>
+		<SimpleData name="sl">118</SimpleData>
+		<SimpleData name="name_municipality">Ponneri</SimpleData>
+		<SimpleData name="details">Vellankulam Colony</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Aladu</SimpleData>
+		<SimpleData name="latitude">13.325244</SimpleData>
+		<SimpleData name="longitude">80.2154</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2153999999999,13.325244</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">119</SimpleData>
+		<SimpleData name="sl">119</SimpleData>
+		<SimpleData name="name_municipality">Gummidipoondi</SimpleData>
+		<SimpleData name="details">Gummidipoondi EB Office</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Gummidipoondi</SimpleData>
+		<SimpleData name="latitude">13.403297</SimpleData>
+		<SimpleData name="longitude">80.103423</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1034229999999,13.403297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">120</SimpleData>
+		<SimpleData name="sl">120</SimpleData>
+		<SimpleData name="name_municipality">Gummidipoondi</SimpleData>
+		<SimpleData name="details">Enathimelpakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Gummidipoondi</SimpleData>
+		<SimpleData name="latitude">13.406948</SimpleData>
+		<SimpleData name="longitude">80.1103</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1103,13.406948</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">121</SimpleData>
+		<SimpleData name="sl">121</SimpleData>
+		<SimpleData name="name_municipality">Gummidipoondi</SimpleData>
+		<SimpleData name="details">Chinna Sozhiyambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinna Sozhiyambakkam</SimpleData>
+		<SimpleData name="latitude">13.403297</SimpleData>
+		<SimpleData name="longitude">80.103423</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1034229999999,13.403297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">122</SimpleData>
+		<SimpleData name="sl">122</SimpleData>
+		<SimpleData name="name_municipality">Gummidipoondi</SimpleData>
+		<SimpleData name="details">Periya Sozhiyambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Periya Sozhiyambakkam</SimpleData>
+		<SimpleData name="latitude">13.403297</SimpleData>
+		<SimpleData name="longitude">80.103423</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1034229999999,13.403297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">123</SimpleData>
+		<SimpleData name="sl">123</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Sunnambukulam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Sunnambukulam</SimpleData>
+		<SimpleData name="latitude">13.424066</SimpleData>
+		<SimpleData name="longitude">80.114335</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.114335,13.424066</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">124</SimpleData>
+		<SimpleData name="sl">124</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Edur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Edur</SimpleData>
+		<SimpleData name="latitude">13.427701</SimpleData>
+		<SimpleData name="longitude">80.16227</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.16227,13.427701</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">125</SimpleData>
+		<SimpleData name="sl">125</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Ezhukannupalam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Edur</SimpleData>
+		<SimpleData name="latitude">13.08268</SimpleData>
+		<SimpleData name="longitude">80.270718</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.270718,13.08268</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">126</SimpleData>
+		<SimpleData name="sl">126</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Vallambedukuppam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="latitude">13.08268</SimpleData>
+		<SimpleData name="longitude">80.270718</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.270718,13.08268</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">127</SimpleData>
+		<SimpleData name="sl">127</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Arambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Arambakkam</SimpleData>
+		<SimpleData name="latitude">13.529616</SimpleData>
+		<SimpleData name="longitude">80.074137</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0741369999999,13.529616</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">128</SimpleData>
+		<SimpleData name="sl">128</SimpleData>
+		<SimpleData name="name_municipality">Elavur</SimpleData>
+		<SimpleData name="details">Chinna Obulapuram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Chinna Obulapuram</SimpleData>
+		<SimpleData name="latitude">13.439193</SimpleData>
+		<SimpleData name="longitude">80.107687</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.107687,13.439193</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">129</SimpleData>
+		<SimpleData name="sl">129</SimpleData>
+		<SimpleData name="name_municipality">Poovalambedu</SimpleData>
+		<SimpleData name="details">Karani</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Karani</SimpleData>
+		<SimpleData name="latitude">13.318448</SimpleData>
+		<SimpleData name="longitude">80.048189</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.048189,13.318448</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">130</SimpleData>
+		<SimpleData name="sl">130</SimpleData>
+		<SimpleData name="name_municipality">Poovalambedu</SimpleData>
+		<SimpleData name="details">Mangalam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Mangalam</SimpleData>
+		<SimpleData name="latitude">13.394555</SimpleData>
+		<SimpleData name="longitude">80.077111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0771109999999,13.394555</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">131</SimpleData>
+		<SimpleData name="sl">131</SimpleData>
+		<SimpleData name="name_municipality">Poovalambedu</SimpleData>
+		<SimpleData name="details">Mukkarambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Mukkarambakkam</SimpleData>
+		<SimpleData name="latitude">13.405656</SimpleData>
+		<SimpleData name="longitude">80.035915</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0359149999999,13.405656</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gummidipoondi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">132</SimpleData>
+		<SimpleData name="sl">132</SimpleData>
+		<SimpleData name="name_municipality">Poovalambedu</SimpleData>
+		<SimpleData name="details">Serpedu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Serpedu</SimpleData>
+		<SimpleData name="latitude">13.405656</SimpleData>
+		<SimpleData name="longitude">80.035915</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0359149999999,13.405656</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">133</SimpleData>
+		<SimpleData name="sl">133</SimpleData>
+		<SimpleData name="name_municipality">Morai</SimpleData>
+		<SimpleData name="details">Pandeswaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Pandeswaram</SimpleData>
+		<SimpleData name="latitude">13.191371</SimpleData>
+		<SimpleData name="longitude">80.067198</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.067198,13.191371</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">134</SimpleData>
+		<SimpleData name="sl">134</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nemilichery - Nagathamman Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Nemilichery</SimpleData>
+		<SimpleData name="latitude">13.128217</SimpleData>
+		<SimpleData name="longitude">80.051794</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.051794,13.128217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">135</SimpleData>
+		<SimpleData name="sl">135</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Tiruninravur</SimpleData>
+		<SimpleData name="vulnerability">Very High</SimpleData>
+		<SimpleData name="name_region">Tiruninravur</SimpleData>
+		<SimpleData name="latitude">13.1198</SimpleData>
+		<SimpleData name="longitude">80.030717</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.030717,13.1198</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">136</SimpleData>
+		<SimpleData name="sl">136</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nemilichery - Rajiv Gandhi Nagar</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Nemilichery</SimpleData>
+		<SimpleData name="latitude">13.121405</SimpleData>
+		<SimpleData name="longitude">80.04511</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0451099999999,13.121405</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">137</SimpleData>
+		<SimpleData name="sl">137</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nadukuthagai- Bhavani Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Nadukuthagai</SimpleData>
+		<SimpleData name="latitude">13.13104</SimpleData>
+		<SimpleData name="longitude">80.034166</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0341659999999,13.13104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">138</SimpleData>
+		<SimpleData name="sl">138</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nadukuthagai- Muvendar Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Nadukuthagai</SimpleData>
+		<SimpleData name="latitude">13.13104</SimpleData>
+		<SimpleData name="longitude">80.034166</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0341659999999,13.13104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">139</SimpleData>
+		<SimpleData name="sl">139</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nadukuthagai - Ramadasapuram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Nadukuthagai</SimpleData>
+		<SimpleData name="latitude">13.164552</SimpleData>
+		<SimpleData name="longitude">80.031473</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.031473,13.164552</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">140</SimpleData>
+		<SimpleData name="sl">140</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nadukuthagai - North Prakash Nagar,Dilipan Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Nadukuthagai</SimpleData>
+		<SimpleData name="latitude">13.13063</SimpleData>
+		<SimpleData name="longitude">80.047763</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.047763,13.13063</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">141</SimpleData>
+		<SimpleData name="sl">141</SimpleData>
+		<SimpleData name="name_municipality">Thirunindravur</SimpleData>
+		<SimpleData name="details">Nadukuthagai -  Thendral Nagar,Amirtha Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Nadukuthagai</SimpleData>
+		<SimpleData name="latitude">13.112691</SimpleData>
+		<SimpleData name="longitude">80.070924</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0709239999999,13.112691</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">142</SimpleData>
+		<SimpleData name="sl">142</SimpleData>
+		<SimpleData name="name_municipality">Thirumullaivoyal</SimpleData>
+		<SimpleData name="details">Palavedu - Jasmine Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Palavedu</SimpleData>
+		<SimpleData name="latitude">13.138654</SimpleData>
+		<SimpleData name="longitude">80.13367</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.13367,13.138654</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">143</SimpleData>
+		<SimpleData name="sl">143</SimpleData>
+		<SimpleData name="name_municipality">Thirumullaivoyal</SimpleData>
+		<SimpleData name="details">Palavedu - Muthamizh Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Palavedu</SimpleData>
+		<SimpleData name="latitude">13.138654</SimpleData>
+		<SimpleData name="longitude">80.13367</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.13367,13.138654</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">144</SimpleData>
+		<SimpleData name="sl">144</SimpleData>
+		<SimpleData name="name_municipality">Thirumullaivoyal</SimpleData>
+		<SimpleData name="details">Palavedu - Sasthri Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Palavedu</SimpleData>
+		<SimpleData name="latitude">13.146177</SimpleData>
+		<SimpleData name="longitude">80.055239</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0552389999999,13.146177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Avadi</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">145</SimpleData>
+		<SimpleData name="sl">145</SimpleData>
+		<SimpleData name="name_municipality">Thirumullaivoyal</SimpleData>
+		<SimpleData name="details">Ayapakkam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Ayapakkam</SimpleData>
+		<SimpleData name="latitude">13.092468</SimpleData>
+		<SimpleData name="longitude">80.137243</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1372429999999,13.092468</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">146</SimpleData>
+		<SimpleData name="sl">146</SimpleData>
+		<SimpleData name="name_municipality">Nemam</SimpleData>
+		<SimpleData name="details">Nochimedu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Nemam B</SimpleData>
+		<SimpleData name="latitude">13.078324</SimpleData>
+		<SimpleData name="longitude">80.02541</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0254099999999,13.078324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">147</SimpleData>
+		<SimpleData name="sl">147</SimpleData>
+		<SimpleData name="name_municipality">Nemam</SimpleData>
+		<SimpleData name="details">Collector Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Gudapakkam</SimpleData>
+		<SimpleData name="latitude">13.078324</SimpleData>
+		<SimpleData name="longitude">80.02541</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0254099999999,13.078324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">148</SimpleData>
+		<SimpleData name="sl">148</SimpleData>
+		<SimpleData name="name_municipality">Thirumazhisai</SimpleData>
+		<SimpleData name="details">Amman Koil Street</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Korattur A</SimpleData>
+		<SimpleData name="latitude">13.047261</SimpleData>
+		<SimpleData name="longitude">80.094531</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.094531,13.047261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">149</SimpleData>
+		<SimpleData name="sl">149</SimpleData>
+		<SimpleData name="name_municipality">Thirumazhisai</SimpleData>
+		<SimpleData name="details">Nazarathpet</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Nazarathpet</SimpleData>
+		<SimpleData name="latitude">13.04728</SimpleData>
+		<SimpleData name="longitude">80.080931</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0809309999999,13.04728</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">150</SimpleData>
+		<SimpleData name="sl">150</SimpleData>
+		<SimpleData name="name_municipality">Vayalanallur</SimpleData>
+		<SimpleData name="details">Vayalanallur A &amp; B</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Vayalanallur</SimpleData>
+		<SimpleData name="latitude">13.085296</SimpleData>
+		<SimpleData name="longitude">80.071309</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.071309,13.085296</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poonamallee</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">151</SimpleData>
+		<SimpleData name="sl">151</SimpleData>
+		<SimpleData name="name_municipality">Vayalanallur</SimpleData>
+		<SimpleData name="details">Parivakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Parivakkam</SimpleData>
+		<SimpleData name="latitude">13.059109</SimpleData>
+		<SimpleData name="longitude">80.098592</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0985919999999,13.059109</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">152</SimpleData>
+		<SimpleData name="sl">152</SimpleData>
+		<SimpleData name="name_municipality">Manali</SimpleData>
+		<SimpleData name="details">MG Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sendrambakkam</SimpleData>
+		<SimpleData name="latitude">13.184815</SimpleData>
+		<SimpleData name="longitude">80.312937</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.312937,13.184815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">153</SimpleData>
+		<SimpleData name="sl">153</SimpleData>
+		<SimpleData name="name_municipality">Manali</SimpleData>
+		<SimpleData name="details">Krishnasamy Chetty Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sendrambakkam</SimpleData>
+		<SimpleData name="latitude">13.152672</SimpleData>
+		<SimpleData name="longitude">80.303787</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.303787,13.152672</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">154</SimpleData>
+		<SimpleData name="sl">154</SimpleData>
+		<SimpleData name="name_municipality">Manali</SimpleData>
+		<SimpleData name="details">Sendrambakkam Colony</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sendrambakkam</SimpleData>
+		<SimpleData name="latitude">13.186632</SimpleData>
+		<SimpleData name="longitude">80.234025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.234025,13.186632</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Thiruvottiyur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">155</SimpleData>
+		<SimpleData name="sl">155</SimpleData>
+		<SimpleData name="name_municipality">Manali</SimpleData>
+		<SimpleData name="details">Telugu Sendrambakkam Colony</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Sendrambakkam</SimpleData>
+		<SimpleData name="latitude">13.186632</SimpleData>
+		<SimpleData name="longitude">80.234025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.234025,13.186632</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Pallipet</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">156</SimpleData>
+		<SimpleData name="sl">156</SimpleData>
+		<SimpleData name="name_municipality">Pallipet</SimpleData>
+		<SimpleData name="details">Sanakuppam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Vengatarajakuppam</SimpleData>
+		<SimpleData name="latitude">13.313397</SimpleData>
+		<SimpleData name="longitude">79.395466</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.3954659999991,13.313397</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Pallipet</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">157</SimpleData>
+		<SimpleData name="sl">157</SimpleData>
+		<SimpleData name="name_municipality">Pallipet</SimpleData>
+		<SimpleData name="details">Sangeethakuppam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Vengatarajakuppam</SimpleData>
+		<SimpleData name="latitude">13.337009</SimpleData>
+		<SimpleData name="longitude">79.445073</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4450729999992,13.337009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Pallipet</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">158</SimpleData>
+		<SimpleData name="sl">158</SimpleData>
+		<SimpleData name="name_municipality">Pallipet</SimpleData>
+		<SimpleData name="details">Samanthavada</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Nedium</SimpleData>
+		<SimpleData name="latitude">13.337009</SimpleData>
+		<SimpleData name="longitude">79.445073</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4450729999992,13.337009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Pallipet</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">159</SimpleData>
+		<SimpleData name="sl">159</SimpleData>
+		<SimpleData name="name_municipality">Pallipet</SimpleData>
+		<SimpleData name="details">Nedium</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Nedium</SimpleData>
+		<SimpleData name="latitude">13.337009</SimpleData>
+		<SimpleData name="longitude">79.445073</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4450729999992,13.337009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">160</SimpleData>
+		<SimpleData name="sl">160</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Theerthakiriyampattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Theerthakiriyampattu</SimpleData>
+		<SimpleData name="latitude">13.147819</SimpleData>
+		<SimpleData name="longitude">80.230986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.230986,13.147819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">161</SimpleData>
+		<SimpleData name="sl">161</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Kadhirvedu collector colony</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Kathirvedu</SimpleData>
+		<SimpleData name="latitude">13.152116</SimpleData>
+		<SimpleData name="longitude">80.20006</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.20006,13.152116</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">162</SimpleData>
+		<SimpleData name="sl">162</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Mathur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Mathur</SimpleData>
+		<SimpleData name="latitude">13.166987</SimpleData>
+		<SimpleData name="longitude">80.24507</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.24507,13.166987</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">163</SimpleData>
+		<SimpleData name="sl">163</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Rettery</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Rettery</SimpleData>
+		<SimpleData name="latitude">13.130717</SimpleData>
+		<SimpleData name="longitude">80.213054</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2130539999999,13.130717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">164</SimpleData>
+		<SimpleData name="sl">164</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Palavoyal</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Palavoyal</SimpleData>
+		<SimpleData name="latitude">13.201837</SimpleData>
+		<SimpleData name="longitude">80.195876</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.195876,13.201837</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">165</SimpleData>
+		<SimpleData name="sl">165</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Athivakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Athivakkam</SimpleData>
+		<SimpleData name="latitude">13.196134</SimpleData>
+		<SimpleData name="longitude">80.202661</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.202661,13.196134</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">166</SimpleData>
+		<SimpleData name="sl">166</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Alinjivakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Alinjivakkam</SimpleData>
+		<SimpleData name="latitude">13.364235</SimpleData>
+		<SimpleData name="longitude">79.991455</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9914549999999,13.364235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">167</SimpleData>
+		<SimpleData name="sl">167</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Vadakarai</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vadakarai</SimpleData>
+		<SimpleData name="latitude">13.186319</SimpleData>
+		<SimpleData name="longitude">80.20006</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.20006,13.186319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">168</SimpleData>
+		<SimpleData name="sl">168</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Grandline</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Grandline</SimpleData>
+		<SimpleData name="latitude">13.185753</SimpleData>
+		<SimpleData name="longitude">80.202828</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.202828,13.185753</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">169</SimpleData>
+		<SimpleData name="sl">169</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Pulliline</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Pulliline</SimpleData>
+		<SimpleData name="latitude">13.193917</SimpleData>
+		<SimpleData name="longitude">80.193783</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.193783,13.193917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">170</SimpleData>
+		<SimpleData name="sl">170</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Thandalkalani</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Thandalkalani</SimpleData>
+		<SimpleData name="latitude">13.147819</SimpleData>
+		<SimpleData name="longitude">80.230986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.230986,13.147819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">171</SimpleData>
+		<SimpleData name="sl">171</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Vilangadupakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Vilangadupakkam</SimpleData>
+		<SimpleData name="latitude">13.191503</SimpleData>
+		<SimpleData name="longitude">80.223766</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.223766,13.191503</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">172</SimpleData>
+		<SimpleData name="sl">172</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Sirugavur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Sirugavur</SimpleData>
+		<SimpleData name="latitude">13.207024</SimpleData>
+		<SimpleData name="longitude">80.219583</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.219583,13.207024</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">173</SimpleData>
+		<SimpleData name="sl">173</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Vadaperumbakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vadaperumbakkam</SimpleData>
+		<SimpleData name="latitude">13.166191</SimpleData>
+		<SimpleData name="longitude">80.225289</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.225289,13.166191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">174</SimpleData>
+		<SimpleData name="sl">174</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Payasambakkam</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Payasambakkam</SimpleData>
+		<SimpleData name="latitude">13.179763</SimpleData>
+		<SimpleData name="longitude">80.218711</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.218711,13.179763</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Madhavaram</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">175</SimpleData>
+		<SimpleData name="sl">175</SimpleData>
+		<SimpleData name="name_municipality">Puzhal</SimpleData>
+		<SimpleData name="details">Puzhal</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="name_region">Puzhal</SimpleData>
+		<SimpleData name="latitude">13.119252</SimpleData>
+		<SimpleData name="longitude">80.243508</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.243508,13.119252</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">180</SimpleData>
+		<SimpleData name="sl">180</SimpleData>
+		<SimpleData name="name_municipality">Tirur</SimpleData>
+		<SimpleData name="details">Pakkam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Pakkam</SimpleData>
+		<SimpleData name="latitude">13.154936</SimpleData>
+		<SimpleData name="longitude">80.033232</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0332319999999,13.154936</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">181</SimpleData>
+		<SimpleData name="sl">181</SimpleData>
+		<SimpleData name="name_municipality">Tirur</SimpleData>
+		<SimpleData name="details">Nathamedu</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Nathamedu</SimpleData>
+		<SimpleData name="latitude">13.141334</SimpleData>
+		<SimpleData name="longitude">80.021869</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.021869,13.141334</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">182</SimpleData>
+		<SimpleData name="sl">182</SimpleData>
+		<SimpleData name="name_municipality">Tiruvallur</SimpleData>
+		<SimpleData name="details">Kakkalur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Kakkalur</SimpleData>
+		<SimpleData name="latitude">13.128294</SimpleData>
+		<SimpleData name="longitude">79.916472</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9164719999999,13.128294</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">183</SimpleData>
+		<SimpleData name="sl">183</SimpleData>
+		<SimpleData name="name_municipality">Tiruvallur</SimpleData>
+		<SimpleData name="details">Thandalam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thandalam</SimpleData>
+		<SimpleData name="latitude">13.146699</SimpleData>
+		<SimpleData name="longitude">79.950048</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9500479999999,13.146699</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">184</SimpleData>
+		<SimpleData name="sl">184</SimpleData>
+		<SimpleData name="name_municipality">Tiruvallur</SimpleData>
+		<SimpleData name="details">Amsa Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Amsa Nagar</SimpleData>
+		<SimpleData name="latitude">13.162337</SimpleData>
+		<SimpleData name="longitude">80.298606</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.298606,13.162337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">185</SimpleData>
+		<SimpleData name="sl">185</SimpleData>
+		<SimpleData name="name_municipality">Vengathur</SimpleData>
+		<SimpleData name="details">Pinjivakkam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Pinjivakkam</SimpleData>
+		<SimpleData name="latitude">13.067331</SimpleData>
+		<SimpleData name="longitude">79.868184</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8681839999998,13.067331</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">186</SimpleData>
+		<SimpleData name="sl">186</SimpleData>
+		<SimpleData name="name_municipality">Vengathur</SimpleData>
+		<SimpleData name="details">M.G.R.Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Vengathur</SimpleData>
+		<SimpleData name="latitude">13.035225</SimpleData>
+		<SimpleData name="longitude">80.19727</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.19727,13.035225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">187</SimpleData>
+		<SimpleData name="sl">187</SimpleData>
+		<SimpleData name="name_municipality">Vengathur</SimpleData>
+		<SimpleData name="details">Manavala Nagar</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Vengathur</SimpleData>
+		<SimpleData name="latitude">13.110991</SimpleData>
+		<SimpleData name="longitude">79.910874</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9108739999999,13.110991</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">188</SimpleData>
+		<SimpleData name="sl">188</SimpleData>
+		<SimpleData name="name_municipality">Vengathur</SimpleData>
+		<SimpleData name="details">Vengathur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Vengathur</SimpleData>
+		<SimpleData name="latitude">13.096868</SimpleData>
+		<SimpleData name="longitude">79.913673</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9136729999999,13.096868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruttani</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">189</SimpleData>
+		<SimpleData name="sl">189</SimpleData>
+		<SimpleData name="name_municipality">Tiruvalangadu</SimpleData>
+		<SimpleData name="details">Jageermangalam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Jageermangalam</SimpleData>
+		<SimpleData name="latitude">13.094911</SimpleData>
+		<SimpleData name="longitude">79.915291</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9152909999998,13.094911</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uthukkottai</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">190</SimpleData>
+		<SimpleData name="sl">190</SimpleData>
+		<SimpleData name="name_municipality">Kannigaipair</SimpleData>
+		<SimpleData name="details">Thirukandalam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Thirukandalam</SimpleData>
+		<SimpleData name="latitude">13.333945</SimpleData>
+		<SimpleData name="longitude">79.892681</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8926809999999,13.333945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">191</SimpleData>
+		<SimpleData name="sl">191</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Royala Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ramapuram</SimpleData>
+		<SimpleData name="latitude">13.029793</SimpleData>
+		<SimpleData name="longitude">80.185414</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.185414,13.029793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">192</SimpleData>
+		<SimpleData name="sl">192</SimpleData>
+		<SimpleData name="name_municipality">Greater Chennai Corporation,                  Zone - XI</SimpleData>
+		<SimpleData name="details">Valasaravakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Valasaravakkam</SimpleData>
+		<SimpleData name="latitude">13.053298</SimpleData>
+		<SimpleData name="longitude">80.176238</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.176238,13.053298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">193</SimpleData>
+		<SimpleData name="sl">193</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Kanniyamma Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vanagaram</SimpleData>
+		<SimpleData name="latitude">13.055883</SimpleData>
+		<SimpleData name="longitude">80.160302</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.160302,13.055883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">194</SimpleData>
+		<SimpleData name="sl">194</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Vanagaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Vanagaram</SimpleData>
+		<SimpleData name="latitude">13.054483</SimpleData>
+		<SimpleData name="longitude">80.161195</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1611949999999,13.054483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">195</SimpleData>
+		<SimpleData name="sl">195</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Ayanambakkam</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Ayanambakkam</SimpleData>
+		<SimpleData name="latitude">13.072578</SimpleData>
+		<SimpleData name="longitude">80.147859</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1478589999999,13.072578</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">196</SimpleData>
+		<SimpleData name="sl">196</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Koladi</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Koladi</SimpleData>
+		<SimpleData name="latitude">13.083922</SimpleData>
+		<SimpleData name="longitude">80.130297</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1302969999999,13.083922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">197</SimpleData>
+		<SimpleData name="sl">197</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Krishna Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Maduravoyal</SimpleData>
+		<SimpleData name="latitude">13.050877</SimpleData>
+		<SimpleData name="longitude">80.169022</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1690219999999,13.050877</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">198</SimpleData>
+		<SimpleData name="sl">198</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Astalakshmi Nagar</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Maduravoyal</SimpleData>
+		<SimpleData name="latitude">13.04818</SimpleData>
+		<SimpleData name="longitude">80.169993</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1699929999999,13.04818</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">199</SimpleData>
+		<SimpleData name="sl">199</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Maduravoyal</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Maduravoyal</SimpleData>
+		<SimpleData name="latitude">13.061238</SimpleData>
+		<SimpleData name="longitude">80.163899</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.163899,13.061238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Maduravoyal</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">200</SimpleData>
+		<SimpleData name="sl">200</SimpleData>
+		<SimpleData name="name_municipality">Maduravoyal</SimpleData>
+		<SimpleData name="details">Noombal</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="name_region">Noombal</SimpleData>
+		<SimpleData name="latitude">13.052815</SimpleData>
+		<SimpleData name="longitude">80.13588</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.13588,13.052815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">176</SimpleData>
+		<SimpleData name="sl">176</SimpleData>
+		<SimpleData name="name_municipality">Kadambattur</SimpleData>
+		<SimpleData name="details">Satharai</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Satharai</SimpleData>
+		<SimpleData name="latitude">13.101945</SimpleData>
+		<SimpleData name="longitude">79.861883</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8618829999999,13.101945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">177</SimpleData>
+		<SimpleData name="sl">177</SimpleData>
+		<SimpleData name="name_municipality">Pandur</SimpleData>
+		<SimpleData name="details">Gandhi Gramam</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Ramanchery</SimpleData>
+		<SimpleData name="latitude">12.993746</SimpleData>
+		<SimpleData name="longitude">80.262826</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.262826,12.993746</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">178</SimpleData>
+		<SimpleData name="sl">178</SimpleData>
+		<SimpleData name="name_municipality">Pandur</SimpleData>
+		<SimpleData name="details">Ellappanaidu Kandigai</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Ramanchery</SimpleData>
+		<SimpleData name="latitude">13.199906</SimpleData>
+		<SimpleData name="longitude">79.797329</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.7973289999998,13.199906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tiruvallur</name>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_tiruvallur_flood_hotspots_2015_withlabel">
+		<SimpleData name="id">179</SimpleData>
+		<SimpleData name="sl">179</SimpleData>
+		<SimpleData name="name_municipality">Pandur</SimpleData>
+		<SimpleData name="details">Narayanapuram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="name_region">Pattaraiperumbudhur</SimpleData>
+		<SimpleData name="latitude">13.165523</SimpleData>
+		<SimpleData name="longitude">79.810708</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8107079999998,13.165523</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

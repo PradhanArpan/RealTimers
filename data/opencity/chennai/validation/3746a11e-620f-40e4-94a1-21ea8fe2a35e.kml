@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015" id="chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="sl_no_" type="int"></SimpleField>
+	<SimpleField name="taluka" type="string"></SimpleField>
+	<SimpleField name="vulnerability" type="string"></SimpleField>
+	<SimpleField name="details" type="string"></SimpleField>
+	<SimpleField name="inundation" type="string"></SimpleField>
+	<SimpleField name="source" type="string"></SimpleField>
+	<SimpleField name="longitude" type="float"></SimpleField>
+	<SimpleField name="latitude" type="float"></SimpleField>
+	<SimpleField name="name_region" type="string"></SimpleField>
+	<SimpleField name="escape_route" type="string"></SimpleField>
+	<SimpleField name="distance" type="float"></SimpleField>
+</Schema>
+<Folder><name>chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="sl_no_">1</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Lakshmi nagar</SimpleData>
+		<SimpleData name="inundation">2 to 3 Feet 7 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.142761</SimpleData>
+		<SimpleData name="latitude">12.913943</SimpleData>
+		<SimpleData name="name_region">Christ King Matric hss</SimpleData>
+		<SimpleData name="escape_route">Old GST Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.142761,12.913943</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="sl_no_">2</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Roja Thottam</SimpleData>
+		<SimpleData name="inundation">Below 2Feet 3 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.106193</SimpleData>
+		<SimpleData name="latitude">12.910851</SimpleData>
+		<SimpleData name="name_region">Santhosh vidyalaya</SimpleData>
+		<SimpleData name="escape_route">Old GST road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1061929999999,12.910851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="sl_no_">3</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Gandhi road</SimpleData>
+		<SimpleData name="inundation">2 to 3 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.112878</SimpleData>
+		<SimpleData name="latitude">12.929082</SimpleData>
+		<SimpleData name="name_region">Sevasadan school</SimpleData>
+		<SimpleData name="escape_route">Gandhi road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1128779999999,12.929082</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="sl_no_">4</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">G.S.T. road</SimpleData>
+		<SimpleData name="inundation">Below 2Feet 3 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.120352</SimpleData>
+		<SimpleData name="latitude">12.93256</SimpleData>
+		<SimpleData name="name_region">Valluvar Gurukulam</SimpleData>
+		<SimpleData name="escape_route">GST Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1203519999999,12.9325599999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="sl_no_">5</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Selaiyur</SimpleData>
+		<SimpleData name="inundation">2 to 3 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.132088</SimpleData>
+		<SimpleData name="latitude">12.920737</SimpleData>
+		<SimpleData name="name_region">Madras Christian College</SimpleData>
+		<SimpleData name="escape_route">Velachery Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1320879999999,12.920737</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">6</SimpleData>
+		<SimpleData name="sl_no_">6</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Selaiyur</SimpleData>
+		<SimpleData name="inundation">Below 2Feet 3 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.139706</SimpleData>
+		<SimpleData name="latitude">12.915355</SimpleData>
+		<SimpleData name="name_region">Madras Christian College</SimpleData>
+		<SimpleData name="escape_route">Velachery road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.139706,12.915355</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">7</SimpleData>
+		<SimpleData name="sl_no_">7</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Perungalathur</SimpleData>
+		<SimpleData name="inundation">5 Feet 6 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.089119</SimpleData>
+		<SimpleData name="latitude">12.919419</SimpleData>
+		<SimpleData name="name_region">Govt.Hr.Sec. school</SimpleData>
+		<SimpleData name="escape_route">G.S.T. road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.089119,12.919419</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">8</SimpleData>
+		<SimpleData name="sl_no_">8</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Peerkankaranai</SimpleData>
+		<SimpleData name="inundation">5 Feet 6 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.104685</SimpleData>
+		<SimpleData name="latitude">12.903926</SimpleData>
+		<SimpleData name="name_region">Kalaimagal kalai salai school</SimpleData>
+		<SimpleData name="escape_route">G.S.T. road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.104685,12.903926</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">9</SimpleData>
+		<SimpleData name="sl_no_">9</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Perungalathur</SimpleData>
+		<SimpleData name="inundation">4 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.10211</SimpleData>
+		<SimpleData name="latitude">12.909785</SimpleData>
+		<SimpleData name="name_region">Alpha Mat school</SimpleData>
+		<SimpleData name="escape_route">G.S.T. road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1021099999999,12.909785</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">10</SimpleData>
+		<SimpleData name="sl_no_">10</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Mudichur</SimpleData>
+		<SimpleData name="inundation">5 Feet days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.086153</SimpleData>
+		<SimpleData name="latitude">12.920519</SimpleData>
+		<SimpleData name="name_region">Govt. middle school</SimpleData>
+		<SimpleData name="escape_route">Mudichur road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0861529999999,12.920519</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">11</SimpleData>
+		<SimpleData name="sl_no_">11</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Mudichur</SimpleData>
+		<SimpleData name="inundation">4 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.067643</SimpleData>
+		<SimpleData name="latitude">12.906338</SimpleData>
+		<SimpleData name="name_region">S.Badalchand Sugankavur school</SimpleData>
+		<SimpleData name="escape_route">Mudichur road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0676429999999,12.9063379999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">12</SimpleData>
+		<SimpleData name="sl_no_">12</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Mudichur</SimpleData>
+		<SimpleData name="inundation">1 Feet 2 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.070426</SimpleData>
+		<SimpleData name="latitude">12.903978</SimpleData>
+		<SimpleData name="name_region">S.Badalchand Sugankavur school</SimpleData>
+		<SimpleData name="escape_route">Mudichur road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.070426,12.903978</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">13</SimpleData>
+		<SimpleData name="sl_no_">13</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Chitlapakkam</SimpleData>
+		<SimpleData name="inundation">4 Feet / 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.132122</SimpleData>
+		<SimpleData name="latitude">12.930125</SimpleData>
+		<SimpleData name="name_region">St.Thomas Mount Panchayat Union School</SimpleData>
+		<SimpleData name="escape_route">Chitlapakkam Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.132122,12.930125</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">14</SimpleData>
+		<SimpleData name="sl_no_">14</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Chitlapakkam</SimpleData>
+		<SimpleData name="inundation">2 Feet / 3 days</SimpleData>
+		<SimpleData name="source">Rainfall</SimpleData>
+		<SimpleData name="longitude">80.138767</SimpleData>
+		<SimpleData name="latitude">12.936481</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Chitlapakkam Main road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1387669999999,12.936481</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">15</SimpleData>
+		<SimpleData name="sl_no_">15</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Chitlapakkam</SimpleData>
+		<SimpleData name="inundation">1 Feet / 2 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.129524</SimpleData>
+		<SimpleData name="latitude">12.933368</SimpleData>
+		<SimpleData name="name_region">St.Thomas Mount Panchayat Union School</SimpleData>
+		<SimpleData name="escape_route">Chitlapakkam Main road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.129524,12.933368</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">16</SimpleData>
+		<SimpleData name="sl_no_">16</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Thiruvanchery</SimpleData>
+		<SimpleData name="inundation">4 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.137652</SimpleData>
+		<SimpleData name="latitude">12.897018</SimpleData>
+		<SimpleData name="name_region">Panchayat Union school</SimpleData>
+		<SimpleData name="escape_route">Thiruvancheri road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.137652,12.897018</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">17</SimpleData>
+		<SimpleData name="sl_no_">17</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Sembakkam</SimpleData>
+		<SimpleData name="inundation">1 Feet 2 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.161352</SimpleData>
+		<SimpleData name="latitude">12.928179</SimpleData>
+		<SimpleData name="name_region">Prince college</SimpleData>
+		<SimpleData name="escape_route">Madambakkam road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.161352,12.928179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">18</SimpleData>
+		<SimpleData name="sl_no_">18</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Agaramthen</SimpleData>
+		<SimpleData name="inundation">2 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.138872</SimpleData>
+		<SimpleData name="latitude">12.861558</SimpleData>
+		<SimpleData name="name_region">Panchayat Union school</SimpleData>
+		<SimpleData name="escape_route">Agaramthen road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.138872,12.861558</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">19</SimpleData>
+		<SimpleData name="sl_no_">19</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Madhurampakkam</SimpleData>
+		<SimpleData name="inundation">2 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.170459</SimpleData>
+		<SimpleData name="latitude">12.881442</SimpleData>
+		<SimpleData name="name_region">St.Thomas mount PUPS School</SimpleData>
+		<SimpleData name="escape_route">Agaramthen road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1704589999999,12.881442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">20</SimpleData>
+		<SimpleData name="sl_no_">20</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Agaramthen</SimpleData>
+		<SimpleData name="inundation">2 to 3 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.154539</SimpleData>
+		<SimpleData name="latitude">12.883153</SimpleData>
+		<SimpleData name="name_region">Govt. Adw Middle School</SimpleData>
+		<SimpleData name="escape_route">Agarmithen Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1545389999999,12.883153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">21</SimpleData>
+		<SimpleData name="sl_no_">21</SimpleData>
+		<SimpleData name="taluka">Tambaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Madambakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 Feet 5 days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.159386</SimpleData>
+		<SimpleData name="latitude">12.904538</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Agarmithen Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.159386,12.904538</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">22</SimpleData>
+		<SimpleData name="sl_no_">22</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Pozhichalur TTK Nagar</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.147385</SimpleData>
+		<SimpleData name="latitude">12.993098</SimpleData>
+		<SimpleData name="name_region">Govt. School Pozhichalur</SimpleData>
+		<SimpleData name="escape_route">Pozhichalur To Pammal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.147385,12.993098</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">23</SimpleData>
+		<SimpleData name="sl_no_">23</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Venkateshwara Nagar Anakaputhur</SimpleData>
+		<SimpleData name="inundation">3 to 5 Ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy rain &amp; overflow</SimpleData>
+		<SimpleData name="longitude">80.133356</SimpleData>
+		<SimpleData name="latitude">12.986015</SimpleData>
+		<SimpleData name="name_region">Raja Rajeswari Kalyana Mandapam</SimpleData>
+		<SimpleData name="escape_route">Anakaputhur To Pammal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.133356,12.986015</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">24</SimpleData>
+		<SimpleData name="sl_no_">24</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Sanjay Gandhi Nagar Anakaputhur</SimpleData>
+		<SimpleData name="inundation">2 to 3 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Overflow</SimpleData>
+		<SimpleData name="longitude">80.127174</SimpleData>
+		<SimpleData name="latitude">12.987279</SimpleData>
+		<SimpleData name="name_region">Govt. School Pozhichalur</SimpleData>
+		<SimpleData name="escape_route">Anakaputhur To Pammal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.127174,12.987279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">25</SimpleData>
+		<SimpleData name="sl_no_">25</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Gurusamy Nagar Anakaputhur</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.126609</SimpleData>
+		<SimpleData name="latitude">12.982472</SimpleData>
+		<SimpleData name="name_region">Govt. School Pozhichalur</SimpleData>
+		<SimpleData name="escape_route">Anakaputhur To Pammal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.126609,12.982472</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">26</SimpleData>
+		<SimpleData name="sl_no_">26</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Saraswathipuram Thiruneermalai</SimpleData>
+		<SimpleData name="inundation">3 to 5 Ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Overflow</SimpleData>
+		<SimpleData name="longitude">80.130759</SimpleData>
+		<SimpleData name="latitude">12.959517</SimpleData>
+		<SimpleData name="name_region">Raja Rajeswari Kalyana Mandapam</SimpleData>
+		<SimpleData name="escape_route">Ponmanam Kalyana Mandapam</SimpleData>
+		<SimpleData name="distance">0</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.130759,12.959517</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">27</SimpleData>
+		<SimpleData name="sl_no_">27</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Thiruneermalai</SimpleData>
+		<SimpleData name="inundation">2 to 3 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Overflow</SimpleData>
+		<SimpleData name="longitude">80.125497</SimpleData>
+		<SimpleData name="latitude">12.959298</SimpleData>
+		<SimpleData name="name_region">Govt. School Pozhichalur</SimpleData>
+		<SimpleData name="escape_route">Ranganathasamy Thirukoil</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1254969999999,12.959298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">28</SimpleData>
+		<SimpleData name="sl_no_">28</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Durga Nagar Thiruneermalai</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.12611</SimpleData>
+		<SimpleData name="latitude">12.94945</SimpleData>
+		<SimpleData name="name_region">Govt. School Pozhichalur</SimpleData>
+		<SimpleData name="escape_route">Sesathri School</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.12611,12.94945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">29</SimpleData>
+		<SimpleData name="sl_no_">29</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Fathima Nagar Pammal</SimpleData>
+		<SimpleData name="inundation">2 to 3 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Overflow</SimpleData>
+		<SimpleData name="longitude">80.119604</SimpleData>
+		<SimpleData name="latitude">12.969797</SimpleData>
+		<SimpleData name="name_region">R.C.C.
+Christian School Kamarajapuram</SimpleData>
+		<SimpleData name="escape_route">Kamarajapuram To
+Pallavaram Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.119604,12.969797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">30</SimpleData>
+		<SimpleData name="sl_no_">30</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Moongileri Pammal</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.140007</SimpleData>
+		<SimpleData name="latitude">12.969787</SimpleData>
+		<SimpleData name="name_region">Ganesh Mahal Pammal</SimpleData>
+		<SimpleData name="escape_route">Pammal To Pallavaram Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.140007,12.969787</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">31</SimpleData>
+		<SimpleData name="sl_no_">31</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Thandalam Village</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.119114</SimpleData>
+		<SimpleData name="latitude">13.000902</SimpleData>
+		<SimpleData name="name_region">Madha 
+Medical College</SimpleData>
+		<SimpleData name="escape_route">Thandalam Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.119114,13.000902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">32</SimpleData>
+		<SimpleData name="sl_no_">32</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Irandamkattalai Village</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.116884</SimpleData>
+		<SimpleData name="latitude">12.995505</SimpleData>
+		<SimpleData name="name_region">Madha 
+Medical College</SimpleData>
+		<SimpleData name="escape_route">Thandalam Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1168839999999,12.995505</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">33</SimpleData>
+		<SimpleData name="sl_no_">33</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Tharapakkam Village</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank overflow</SimpleData>
+		<SimpleData name="longitude">80.135517</SimpleData>
+		<SimpleData name="latitude">13.001906</SimpleData>
+		<SimpleData name="name_region">Govt Hr Sec School, Kovur</SimpleData>
+		<SimpleData name="escape_route">Tharapakkam to Kovur Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1355169999999,13.001906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">34</SimpleData>
+		<SimpleData name="sl_no_">34</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Ambal Nagar,Kumaran Colony, Selvaganapathy street</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.118039</SimpleData>
+		<SimpleData name="latitude">13.029135</SimpleData>
+		<SimpleData name="name_region">Govt high school</SimpleData>
+		<SimpleData name="escape_route">Ambal Nagar School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.118039,13.029135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">35</SimpleData>
+		<SimpleData name="sl_no_">35</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Ambal Nagar, Kamatchi Nagar</SimpleData>
+		<SimpleData name="inundation">3 to 5 Ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.114974</SimpleData>
+		<SimpleData name="latitude">13.035111</SimpleData>
+		<SimpleData name="name_region">Navabharati School</SimpleData>
+		<SimpleData name="escape_route">Gangai Amman Koil Street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.114974,13.035111</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">36</SimpleData>
+		<SimpleData name="sl_no_">36</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Kamatchi Nagar Extension,
+Selva Ganapathy Nagar</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.113373</SimpleData>
+		<SimpleData name="latitude">13.0189</SimpleData>
+		<SimpleData name="name_region">Navabharati School</SimpleData>
+		<SimpleData name="escape_route">Gangai Amman Koil Street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.113373,13.0189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">37</SimpleData>
+		<SimpleData name="sl_no_">37</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Manikandan Nagar, Metro Star City</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.111028</SimpleData>
+		<SimpleData name="latitude">12.989945</SimpleData>
+		<SimpleData name="name_region">PR Sai Mahal</SimpleData>
+		<SimpleData name="escape_route">Karima nagar Main road- Kunnathur road</SimpleData>
+		<SimpleData name="distance">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.111028,12.989945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">38</SimpleData>
+		<SimpleData name="sl_no_">38</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Thiruvalluvar Nagar</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.095587</SimpleData>
+		<SimpleData name="latitude">12.996679</SimpleData>
+		<SimpleData name="name_region">Sengunthur Kalyana Mandapam &amp; Govt.School</SimpleData>
+		<SimpleData name="escape_route">Chinna Street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.095587,12.996679</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">39</SimpleData>
+		<SimpleData name="sl_no_">39</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Sekizhar Nagar</SimpleData>
+		<SimpleData name="inundation">3 to 5 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.096212</SimpleData>
+		<SimpleData name="latitude">13.001661</SimpleData>
+		<SimpleData name="name_region">Sekizhar Hr.Sec School</SimpleData>
+		<SimpleData name="escape_route">Chinna Street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0962119999999,13.001661</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">40</SimpleData>
+		<SimpleData name="sl_no_">40</SimpleData>
+		<SimpleData name="taluka">Pallavaram</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">GST Road (Govt.
+Hospital)</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Chitlapakkam canal</SimpleData>
+		<SimpleData name="longitude">80.134699</SimpleData>
+		<SimpleData name="latitude">12.944886</SimpleData>
+		<SimpleData name="name_region">Ananda Marriage Hall/ Municipality</SimpleData>
+		<SimpleData name="escape_route">Govt.Hospital Gate (North)</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.134699,12.944886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">41</SimpleData>
+		<SimpleData name="sl_no_">41</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Tirusulam</SimpleData>
+		<SimpleData name="inundation">3 to 5 Ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Over Flow</SimpleData>
+		<SimpleData name="longitude">80.165512</SimpleData>
+		<SimpleData name="latitude">12.97145</SimpleData>
+		<SimpleData name="name_region">Govt.High
+School, Tirusulam</SimpleData>
+		<SimpleData name="escape_route">Tirusulam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.165512,12.97145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">42</SimpleData>
+		<SimpleData name="sl_no_">42</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Moovarasampattu</SimpleData>
+		<SimpleData name="inundation">2 to 3Ft / 3 Days</SimpleData>
+		<SimpleData name="source">Heavy Rain &amp; Over Flow</SimpleData>
+		<SimpleData name="longitude">80.184021</SimpleData>
+		<SimpleData name="latitude">12.964277</SimpleData>
+		<SimpleData name="name_region">Govt. School
+Moovarasam
+-pattu</SimpleData>
+		<SimpleData name="escape_route">Moovarasam
+-pattu Main Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.184021,12.964277</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">43</SimpleData>
+		<SimpleData name="sl_no_">43</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Cowl Bazaar</SimpleData>
+		<SimpleData name="inundation">below 2' /
+3 Days</SimpleData>
+		<SimpleData name="source">Tank Over Flow</SimpleData>
+		<SimpleData name="longitude">80.149827</SimpleData>
+		<SimpleData name="latitude">12.990421</SimpleData>
+		<SimpleData name="name_region">Govt. School
+Cowl Bazaar</SimpleData>
+		<SimpleData name="escape_route">Cowl Bazaar To Kolapakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.149827,12.990421</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">44</SimpleData>
+		<SimpleData name="sl_no_">44</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Abraham Street Alandur</SimpleData>
+		<SimpleData name="inundation">above 5 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.203261</SimpleData>
+		<SimpleData name="latitude">12.996218</SimpleData>
+		<SimpleData name="name_region">Kalaimagal Middle School</SimpleData>
+		<SimpleData name="escape_route">Alandur To Medavakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.203261,12.996218</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">45</SimpleData>
+		<SimpleData name="sl_no_">45</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Padmini Gardens</SimpleData>
+		<SimpleData name="inundation">3 to 5Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.188342</SimpleData>
+		<SimpleData name="latitude">13.018699</SimpleData>
+		<SimpleData name="name_region">St.Dominic School
+RCM High School</SimpleData>
+		<SimpleData name="escape_route">Guindy To Mount Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.188342,13.018699</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">46</SimpleData>
+		<SimpleData name="sl_no_">46</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Ambedkar Nagar</SimpleData>
+		<SimpleData name="inundation">2 to 3Ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Over Flow</SimpleData>
+		<SimpleData name="longitude">80.178991</SimpleData>
+		<SimpleData name="latitude">13.011526</SimpleData>
+		<SimpleData name="name_region">Civil Aviation Middle School</SimpleData>
+		<SimpleData name="escape_route">Mount Poonamallee Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.178991,13.011526</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">47</SimpleData>
+		<SimpleData name="sl_no_">47</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Koluthuvanjeri Colony</SimpleData>
+		<SimpleData name="inundation">above 5 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.138284</SimpleData>
+		<SimpleData name="latitude">13.032243</SimpleData>
+		<SimpleData name="name_region">Govt.Hr.Sec School</SimpleData>
+		<SimpleData name="escape_route">Poonamallee To
+Mount Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.138284,13.032243</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">48</SimpleData>
+		<SimpleData name="sl_no_">48</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Srinivasapuram Colony</SimpleData>
+		<SimpleData name="inundation">3 to 5Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.132395</SimpleData>
+		<SimpleData name="latitude">13.030434</SimpleData>
+		<SimpleData name="name_region">Govt.Hr.Sec School</SimpleData>
+		<SimpleData name="escape_route">Poonamallee To
+Mount Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.132395,13.030434</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">49</SimpleData>
+		<SimpleData name="sl_no_">49</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Chinnapanicheri Colony</SimpleData>
+		<SimpleData name="inundation">2 to 3Ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Over Flow</SimpleData>
+		<SimpleData name="longitude">80.119788</SimpleData>
+		<SimpleData name="latitude">13.015347</SimpleData>
+		<SimpleData name="name_region">Govt. High.Sec School</SimpleData>
+		<SimpleData name="escape_route">Chinnapanicheri Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.119788,13.015347</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">50</SimpleData>
+		<SimpleData name="sl_no_">50</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Ayyappanthangal Mettu Colony</SimpleData>
+		<SimpleData name="inundation">above 5 Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.130643</SimpleData>
+		<SimpleData name="latitude">13.038726</SimpleData>
+		<SimpleData name="name_region">Govt.Hr.Sec School</SimpleData>
+		<SimpleData name="escape_route">Poonamallee To
+Mount Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.130643,13.0387259999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">51</SimpleData>
+		<SimpleData name="sl_no_">51</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Mowlivakkam Pattu Mangadu Road</SimpleData>
+		<SimpleData name="inundation">3 to 5Ft / 5 Days</SimpleData>
+		<SimpleData name="source">Sembarambakkam River</SimpleData>
+		<SimpleData name="longitude">80.138003</SimpleData>
+		<SimpleData name="latitude">13.020442</SimpleData>
+		<SimpleData name="name_region">Govt.Hr.Sec School</SimpleData>
+		<SimpleData name="escape_route">Poonamallee To
+Mount Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.138003,13.020442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">52</SimpleData>
+		<SimpleData name="sl_no_">52</SimpleData>
+		<SimpleData name="taluka">Alandur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Paraniputhur Colony</SimpleData>
+		<SimpleData name="inundation">2 to 3Ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Over Flow</SimpleData>
+		<SimpleData name="longitude">80.126607</SimpleData>
+		<SimpleData name="latitude">13.020212</SimpleData>
+		<SimpleData name="name_region">Govt. High.Sec School</SimpleData>
+		<SimpleData name="escape_route">Chinnapanicheri Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.126607,13.020212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">53</SimpleData>
+		<SimpleData name="sl_no_">53</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Perumbakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.200324</SimpleData>
+		<SimpleData name="latitude">12.893877</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Perumbakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2003239999999,12.893877</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">54</SimpleData>
+		<SimpleData name="sl_no_">54</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Medavakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy rainfall</SimpleData>
+		<SimpleData name="longitude">80.187744</SimpleData>
+		<SimpleData name="latitude">12.924844</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Medavakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.187744,12.924844</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">55</SimpleData>
+		<SimpleData name="sl_no_">55</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Vengaivasal</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.176453</SimpleData>
+		<SimpleData name="latitude">12.91477</SimpleData>
+		<SimpleData name="name_region">Govt.Middle School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Vengaivasal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.176453,12.91477</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">56</SimpleData>
+		<SimpleData name="sl_no_">56</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Perumbakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.205969</SimpleData>
+		<SimpleData name="latitude">12.897369</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Perumbakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.205969,12.897369</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">57</SimpleData>
+		<SimpleData name="sl_no_">57</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Sithlapakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.190797</SimpleData>
+		<SimpleData name="latitude">12.879906</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Sithlapakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.190797,12.879906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">58</SimpleData>
+		<SimpleData name="sl_no_">58</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Arasankalani</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.194925</SimpleData>
+		<SimpleData name="latitude">12.880391</SimpleData>
+		<SimpleData name="name_region">Govt.Middle School Community Hall</SimpleData>
+		<SimpleData name="escape_route">Sithlapakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.194925,12.880391</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">59</SimpleData>
+		<SimpleData name="sl_no_">59</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Ottiyambakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.191313</SimpleData>
+		<SimpleData name="latitude">12.860802</SimpleData>
+		<SimpleData name="name_region">Govt.High School
+Community hall</SimpleData>
+		<SimpleData name="escape_route">Ottiyambakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.191313,12.860802</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">60</SimpleData>
+		<SimpleData name="sl_no_">60</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Vengaivasal</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.181667</SimpleData>
+		<SimpleData name="latitude">12.90119</SimpleData>
+		<SimpleData name="name_region">Govt.Middle School Community hall</SimpleData>
+		<SimpleData name="escape_route">Vengaivasal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.181667,12.90119</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">61</SimpleData>
+		<SimpleData name="sl_no_">61</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Kovilambakkam</SimpleData>
+		<SimpleData name="inundation">3 to 5 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.189632</SimpleData>
+		<SimpleData name="latitude">12.950178</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community hall</SimpleData>
+		<SimpleData name="escape_route">Kovilambakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1896319999999,12.950178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">62</SimpleData>
+		<SimpleData name="sl_no_">62</SimpleData>
+		<SimpleData name="taluka">Sholinghanallur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Nanmangalam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.176598</SimpleData>
+		<SimpleData name="latitude">12.937659</SimpleData>
+		<SimpleData name="name_region">Govt.High School Community hall</SimpleData>
+		<SimpleData name="escape_route">Nanmangalam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1765979999999,12.937659</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">63</SimpleData>
+		<SimpleData name="sl_no_">63</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Varaprasath Rao Nagar Nedugundram</SimpleData>
+		<SimpleData name="inundation">9ft 6 days</SimpleData>
+		<SimpleData name="source">Nedugundram lake over flow</SimpleData>
+		<SimpleData name="longitude">80.105235</SimpleData>
+		<SimpleData name="latitude">12.878398</SimpleData>
+		<SimpleData name="name_region">CSC School</SimpleData>
+		<SimpleData name="escape_route">Nedugundram road</SimpleData>
+		<SimpleData name="distance">0.75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1052349999999,12.878398</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">64</SimpleData>
+		<SimpleData name="sl_no_">64</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Subashchandra bose nagar</SimpleData>
+		<SimpleData name="inundation">4 ft / 2 days</SimpleData>
+		<SimpleData name="source">Vengadamangalam lake overflow</SimpleData>
+		<SimpleData name="longitude">80.159288</SimpleData>
+		<SimpleData name="latitude">12.86466</SimpleData>
+		<SimpleData name="name_region">Govt school</SimpleData>
+		<SimpleData name="escape_route">School road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.159288,12.86466</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">65</SimpleData>
+		<SimpleData name="sl_no_">65</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Kayarambedu</SimpleData>
+		<SimpleData name="inundation">10days</SimpleData>
+		<SimpleData name="source">Lake over flow</SimpleData>
+		<SimpleData name="longitude">80.069029</SimpleData>
+		<SimpleData name="latitude">12.804077</SimpleData>
+		<SimpleData name="name_region">Community hall 
+Govt school</SimpleData>
+		<SimpleData name="escape_route">Kayarambedu road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.069029,12.804077</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">66</SimpleData>
+		<SimpleData name="sl_no_">66</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Gudalur</SimpleData>
+		<SimpleData name="inundation">5 days</SimpleData>
+		<SimpleData name="source">Lake over flow</SimpleData>
+		<SimpleData name="longitude">80.041965</SimpleData>
+		<SimpleData name="latitude">12.779489</SimpleData>
+		<SimpleData name="name_region">Govt School</SimpleData>
+		<SimpleData name="escape_route">Gudalur Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0419649999999,12.779489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">67</SimpleData>
+		<SimpleData name="sl_no_">67</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Samundees wari nagar potheri</SimpleData>
+		<SimpleData name="inundation">7days</SimpleData>
+		<SimpleData name="source">Potheri lake over flow</SimpleData>
+		<SimpleData name="longitude">80.044754</SimpleData>
+		<SimpleData name="latitude">12.827921</SimpleData>
+		<SimpleData name="name_region">West potheri Govt school</SimpleData>
+		<SimpleData name="escape_route">Potheri road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0447539999999,12.827921</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">68</SimpleData>
+		<SimpleData name="sl_no_">68</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Vallancheri</SimpleData>
+		<SimpleData name="inundation">3 days</SimpleData>
+		<SimpleData name="source">Potheri lake over flow</SimpleData>
+		<SimpleData name="longitude">80.049154</SimpleData>
+		<SimpleData name="latitude">12.833912</SimpleData>
+		<SimpleData name="name_region">East Potheri Govt school</SimpleData>
+		<SimpleData name="escape_route">Vallancheri Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0491539999999,12.833912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">69</SimpleData>
+		<SimpleData name="sl_no_">69</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Thailavaram</SimpleData>
+		<SimpleData name="inundation">4 days</SimpleData>
+		<SimpleData name="source">Lake over flow</SimpleData>
+		<SimpleData name="longitude">80.041973</SimpleData>
+		<SimpleData name="latitude">12.832779</SimpleData>
+		<SimpleData name="name_region">Govt school</SimpleData>
+		<SimpleData name="escape_route">Thailavaram road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.041973,12.832779</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">70</SimpleData>
+		<SimpleData name="sl_no_">70</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Kattankolathur</SimpleData>
+		<SimpleData name="inundation">3 days</SimpleData>
+		<SimpleData name="source">Potheri lake over flow</SimpleData>
+		<SimpleData name="longitude">80.031774</SimpleData>
+		<SimpleData name="latitude">12.803539</SimpleData>
+		<SimpleData name="name_region">Kattankolathur Govt high school</SimpleData>
+		<SimpleData name="escape_route">Kattankolathur road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0317739999999,12.803539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">71</SimpleData>
+		<SimpleData name="sl_no_">71</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Ninnakarai NH 2</SimpleData>
+		<SimpleData name="inundation">5ft / 4 days</SimpleData>
+		<SimpleData name="source">Ninnakarai lake over flow</SimpleData>
+		<SimpleData name="longitude">80.026018</SimpleData>
+		<SimpleData name="latitude">12.794896</SimpleData>
+		<SimpleData name="name_region">Ninnakarai Govt girls School</SimpleData>
+		<SimpleData name="escape_route">Ninnakarai Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.026018,12.794896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">72</SimpleData>
+		<SimpleData name="sl_no_">72</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Kattur  Radhai, Krishna Nagar</SimpleData>
+		<SimpleData name="inundation">4ft 3 days</SimpleData>
+		<SimpleData name="source">Kattur lake over flow</SimpleData>
+		<SimpleData name="longitude">80.028283</SimpleData>
+		<SimpleData name="latitude">12.80295</SimpleData>
+		<SimpleData name="name_region">Kattur Govt school</SimpleData>
+		<SimpleData name="escape_route">Krishna nagar street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.028283,12.80295</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">73</SimpleData>
+		<SimpleData name="sl_no_">73</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Nandivaram Mahalakshmi Nagar</SimpleData>
+		<SimpleData name="inundation">10ft 6 days</SimpleData>
+		<SimpleData name="source">Esa lake over flow</SimpleData>
+		<SimpleData name="longitude">80.070937</SimpleData>
+		<SimpleData name="latitude">12.85045</SimpleData>
+		<SimpleData name="name_region">NPR Marriage Mahal</SimpleData>
+		<SimpleData name="escape_route">Near by GST Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0709369999999,12.85045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">74</SimpleData>
+		<SimpleData name="sl_no_">74</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Nandivaram Mahalakshmi Nagar</SimpleData>
+		<SimpleData name="inundation">10ft 6 days</SimpleData>
+		<SimpleData name="source">Esa lake over flow</SimpleData>
+		<SimpleData name="longitude">80.064758</SimpleData>
+		<SimpleData name="latitude">12.852743</SimpleData>
+		<SimpleData name="name_region">NPR Marriage Mahal 
+Bharathiyar Matrci school</SimpleData>
+		<SimpleData name="escape_route">Near by GST Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0647579999999,12.852743</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">75</SimpleData>
+		<SimpleData name="sl_no_">75</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Karanaipuducheri</SimpleData>
+		<SimpleData name="inundation">3ft / 3 days</SimpleData>
+		<SimpleData name="source">Karanaipuducheri lake over flow</SimpleData>
+		<SimpleData name="longitude">80.085622</SimpleData>
+		<SimpleData name="latitude">12.83744</SimpleData>
+		<SimpleData name="name_region">Govt girls school</SimpleData>
+		<SimpleData name="escape_route">Karanaipuducheri road</SimpleData>
+		<SimpleData name="distance">0.3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0856219999999,12.83744</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">76</SimpleData>
+		<SimpleData name="sl_no_">76</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Sathananthapuram Nedugundram</SimpleData>
+		<SimpleData name="inundation">12ft 7 days</SimpleData>
+		<SimpleData name="source">Nedugundram lake over flow</SimpleData>
+		<SimpleData name="longitude">80.105181</SimpleData>
+		<SimpleData name="latitude">12.87771</SimpleData>
+		<SimpleData name="name_region">Govt school Alapakkam</SimpleData>
+		<SimpleData name="escape_route">Nedugundram road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.105181,12.87771</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">77</SimpleData>
+		<SimpleData name="sl_no_">77</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">MGR street 
+Mettu street
+Nedungundram</SimpleData>
+		<SimpleData name="inundation">10ft 5 days</SimpleData>
+		<SimpleData name="source">Nedugundram lake over flow</SimpleData>
+		<SimpleData name="longitude">80.110086</SimpleData>
+		<SimpleData name="latitude">12.895895</SimpleData>
+		<SimpleData name="name_region">Govt school Alapakkam</SimpleData>
+		<SimpleData name="escape_route">MGR street</SimpleData>
+		<SimpleData name="distance">0.75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.110086,12.895895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">78</SimpleData>
+		<SimpleData name="sl_no_">78</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Mannivakkam</SimpleData>
+		<SimpleData name="inundation">5ft 2 days</SimpleData>
+		<SimpleData name="source">Mannivakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.070066</SimpleData>
+		<SimpleData name="latitude">12.889126</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">Vandalur to Walajahbad</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0700659999999,12.889126</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">79</SimpleData>
+		<SimpleData name="sl_no_">79</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Anna nagar Mannivakkam</SimpleData>
+		<SimpleData name="inundation">8ft 4 days</SimpleData>
+		<SimpleData name="source">Mannivakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.062055</SimpleData>
+		<SimpleData name="latitude">12.869469</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">Vandalur to Walajahbad</SimpleData>
+		<SimpleData name="distance">1.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.062055,12.869469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">80</SimpleData>
+		<SimpleData name="sl_no_">80</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Ambedkar nagar Mannivakkam</SimpleData>
+		<SimpleData name="inundation">5ft 2 days</SimpleData>
+		<SimpleData name="source">Mannivakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.06883</SimpleData>
+		<SimpleData name="latitude">12.881482</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">Vandalur to Walajahbad</SimpleData>
+		<SimpleData name="distance">1.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0688299999999,12.881482</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">81</SimpleData>
+		<SimpleData name="sl_no_">81</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Subashchandra bose nagar</SimpleData>
+		<SimpleData name="inundation">4 ft / 2 days</SimpleData>
+		<SimpleData name="source">Nedugundram lake over flow</SimpleData>
+		<SimpleData name="longitude">80.108658</SimpleData>
+		<SimpleData name="latitude">12.885586</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">Subash chandra bose salai</SimpleData>
+		<SimpleData name="distance">0.75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.108658,12.885586</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">82</SimpleData>
+		<SimpleData name="sl_no_">82</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Rajivganthi nagar Urapakkam</SimpleData>
+		<SimpleData name="inundation">15ft 7 days</SimpleData>
+		<SimpleData name="source">Urapakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.075809</SimpleData>
+		<SimpleData name="latitude">12.857643</SimpleData>
+		<SimpleData name="name_region">Immanuel School</SimpleData>
+		<SimpleData name="escape_route">Karanaipuducheri road</SimpleData>
+		<SimpleData name="distance">0.4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.075809,12.857643</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">83</SimpleData>
+		<SimpleData name="sl_no_">83</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Priya nagar</SimpleData>
+		<SimpleData name="inundation">8ft 5 days</SimpleData>
+		<SimpleData name="source">Urapakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.06765</SimpleData>
+		<SimpleData name="latitude">12.859242</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Priya Nagar road</SimpleData>
+		<SimpleData name="distance">0.4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.06765,12.8592419999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">84</SimpleData>
+		<SimpleData name="sl_no_">84</SimpleData>
+		<SimpleData name="taluka">Chengalpattu</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">MG nagar</SimpleData>
+		<SimpleData name="inundation">4ft 2 days</SimpleData>
+		<SimpleData name="source">Urapakkam lake over flow</SimpleData>
+		<SimpleData name="longitude">80.06368</SimpleData>
+		<SimpleData name="latitude">12.866475</SimpleData>
+		<SimpleData name="name_region">Santhosh Mahal</SimpleData>
+		<SimpleData name="escape_route">MG Nagar road</SimpleData>
+		<SimpleData name="distance">0.3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0636799999999,12.866475</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">85</SimpleData>
+		<SimpleData name="sl_no_">85</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Puthupakkam</SimpleData>
+		<SimpleData name="inundation">4Feet / 11 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.202396</SimpleData>
+		<SimpleData name="latitude">12.806447</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Puthupakkam Main road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.202396,12.806447</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">86</SimpleData>
+		<SimpleData name="sl_no_">86</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Sathankuppam</SimpleData>
+		<SimpleData name="inundation">3Feet/ 4 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.183332</SimpleData>
+		<SimpleData name="latitude">12.758616</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Vandalur Main Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.183332,12.758616</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">87</SimpleData>
+		<SimpleData name="sl_no_">87</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Siruseri</SimpleData>
+		<SimpleData name="inundation">2Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.203614</SimpleData>
+		<SimpleData name="latitude">12.83594</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">siruseri main road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2036139999999,12.83594</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">88</SimpleData>
+		<SimpleData name="sl_no_">88</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Thaiyur</SimpleData>
+		<SimpleData name="inundation">6 Feet / 12 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.206178</SimpleData>
+		<SimpleData name="latitude">12.782582</SimpleData>
+		<SimpleData name="name_region">Akshaya apartment</SimpleData>
+		<SimpleData name="escape_route">Easwaran koil street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.206178,12.782582</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">89</SimpleData>
+		<SimpleData name="sl_no_">89</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Illalur</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.158945</SimpleData>
+		<SimpleData name="latitude">12.734842</SimpleData>
+		<SimpleData name="name_region">Govt. School School</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.158945,12.734842</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">90</SimpleData>
+		<SimpleData name="sl_no_">90</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Vengaleri</SimpleData>
+		<SimpleData name="inundation">3 Feet / 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.188085</SimpleData>
+		<SimpleData name="latitude">12.692768</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">Gengaiyamman koil street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.188085,12.692768</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">91</SimpleData>
+		<SimpleData name="sl_no_">91</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Alathur</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.176834</SimpleData>
+		<SimpleData name="latitude">12.692821</SimpleData>
+		<SimpleData name="name_region">Anganwadi centre</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.176834,12.692821</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">92</SimpleData>
+		<SimpleData name="sl_no_">92</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Karungulipallam</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.168038</SimpleData>
+		<SimpleData name="latitude">12.643292</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.168038,12.6432919999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">93</SimpleData>
+		<SimpleData name="sl_no_">93</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Edayankuppam</SimpleData>
+		<SimpleData name="inundation">6 Feet / 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.155456</SimpleData>
+		<SimpleData name="latitude">12.678104</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Annai Indira street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.155456,12.678104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">94</SimpleData>
+		<SimpleData name="sl_no_">94</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Thandalam</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.18784</SimpleData>
+		<SimpleData name="latitude">12.713703</SimpleData>
+		<SimpleData name="name_region">Govt school</SimpleData>
+		<SimpleData name="escape_route">Thandalam road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.18784,12.713703</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">95</SimpleData>
+		<SimpleData name="sl_no_">95</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Sirudavur</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.157019</SimpleData>
+		<SimpleData name="latitude">12.682642</SimpleData>
+		<SimpleData name="name_region">Govt school</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.157019,12.682642</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">96</SimpleData>
+		<SimpleData name="sl_no_">96</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Nemmeli</SimpleData>
+		<SimpleData name="inundation">5 Feet / 8 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.21538</SimpleData>
+		<SimpleData name="latitude">12.710318</SimpleData>
+		<SimpleData name="name_region">Govt. School Tsunami building</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.21538,12.710318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">97</SimpleData>
+		<SimpleData name="sl_no_">97</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Krishnan Karanai</SimpleData>
+		<SimpleData name="inundation">5Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.216782</SimpleData>
+		<SimpleData name="latitude">12.69177</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Pillaiiyar Koil street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.216782,12.69177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">98</SimpleData>
+		<SimpleData name="sl_no_">98</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Pattipulam</SimpleData>
+		<SimpleData name="inundation">5 Feet/ 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.204174</SimpleData>
+		<SimpleData name="latitude">12.664108</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">School Street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.204174,12.664108</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">99</SimpleData>
+		<SimpleData name="sl_no_">99</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Kelambakkam</SimpleData>
+		<SimpleData name="inundation">5 Feet/ 8 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.213452</SimpleData>
+		<SimpleData name="latitude">12.785752</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Vandalur Main road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.213452,12.785752</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">100</SimpleData>
+		<SimpleData name="sl_no_">100</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Kovalam</SimpleData>
+		<SimpleData name="inundation">5Feet/ 4 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.250445</SimpleData>
+		<SimpleData name="latitude">12.786446</SimpleData>
+		<SimpleData name="name_region">Govt. School
+Church</SimpleData>
+		<SimpleData name="escape_route">Madha Koil street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.2504449999999,12.786446</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">101</SimpleData>
+		<SimpleData name="sl_no_">101</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Kovalam</SimpleData>
+		<SimpleData name="inundation">2Feet/ 3 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.247509</SimpleData>
+		<SimpleData name="latitude">12.796829</SimpleData>
+		<SimpleData name="name_region">Govt. School
+Church</SimpleData>
+		<SimpleData name="escape_route">Madha Koil street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.247509,12.796829</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">102</SimpleData>
+		<SimpleData name="sl_no_">102</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Egattur</SimpleData>
+		<SimpleData name="inundation">5 Feet / 8 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.229343</SimpleData>
+		<SimpleData name="latitude">12.832758</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">Main Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.229343,12.832758</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">103</SimpleData>
+		<SimpleData name="sl_no_">103</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Muttukadu</SimpleData>
+		<SimpleData name="inundation">5Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.240514</SimpleData>
+		<SimpleData name="latitude">12.821605</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">Main Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.240514,12.821605</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">104</SimpleData>
+		<SimpleData name="sl_no_">104</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Kalipattur</SimpleData>
+		<SimpleData name="inundation">5 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.229343</SimpleData>
+		<SimpleData name="latitude">12.821635</SimpleData>
+		<SimpleData name="name_region">Govt school</SimpleData>
+		<SimpleData name="escape_route">Main Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.229343,12.821635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">105</SimpleData>
+		<SimpleData name="sl_no_">105</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Saluvankuppam</SimpleData>
+		<SimpleData name="inundation">5 Feet / 3 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.184682</SimpleData>
+		<SimpleData name="latitude">12.626603</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.184682,12.626603</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">106</SimpleData>
+		<SimpleData name="sl_no_">106</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Mullipakkam</SimpleData>
+		<SimpleData name="inundation">4 Feet / 4 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.084921</SimpleData>
+		<SimpleData name="latitude">12.680534</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Manamathi Main road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.084921,12.680534</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">107</SimpleData>
+		<SimpleData name="sl_no_">107</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Mailai</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.09118</SimpleData>
+		<SimpleData name="latitude">12.678487</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Mattu Street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.09118,12.678487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">108</SimpleData>
+		<SimpleData name="sl_no_">108</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Mailai</SimpleData>
+		<SimpleData name="inundation">2 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.087792</SimpleData>
+		<SimpleData name="latitude">12.677481</SimpleData>
+		<SimpleData name="name_region">Church
+Govt school</SimpleData>
+		<SimpleData name="escape_route">Mattu Street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0877919999999,12.677481</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">109</SimpleData>
+		<SimpleData name="sl_no_">109</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Kottamedu</SimpleData>
+		<SimpleData name="inundation">3 Feet / 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.095405</SimpleData>
+		<SimpleData name="latitude">12.69717</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Guduvancheri main road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0954049999999,12.69717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">110</SimpleData>
+		<SimpleData name="sl_no_">110</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Hanumanthapuram</SimpleData>
+		<SimpleData name="inundation">2 Feet/ 2 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.06397</SimpleData>
+		<SimpleData name="latitude">12.718042</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">Big Street.</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.06397,12.718042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">111</SimpleData>
+		<SimpleData name="sl_no_">111</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Nellikuppam</SimpleData>
+		<SimpleData name="inundation">4 Feet / 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.10795</SimpleData>
+		<SimpleData name="latitude">12.753123</SimpleData>
+		<SimpleData name="name_region">Community hall</SimpleData>
+		<SimpleData name="escape_route">Guduvancheri main road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1079499999999,12.753123</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">112</SimpleData>
+		<SimpleData name="sl_no_">112</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Kayar</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.143543</SimpleData>
+		<SimpleData name="latitude">12.770714</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">palls Street, church</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.143543,12.770714</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">113</SimpleData>
+		<SimpleData name="sl_no_">113</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Paiyanur</SimpleData>
+		<SimpleData name="inundation">5 Feet / 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.153969</SimpleData>
+		<SimpleData name="latitude">12.60755</SimpleData>
+		<SimpleData name="name_region">AVIT College</SimpleData>
+		<SimpleData name="escape_route">OMR Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.1539689999999,12.60755</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">114</SimpleData>
+		<SimpleData name="sl_no_">114</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Kalanipakkam</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 3 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.080041</SimpleData>
+		<SimpleData name="latitude">12.615926</SimpleData>
+		<SimpleData name="name_region">Govt. School</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0800409999999,12.615926</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">115</SimpleData>
+		<SimpleData name="sl_no_">115</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Arunkundram</SimpleData>
+		<SimpleData name="inundation">2 Feet/ 1 day</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.102284</SimpleData>
+		<SimpleData name="latitude">12.641498</SimpleData>
+		<SimpleData name="name_region">Church
+Govt school</SimpleData>
+		<SimpleData name="escape_route">Gangaiamman koil street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.102284,12.641498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">116</SimpleData>
+		<SimpleData name="sl_no_">116</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Rayamangalam</SimpleData>
+		<SimpleData name="inundation">5 Feet / 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.091658</SimpleData>
+		<SimpleData name="latitude">12.64618</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">Vanniyar street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0916579999999,12.64618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">117</SimpleData>
+		<SimpleData name="sl_no_">117</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Panjanthiruthi</SimpleData>
+		<SimpleData name="inundation">5 Feet/ 5 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.130288</SimpleData>
+		<SimpleData name="latitude">12.623406</SimpleData>
+		<SimpleData name="name_region">Govt. school</SimpleData>
+		<SimpleData name="escape_route">School street</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.130288,12.623406</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">118</SimpleData>
+		<SimpleData name="sl_no_">118</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Agaram</SimpleData>
+		<SimpleData name="inundation">3 Feet/ 4 days</SimpleData>
+		<SimpleData name="source">Surplus water</SimpleData>
+		<SimpleData name="longitude">80.084222</SimpleData>
+		<SimpleData name="latitude">12.730764</SimpleData>
+		<SimpleData name="name_region">MMS mandapam</SimpleData>
+		<SimpleData name="escape_route">Agaram Main road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0842219999999,12.730764</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">119</SimpleData>
+		<SimpleData name="sl_no_">119</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Mammallapuram
+Kokilamedu
+Kuppam &amp; colony</SimpleData>
+		<SimpleData name="inundation">4 Feet / 6 days</SimpleData>
+		<SimpleData name="source">Heavy rain &amp; overflow</SimpleData>
+		<SimpleData name="longitude">80.167967</SimpleData>
+		<SimpleData name="latitude">12.558107</SimpleData>
+		<SimpleData name="name_region">Govt. School 
+Community Hall,
+Cyclone centre</SimpleData>
+		<SimpleData name="escape_route">ECR road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.167967,12.558107</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">120</SimpleData>
+		<SimpleData name="sl_no_">120</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Vadakadambadi
+Perumal Eri,
+Irular colony, Erikarai</SimpleData>
+		<SimpleData name="inundation">4 Feet / 6 days</SimpleData>
+		<SimpleData name="source">Heavy rain &amp; overflow</SimpleData>
+		<SimpleData name="longitude">80.128893</SimpleData>
+		<SimpleData name="latitude">12.590806</SimpleData>
+		<SimpleData name="name_region">Govt. School 
+Community Hall,
+Cyclone centre</SimpleData>
+		<SimpleData name="escape_route">ECR road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.128893,12.590806</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">121</SimpleData>
+		<SimpleData name="sl_no_">121</SimpleData>
+		<SimpleData name="taluka">Thiruporur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Kadambadi, Melakuppam</SimpleData>
+		<SimpleData name="inundation">4 Feet / 6 days</SimpleData>
+		<SimpleData name="source">Heavy rain &amp; overflow</SimpleData>
+		<SimpleData name="longitude">80.148256</SimpleData>
+		<SimpleData name="latitude">12.596593</SimpleData>
+		<SimpleData name="name_region">Govt. School 
+Community Hall,
+Cyclone centre</SimpleData>
+		<SimpleData name="escape_route">ECR road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.148256,12.596593</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">122</SimpleData>
+		<SimpleData name="sl_no_">122</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Bajanai Koil Street, Ettikuttimedu</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">79.81862</SimpleData>
+		<SimpleData name="latitude">12.983027</SimpleData>
+		<SimpleData name="name_region">P.U.Ele.School Ettikuttimedu</SimpleData>
+		<SimpleData name="escape_route">Ettikuttimedu to Kannanthangal Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8186199999998,12.983027</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">123</SimpleData>
+		<SimpleData name="sl_no_">123</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Periyar Nagar, Nethaji Nagar, David Nagar, Somangalam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">From Periya Eri And Chiteri</SimpleData>
+		<SimpleData name="longitude">80.041598</SimpleData>
+		<SimpleData name="latitude">12.951196</SimpleData>
+		<SimpleData name="name_region">Govt.High School Somangalam</SimpleData>
+		<SimpleData name="escape_route">Somangalam To Karunakara
+-chery Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.041598,12.951196</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">124</SimpleData>
+		<SimpleData name="sl_no_">124</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Indra Nagar, Natesan Street, MGR Street, Palanthandalam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.078337</SimpleData>
+		<SimpleData name="latitude">12.964704</SimpleData>
+		<SimpleData name="name_region">P.U.Middle School Palan
+-thandalam</SimpleData>
+		<SimpleData name="escape_route">Palan
+-thandalam To Varadharaja
+-puram Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.078337,12.964704</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">125</SimpleData>
+		<SimpleData name="sl_no_">125</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Pillayar Koil St, Perumal koil St, Karunakaracheri</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Somang
+-alam Odai</SimpleData>
+		<SimpleData name="longitude">80.019123</SimpleData>
+		<SimpleData name="latitude">12.940259</SimpleData>
+		<SimpleData name="name_region">Mettukaruna
+-karacheri Primary School</SimpleData>
+		<SimpleData name="escape_route">Karunakara
+-chery to Somangalam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.019123,12.940259</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">126</SimpleData>
+		<SimpleData name="sl_no_">126</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Samathuvapuram, Moogambigai Nagar,Karasankal</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.045695</SimpleData>
+		<SimpleData name="latitude">12.899637</SimpleData>
+		<SimpleData name="name_region">P.U.Middle School Karasankal</SimpleData>
+		<SimpleData name="escape_route">Karasankal to
+Manimangalam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.045695,12.899637</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">127</SimpleData>
+		<SimpleData name="sl_no_">127</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Bhuvaneshwari, Kumaran Nagar, Asthalakshmi Nagar, Gopal Nagar,Royappa Nagar,Mahalakshmi Nagar,Shantiniketan Nagar</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Adayar River &amp; Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.068842</SimpleData>
+		<SimpleData name="latitude">12.918705</SimpleData>
+		<SimpleData name="name_region">BSSK Mat.
+School, Varadha rajapuram, CSI Church Mudichur.</SimpleData>
+		<SimpleData name="escape_route">Varadharaja
+-puram to Tambaram Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0688419999999,12.918705</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">128</SimpleData>
+		<SimpleData name="sl_no_">128</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Chettupattu</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Adayar River &amp; Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.013646</SimpleData>
+		<SimpleData name="latitude">12.896937</SimpleData>
+		<SimpleData name="name_region">P.U.P
+School</SimpleData>
+		<SimpleData name="escape_route">Sriperumbudur To
+Tambaram
+Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0136459999999,12.896937</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">129</SimpleData>
+		<SimpleData name="sl_no_">129</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Gajalakshmi Nagar, Green City, Ambedkar Nagar, Manimangalam</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Adayar River &amp; Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">80.058472</SimpleData>
+		<SimpleData name="latitude">12.922059</SimpleData>
+		<SimpleData name="name_region">P.U.P
+School, Mani
+-mangalam</SimpleData>
+		<SimpleData name="escape_route">Manimangalam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0584719999999,12.922059</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">130</SimpleData>
+		<SimpleData name="sl_no_">130</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Ambedkar Nagar, Tiruvallur Nagar, Padappai</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.017964</SimpleData>
+		<SimpleData name="latitude">12.887277</SimpleData>
+		<SimpleData name="name_region">P.U.Middle School, Padappai AKT Mahal,
+SK Mahal Padappai</SimpleData>
+		<SimpleData name="escape_route">Padappai To Vandalur Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0179639999999,12.887277</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">131</SimpleData>
+		<SimpleData name="sl_no_">131</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Mariyamman Koil Street,
+Lakshmi Nagar, Athanancheri</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">79.997493</SimpleData>
+		<SimpleData name="latitude">12.854755</SimpleData>
+		<SimpleData name="name_region">Govt.Girls Hr.Sec. School, Athanancheri</SimpleData>
+		<SimpleData name="escape_route">Athanancheri To
+Vandalur Road</SimpleData>
+		<SimpleData name="distance">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9974929999999,12.854755</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">132</SimpleData>
+		<SimpleData name="sl_no_">132</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Very high</SimpleData>
+		<SimpleData name="details">Adhanur</SimpleData>
+		<SimpleData name="inundation">above 5 ft / 5 Days</SimpleData>
+		<SimpleData name="source">Overflow from Kaduvan
+-cheri Kalangal</SimpleData>
+		<SimpleData name="longitude">80.056131</SimpleData>
+		<SimpleData name="latitude">12.870388</SimpleData>
+		<SimpleData name="name_region">Community
+Hall, CSI Church, AGRC Kalyana Mahal,
+P.U.P.
+School,Adhanur</SimpleData>
+		<SimpleData name="escape_route">Adhanur To Madambakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0561309999999,12.870388</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">133</SimpleData>
+		<SimpleData name="sl_no_">133</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Chinna Theru, Rajiv Gandhi St, Ammanambakkam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Neela
+-mangalam Thangal And Koukkan -thangal Odai</SimpleData>
+		<SimpleData name="longitude">80.033943</SimpleData>
+		<SimpleData name="latitude">12.86552</SimpleData>
+		<SimpleData name="name_region">P.U.P.School, Ammanam
+-bakkam</SimpleData>
+		<SimpleData name="escape_route">Ammanam
+-bakkam to Neela
+-mangalam Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0339429999999,12.86552</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">134</SimpleData>
+		<SimpleData name="sl_no_">134</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Theruvedi Amman Koil Street, Muthalamman koil
+St,Korukkanthangal</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Overflow From Koukkan
+-thangal
+Odai</SimpleData>
+		<SimpleData name="longitude">80.034417</SimpleData>
+		<SimpleData name="latitude">12.864224</SimpleData>
+		<SimpleData name="name_region">P.U.Pri,
+School, Korukkan
+-thangal</SimpleData>
+		<SimpleData name="escape_route">Adhanur to Neela
+-mangalam
+Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0344169999999,12.864224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">135</SimpleData>
+		<SimpleData name="sl_no_">135</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">High</SimpleData>
+		<SimpleData name="details">Bangalore Main Road, Sriperumbudur</SimpleData>
+		<SimpleData name="inundation">3' to 5' /
+5 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">79.947961</SimpleData>
+		<SimpleData name="latitude">12.957045</SimpleData>
+		<SimpleData name="name_region">Govt.Boys School,Spr Govt.Girls School,Spr</SimpleData>
+		<SimpleData name="escape_route">Spr To Kanchi
+-puram  Road, Spr To Thiru
+-vallur  Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9479609999999,12.957045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">136</SimpleData>
+		<SimpleData name="sl_no_">136</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Eswaran Koil St, Mandaiveliamman Koil St,Echur</SimpleData>
+		<SimpleData name="inundation">below 2ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">79.893992</SimpleData>
+		<SimpleData name="latitude">12.887408</SimpleData>
+		<SimpleData name="name_region">Govt.Middle School, Echur</SimpleData>
+		<SimpleData name="escape_route">Echur to Santhavelur Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.8939919999999,12.887408</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">137</SimpleData>
+		<SimpleData name="sl_no_">137</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Medium</SimpleData>
+		<SimpleData name="details">Reddiyar Street, Kalaignar Street, Mevalurkuppam</SimpleData>
+		<SimpleData name="inundation">2 to 3 ft /
+5 Days</SimpleData>
+		<SimpleData name="source">Heavy Rainfall</SimpleData>
+		<SimpleData name="longitude">79.989222</SimpleData>
+		<SimpleData name="latitude">13.011225</SimpleData>
+		<SimpleData name="name_region">Govt.High School Mevalur
+-kuppam</SimpleData>
+		<SimpleData name="escape_route">Mevalur
+-kuppam to Perambakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.989222,13.011225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">138</SimpleData>
+		<SimpleData name="sl_no_">138</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Pudupper Pallam</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">80.029716</SimpleData>
+		<SimpleData name="latitude">12.951804</SimpleData>
+		<SimpleData name="name_region">Panch.Union Middle
+School, Pudupper</SimpleData>
+		<SimpleData name="escape_route">Pudupper To
+Kattaram-bakkam Road</SimpleData>
+		<SimpleData name="distance">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.0297159999999,12.951804</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_kancheepuram_flood_hotspots_2015">
+		<SimpleData name="id">139</SimpleData>
+		<SimpleData name="sl_no_">139</SimpleData>
+		<SimpleData name="taluka">Sriperumbudur</SimpleData>
+		<SimpleData name="vulnerability">Low</SimpleData>
+		<SimpleData name="details">Vadakal &quot;B&quot;</SimpleData>
+		<SimpleData name="inundation">below 2 ft / 3 Days</SimpleData>
+		<SimpleData name="source">Tank Overflow</SimpleData>
+		<SimpleData name="longitude">79.926596</SimpleData>
+		<SimpleData name="latitude">12.912693</SimpleData>
+		<SimpleData name="name_region">Panch.Union Primary
+School, Vadakal</SimpleData>
+		<SimpleData name="escape_route">Mathur To
+Pondur Road</SimpleData>
+		<SimpleData name="distance">0.5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.9265959999998,12.912693</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

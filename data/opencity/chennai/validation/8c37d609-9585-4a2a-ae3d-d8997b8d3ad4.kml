@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015" id="chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="slno" type="int"></SimpleField>
+	<SimpleField name="taluka" type="string"></SimpleField>
+	<SimpleField name="types" type="string"></SimpleField>
+	<SimpleField name="details" type="string"></SimpleField>
+	<SimpleField name="inundation" type="string"></SimpleField>
+	<SimpleField name="source" type="string"></SimpleField>
+	<SimpleField name="longitude" type="float"></SimpleField>
+	<SimpleField name="latitude" type="float"></SimpleField>
+</Schema>
+<Folder><name>chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="slno">1</SimpleData>
+		<SimpleData name="taluka">Walajapet</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Kodaikkal Perunkanchi lake</SimpleData>
+		<SimpleData name="inundation">3 feet / 3 days</SimpleData>
+		<SimpleData name="source">lake</SimpleData>
+		<SimpleData name="longitude">79.4045</SimpleData>
+		<SimpleData name="latitude">13.0447</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4044999999991,13.0447</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="slno">2</SimpleData>
+		<SimpleData name="taluka">Walajapet</SimpleData>
+		<SimpleData name="types">Low</SimpleData>
+		<SimpleData name="details">Sholinghur lake</SimpleData>
+		<SimpleData name="inundation">1 ft / 1 day</SimpleData>
+		<SimpleData name="source">lake</SimpleData>
+		<SimpleData name="longitude">79.419</SimpleData>
+		<SimpleData name="latitude">13.1183</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4189999999992,13.1183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="slno">3</SimpleData>
+		<SimpleData name="taluka">Walajapet</SimpleData>
+		<SimpleData name="types">Low</SimpleData>
+		<SimpleData name="details">ozhur lake</SimpleData>
+		<SimpleData name="inundation">below 1 ft / 1 day</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.3634</SimpleData>
+		<SimpleData name="latitude">12.9779</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.3633999999989,12.9779</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="slno">4</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Kaveripakkam</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.4619</SimpleData>
+		<SimpleData name="latitude">12.9086</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4618999999992,12.9086</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="slno">5</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">kalathur</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5371</SimpleData>
+		<SimpleData name="latitude">12.8707</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5370999999994,12.8707</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">6</SimpleData>
+		<SimpleData name="slno">6</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Sankarampadi</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5587</SimpleData>
+		<SimpleData name="latitude">12.8602</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5586999999994,12.8602</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">7</SimpleData>
+		<SimpleData name="slno">7</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Koothambakkam</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.5054</SimpleData>
+		<SimpleData name="latitude">13.0002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5053999999993,13.0002</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">8</SimpleData>
+		<SimpleData name="slno">8</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Mahendravadi</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5362</SimpleData>
+		<SimpleData name="latitude">12.9893</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5361999999994,12.9892999999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">9</SimpleData>
+		<SimpleData name="slno">9</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Thuraiyur</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5627</SimpleData>
+		<SimpleData name="latitude">12.9562</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5626999999995,12.9562</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">10</SimpleData>
+		<SimpleData name="slno">10</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Thenmampakkam</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5836</SimpleData>
+		<SimpleData name="latitude">12.9244</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5835999999995,12.9243999999999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">11</SimpleData>
+		<SimpleData name="slno">11</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Chitheri</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.6051</SimpleData>
+		<SimpleData name="latitude">13.065</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6050999999995,13.065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">12</SimpleData>
+		<SimpleData name="slno">12</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Sirunamalli</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.6377</SimpleData>
+		<SimpleData name="latitude">13.0214</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6376999999996,13.0214</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">13</SimpleData>
+		<SimpleData name="slno">13</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Melandurai</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Melandurai Eri</SimpleData>
+		<SimpleData name="longitude">79.6407</SimpleData>
+		<SimpleData name="latitude">13.0402</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6406999999996,13.0402</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">14</SimpleData>
+		<SimpleData name="slno">14</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Poigainallur</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5619</SimpleData>
+		<SimpleData name="latitude">12.9058</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5618999999994,12.9058</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">15</SimpleData>
+		<SimpleData name="slno">15</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Perumbulipakkam</SimpleData>
+		<SimpleData name="inundation">2 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.556</SimpleData>
+		<SimpleData name="latitude">12.8945</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5559999999994,12.8945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">16</SimpleData>
+		<SimpleData name="slno">16</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Avalur</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5431</SimpleData>
+		<SimpleData name="latitude">12.8925</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5430999999994,12.8925</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">17</SimpleData>
+		<SimpleData name="slno">17</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Thalikal</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.4769</SimpleData>
+		<SimpleData name="latitude">13.0748</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4768999999992,13.0748</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">18</SimpleData>
+		<SimpleData name="slno">18</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Polipakkam</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.4866</SimpleData>
+		<SimpleData name="latitude">13.0584</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4865999999993,13.0584</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">19</SimpleData>
+		<SimpleData name="slno">19</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Anwarthikanpettai</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake</SimpleData>
+		<SimpleData name="longitude">79.5652</SimpleData>
+		<SimpleData name="latitude">13.0546</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5651999999995,13.0546</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">20</SimpleData>
+		<SimpleData name="slno">20</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Velithangipuram</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5385</SimpleData>
+		<SimpleData name="latitude">13.0051</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5384999999995,13.0051</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">21</SimpleData>
+		<SimpleData name="slno">21</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Peraperi</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5612</SimpleData>
+		<SimpleData name="latitude">12.9859</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5611999999995,12.9859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">22</SimpleData>
+		<SimpleData name="slno">22</SimpleData>
+		<SimpleData name="taluka">Nemili</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Uliyanallur</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.5574</SimpleData>
+		<SimpleData name="latitude">12.9686</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.5573999999994,12.9686</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">23</SimpleData>
+		<SimpleData name="slno">23</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Ananthapuram Lake</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.7479</SimpleData>
+		<SimpleData name="latitude">13.0208</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.7478999999997,13.0208</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">24</SimpleData>
+		<SimpleData name="slno">24</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Krishnapuram Kanikal lake</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.6912</SimpleData>
+		<SimpleData name="latitude">13.1834</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6911999999996,13.1834</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">25</SimpleData>
+		<SimpleData name="slno">25</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">S. kolathur lake</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.6271</SimpleData>
+		<SimpleData name="latitude">12.9365</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6270999999996,12.9365</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">26</SimpleData>
+		<SimpleData name="slno">26</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Synapuram</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.6485</SimpleData>
+		<SimpleData name="latitude">12.986</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6484999999996,12.986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">27</SimpleData>
+		<SimpleData name="slno">27</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Thanigaipollur lake</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.6373</SimpleData>
+		<SimpleData name="latitude">13.1151</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6372999999996,13.1151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">28</SimpleData>
+		<SimpleData name="slno">28</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Velurpettai lake</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.6947</SimpleData>
+		<SimpleData name="latitude">13.1368</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6946999999996,13.1368</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#chennaidss_gis_flood_hotspots_vellore_flood_hotspots_2015">
+		<SimpleData name="id">29</SimpleData>
+		<SimpleData name="slno">29</SimpleData>
+		<SimpleData name="taluka">Arakkonam</SimpleData>
+		<SimpleData name="types">Medium</SimpleData>
+		<SimpleData name="details">Mudhur Isha tank</SimpleData>
+		<SimpleData name="inundation">3 ft / 3 days</SimpleData>
+		<SimpleData name="source">Lake overflow</SimpleData>
+		<SimpleData name="longitude">79.685</SimpleData>
+		<SimpleData name="latitude">13.1521</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.6849999999997,13.1521</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

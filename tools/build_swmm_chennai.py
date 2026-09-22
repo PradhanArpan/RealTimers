@@ -48,7 +48,7 @@ def fnum(v, lo=None, hi=None):
 
 def build(rain_mm: float, duration_min: float, hyetograph: str = "") -> Path:
     W, S, E, N = CITIES[CITY]["bbox"]
-    out = ROOT / "data" / "swmm" / CITY; out.mkdir(parents=True, exist_ok=True)
+    out = ROOT / "data" / "swmm" / (CITY if not hyetograph else f"{CITY}_{Path(hyetograph).stem}"); out.mkdir(parents=True, exist_ok=True)
     utm = Transformer.from_crs("EPSG:4326", "EPSG:32644", always_xy=True).transform
     ll = Transformer.from_crs("EPSG:32644", "EPSG:4326", always_xy=True).transform
 
@@ -128,7 +128,7 @@ def build(rain_mm: float, duration_min: float, hyetograph: str = "") -> Path:
     else:
         steps = int(duration_min // 5); inten = rain_mm / (duration_min / 60.0)
         series = [(t * 5, inten if t < steps else 0.0) for t in range(steps + 2)]
-    end_min = int(duration_min) + 180
+    end_min = int(duration_min) + 240
     end_date, end_time = f"01/{1 + end_min // 1440:02d}/2026", f"{end_min % 1440 // 60:02d}:{end_min % 60:02d}:00"
     J = lambda i: f"N{i}"
     lines = ["[TITLE]", f"RealTimers Chennai pilot: {rain_mm:g} mm in {duration_min:g} min, from the GCC drain register", "",
