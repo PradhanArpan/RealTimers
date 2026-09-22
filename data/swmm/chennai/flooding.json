@@ -1,0 +1,4496 @@
+{
+ "runoff_continuity_pct": -0.014,
+ "routing_continuity_pct": 0.129,
+ "flooded": [
+  {
+   "node": "N468",
+   "hours": 2.09,
+   "max_cms": 4.989,
+   "volume_ml": 28.365,
+   "lon": 80.240572,
+   "lat": 13.038065,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N643",
+   "hours": 2.17,
+   "max_cms": 3.529,
+   "volume_ml": 20.959,
+   "lon": 80.258016,
+   "lat": 13.038666,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N181",
+   "hours": 5.6,
+   "max_cms": 3.131,
+   "volume_ml": 20.671,
+   "lon": 80.229269,
+   "lat": 12.98098,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3579",
+   "hours": 3.19,
+   "max_cms": 3.115,
+   "volume_ml": 20.426,
+   "lon": 80.238866,
+   "lat": 12.962977,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N248",
+   "hours": 1.92,
+   "max_cms": 3.14,
+   "volume_ml": 18.838,
+   "lon": 80.253564,
+   "lat": 13.001881,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N3475",
+   "hours": 2.35,
+   "max_cms": 2.764,
+   "volume_ml": 17.656,
+   "lon": 80.247878,
+   "lat": 12.966321,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6942",
+   "hours": 5.17,
+   "max_cms": 2.653,
+   "volume_ml": 17.198,
+   "lon": 80.255425,
+   "lat": 12.979281,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N4257",
+   "hours": 2.16,
+   "max_cms": 2.705,
+   "volume_ml": 16.475,
+   "lon": 80.193188,
+   "lat": 12.954685,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6879",
+   "hours": 4.76,
+   "max_cms": 2.584,
+   "volume_ml": 15.494,
+   "lon": 80.262168,
+   "lat": 13.00402,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N5626",
+   "hours": 4.68,
+   "max_cms": 2.961,
+   "volume_ml": 15.367,
+   "lon": 80.181162,
+   "lat": 13.033475,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N2024",
+   "hours": 2.31,
+   "max_cms": 2.308,
+   "volume_ml": 14.934,
+   "lon": 80.191297,
+   "lat": 12.98872,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4696",
+   "hours": 2.48,
+   "max_cms": 2.427,
+   "volume_ml": 14.706,
+   "lon": 80.233939,
+   "lat": 12.939704,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1208",
+   "hours": 2.28,
+   "max_cms": 2.186,
+   "volume_ml": 14.619,
+   "lon": 80.199387,
+   "lat": 13.041063,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N7142",
+   "hours": 2.17,
+   "max_cms": 2.375,
+   "volume_ml": 14.442,
+   "lon": 80.207654,
+   "lat": 12.936879,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N5541",
+   "hours": 2.22,
+   "max_cms": 2.258,
+   "volume_ml": 13.866,
+   "lon": 80.185824,
+   "lat": 13.030189,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N2977",
+   "hours": 5.79,
+   "max_cms": 2.069,
+   "volume_ml": 13.784,
+   "lon": 80.20075,
+   "lat": 12.976194,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4770",
+   "hours": 2.35,
+   "max_cms": 2.175,
+   "volume_ml": 13.585,
+   "lon": 80.238388,
+   "lat": 12.939435,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N6685",
+   "hours": 2.07,
+   "max_cms": 3.161,
+   "volume_ml": 13.583,
+   "lon": 80.240383,
+   "lat": 13.007101,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N5186",
+   "hours": 4.65,
+   "max_cms": 2.088,
+   "volume_ml": 13.459,
+   "lon": 80.229835,
+   "lat": 13.032146,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6084",
+   "hours": 5.87,
+   "max_cms": 1.998,
+   "volume_ml": 13.384,
+   "lon": 80.181779,
+   "lat": 12.977998,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3274",
+   "hours": 2.3,
+   "max_cms": 2.211,
+   "volume_ml": 13.251,
+   "lon": 80.253556,
+   "lat": 12.983811,
+   "bad_drain": true,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N5137",
+   "hours": 2.11,
+   "max_cms": 2.143,
+   "volume_ml": 13.246,
+   "lon": 80.223153,
+   "lat": 13.036692,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6638",
+   "hours": 2.26,
+   "max_cms": 2.529,
+   "volume_ml": 12.939,
+   "lon": 80.238384,
+   "lat": 13.020586,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N398",
+   "hours": 2.05,
+   "max_cms": 2.124,
+   "volume_ml": 12.398,
+   "lon": 80.241619,
+   "lat": 13.045727,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N4955",
+   "hours": 2.04,
+   "max_cms": 2.218,
+   "volume_ml": 12.296,
+   "lon": 80.245368,
+   "lat": 13.029536,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N1290",
+   "hours": 5.15,
+   "max_cms": 1.953,
+   "volume_ml": 12.051,
+   "lon": 80.211299,
+   "lat": 13.024754,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N718",
+   "hours": 1.93,
+   "max_cms": 2.165,
+   "volume_ml": 11.556,
+   "lon": 80.257135,
+   "lat": 13.034885,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5987",
+   "hours": 2.28,
+   "max_cms": 1.804,
+   "volume_ml": 11.493,
+   "lon": 80.185751,
+   "lat": 12.969921,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N7124",
+   "hours": 2.2,
+   "max_cms": 2.044,
+   "volume_ml": 11.488,
+   "lon": 80.214838,
+   "lat": 12.940917,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1260",
+   "hours": 2.16,
+   "max_cms": 1.94,
+   "volume_ml": 11.395,
+   "lon": 80.197091,
+   "lat": 13.029186,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3523",
+   "hours": 2.23,
+   "max_cms": 1.777,
+   "volume_ml": 11.392,
+   "lon": 80.249073,
+   "lat": 12.969709,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4299",
+   "hours": 5.51,
+   "max_cms": 1.609,
+   "volume_ml": 11.276,
+   "lon": 80.209115,
+   "lat": 12.952441,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4691",
+   "hours": 1.95,
+   "max_cms": 1.995,
+   "volume_ml": 11.206,
+   "lon": 80.232399,
+   "lat": 12.933188,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N4600",
+   "hours": 2.1,
+   "max_cms": 1.786,
+   "volume_ml": 11.125,
+   "lon": 80.251375,
+   "lat": 12.947974,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4448",
+   "hours": 2.19,
+   "max_cms": 1.947,
+   "volume_ml": 11.073,
+   "lon": 80.212144,
+   "lat": 12.959525,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6098",
+   "hours": 5.88,
+   "max_cms": 1.65,
+   "volume_ml": 10.995,
+   "lon": 80.186098,
+   "lat": 12.975643,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N570",
+   "hours": 5.79,
+   "max_cms": 1.572,
+   "volume_ml": 10.782,
+   "lon": 80.27733,
+   "lat": 13.046629,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5688",
+   "hours": 5.19,
+   "max_cms": 2.004,
+   "volume_ml": 10.542,
+   "lon": 80.194192,
+   "lat": 13.013599,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N3530",
+   "hours": 2.13,
+   "max_cms": 1.814,
+   "volume_ml": 10.398,
+   "lon": 80.230672,
+   "lat": 12.967195,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4013",
+   "hours": 2.38,
+   "max_cms": 1.612,
+   "volume_ml": 10.316,
+   "lon": 80.255127,
+   "lat": 12.965153,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N841",
+   "hours": 4.61,
+   "max_cms": 1.813,
+   "volume_ml": 10.275,
+   "lon": 80.275213,
+   "lat": 13.025814,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4551",
+   "hours": 1.79,
+   "max_cms": 2.008,
+   "volume_ml": 10.26,
+   "lon": 80.251226,
+   "lat": 12.955526,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1180",
+   "hours": 4.11,
+   "max_cms": 1.758,
+   "volume_ml": 10.19,
+   "lon": 80.199037,
+   "lat": 13.038915,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N7032",
+   "hours": 2.01,
+   "max_cms": 1.914,
+   "volume_ml": 10.023,
+   "lon": 80.189507,
+   "lat": 12.958901,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1624",
+   "hours": 1.93,
+   "max_cms": 1.853,
+   "volume_ml": 10.007,
+   "lon": 80.175426,
+   "lat": 13.019265,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6281",
+   "hours": 2.1,
+   "max_cms": 1.584,
+   "volume_ml": 9.982,
+   "lon": 80.192492,
+   "lat": 12.969838,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3149",
+   "hours": 1.82,
+   "max_cms": 1.949,
+   "volume_ml": 9.88,
+   "lon": 80.218598,
+   "lat": 12.987975,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3450",
+   "hours": 2.4,
+   "max_cms": 1.487,
+   "volume_ml": 9.723,
+   "lon": 80.263342,
+   "lat": 12.968558,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N3116",
+   "hours": 3.93,
+   "max_cms": 1.093,
+   "volume_ml": 9.7,
+   "lon": 80.209595,
+   "lat": 12.990515,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3258",
+   "hours": 2.1,
+   "max_cms": 2.217,
+   "volume_ml": 9.7,
+   "lon": 80.236784,
+   "lat": 12.982899,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N6550",
+   "hours": 2.33,
+   "max_cms": 1.465,
+   "volume_ml": 9.566,
+   "lon": 80.20303,
+   "lat": 13.016127,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4819",
+   "hours": 1.97,
+   "max_cms": 1.661,
+   "volume_ml": 9.542,
+   "lon": 80.2082,
+   "lat": 13.046222,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N3531",
+   "hours": 3.04,
+   "max_cms": 1.395,
+   "volume_ml": 9.504,
+   "lon": 80.233183,
+   "lat": 12.96715,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N3333",
+   "hours": 2.06,
+   "max_cms": 1.678,
+   "volume_ml": 9.488,
+   "lon": 80.255951,
+   "lat": 12.995781,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N6500",
+   "hours": 2.15,
+   "max_cms": 1.538,
+   "volume_ml": 9.484,
+   "lon": 80.207812,
+   "lat": 12.974103,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4194",
+   "hours": 2.04,
+   "max_cms": 1.526,
+   "volume_ml": 9.452,
+   "lon": 80.240356,
+   "lat": 12.9585,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6994",
+   "hours": 2.02,
+   "max_cms": 1.529,
+   "volume_ml": 9.447,
+   "lon": 80.260165,
+   "lat": 12.981958,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N3864",
+   "hours": 2.09,
+   "max_cms": 1.548,
+   "volume_ml": 9.429,
+   "lon": 80.255803,
+   "lat": 12.959203,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N3302",
+   "hours": 2.31,
+   "max_cms": 2.058,
+   "volume_ml": 9.398,
+   "lon": 80.241673,
+   "lat": 12.989669,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N3073",
+   "hours": 5.91,
+   "max_cms": 1.394,
+   "volume_ml": 9.366,
+   "lon": 80.214593,
+   "lat": 12.985472,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4",
+   "hours": 2.02,
+   "max_cms": 1.509,
+   "volume_ml": 9.335,
+   "lon": 80.207476,
+   "lat": 12.998447,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N7018",
+   "hours": 2.12,
+   "max_cms": 1.443,
+   "volume_ml": 9.163,
+   "lon": 80.194702,
+   "lat": 12.961898,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1977",
+   "hours": 2.45,
+   "max_cms": 1.663,
+   "volume_ml": 9.108,
+   "lon": 80.187075,
+   "lat": 12.993352,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N7094",
+   "hours": 2.4,
+   "max_cms": 1.389,
+   "volume_ml": 9.052,
+   "lon": 80.206025,
+   "lat": 12.939658,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N3972",
+   "hours": 2.38,
+   "max_cms": 1.362,
+   "volume_ml": 8.914,
+   "lon": 80.255079,
+   "lat": 12.96328,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4292",
+   "hours": 1.98,
+   "max_cms": 1.542,
+   "volume_ml": 8.894,
+   "lon": 80.201822,
+   "lat": 12.953107,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4771",
+   "hours": 2.23,
+   "max_cms": 1.367,
+   "volume_ml": 8.872,
+   "lon": 80.238277,
+   "lat": 12.937244,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N6405",
+   "hours": 1.84,
+   "max_cms": 1.638,
+   "volume_ml": 8.869,
+   "lon": 80.201719,
+   "lat": 12.972345,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6856",
+   "hours": 1.95,
+   "max_cms": 1.508,
+   "volume_ml": 8.774,
+   "lon": 80.263017,
+   "lat": 13.021433,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6765",
+   "hours": 5.17,
+   "max_cms": 1.288,
+   "volume_ml": 8.738,
+   "lon": 80.242432,
+   "lat": 13.025437,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N4779",
+   "hours": 1.78,
+   "max_cms": 1.857,
+   "volume_ml": 8.73,
+   "lon": 80.24393,
+   "lat": 12.93488,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1109",
+   "hours": 3.35,
+   "max_cms": 1.342,
+   "volume_ml": 8.646,
+   "lon": 80.229783,
+   "lat": 13.036245,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N504",
+   "hours": 1.99,
+   "max_cms": 1.385,
+   "volume_ml": 8.598,
+   "lon": 80.250425,
+   "lat": 13.039679,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N313",
+   "hours": 3.93,
+   "max_cms": 1.475,
+   "volume_ml": 8.581,
+   "lon": 80.251327,
+   "lat": 12.998643,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N5637",
+   "hours": 2.6,
+   "max_cms": 1.473,
+   "volume_ml": 8.562,
+   "lon": 80.189101,
+   "lat": 13.009544,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4140",
+   "hours": 2.04,
+   "max_cms": 1.597,
+   "volume_ml": 8.255,
+   "lon": 80.242906,
+   "lat": 12.957774,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N119",
+   "hours": 2.22,
+   "max_cms": 1.283,
+   "volume_ml": 8.241,
+   "lon": 80.225138,
+   "lat": 12.974925,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N2595",
+   "hours": 1.97,
+   "max_cms": 1.393,
+   "volume_ml": 8.231,
+   "lon": 80.182099,
+   "lat": 12.984535,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6308",
+   "hours": 2.37,
+   "max_cms": 1.242,
+   "volume_ml": 8.201,
+   "lon": 80.194811,
+   "lat": 12.968046,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3861",
+   "hours": 2.32,
+   "max_cms": 1.295,
+   "volume_ml": 8.179,
+   "lon": 80.257502,
+   "lat": 12.95894,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N2768",
+   "hours": 5.7,
+   "max_cms": 1.214,
+   "volume_ml": 8.129,
+   "lon": 80.190468,
+   "lat": 12.975824,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6215",
+   "hours": 2.13,
+   "max_cms": 1.248,
+   "volume_ml": 8.004,
+   "lon": 80.18893,
+   "lat": 12.978293,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6682",
+   "hours": 1.95,
+   "max_cms": 1.422,
+   "volume_ml": 7.992,
+   "lon": 80.230314,
+   "lat": 13.026876,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6601",
+   "hours": 5.87,
+   "max_cms": 1.228,
+   "volume_ml": 7.754,
+   "lon": 80.210813,
+   "lat": 13.015276,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4549",
+   "hours": 5.26,
+   "max_cms": 1.234,
+   "volume_ml": 7.71,
+   "lon": 80.249324,
+   "lat": 12.952531,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1351",
+   "hours": 4.98,
+   "max_cms": 1.161,
+   "volume_ml": 7.674,
+   "lon": 80.177021,
+   "lat": 13.039966,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1304",
+   "hours": 1.86,
+   "max_cms": 1.41,
+   "volume_ml": 7.668,
+   "lon": 80.224364,
+   "lat": 13.021948,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3724",
+   "hours": 2.01,
+   "max_cms": 1.235,
+   "volume_ml": 7.644,
+   "lon": 80.246219,
+   "lat": 12.971616,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N839",
+   "hours": 1.95,
+   "max_cms": 1.375,
+   "volume_ml": 7.638,
+   "lon": 80.275647,
+   "lat": 13.02713,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N1248",
+   "hours": 1.89,
+   "max_cms": 1.537,
+   "volume_ml": 7.62,
+   "lon": 80.202138,
+   "lat": 13.0341,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4592",
+   "hours": 2.3,
+   "max_cms": 1.192,
+   "volume_ml": 7.619,
+   "lon": 80.255674,
+   "lat": 12.948894,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4414",
+   "hours": 2.3,
+   "max_cms": 1.251,
+   "volume_ml": 7.602,
+   "lon": 80.200855,
+   "lat": 12.96606,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N183",
+   "hours": 1.94,
+   "max_cms": 1.282,
+   "volume_ml": 7.466,
+   "lon": 80.224456,
+   "lat": 12.970114,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3574",
+   "hours": 2.09,
+   "max_cms": 1.265,
+   "volume_ml": 7.359,
+   "lon": 80.243322,
+   "lat": 12.972827,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4459",
+   "hours": 2.04,
+   "max_cms": 1.195,
+   "volume_ml": 7.359,
+   "lon": 80.211113,
+   "lat": 12.963162,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5320",
+   "hours": 2.06,
+   "max_cms": 1.17,
+   "volume_ml": 7.158,
+   "lon": 80.173875,
+   "lat": 13.042426,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3513",
+   "hours": 1.87,
+   "max_cms": 1.536,
+   "volume_ml": 7.131,
+   "lon": 80.248314,
+   "lat": 12.976004,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N472",
+   "hours": 1.92,
+   "max_cms": 1.288,
+   "volume_ml": 7.048,
+   "lon": 80.239357,
+   "lat": 13.036086,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N994",
+   "hours": 1.98,
+   "max_cms": 1.195,
+   "volume_ml": 7.023,
+   "lon": 80.219147,
+   "lat": 13.043607,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6782",
+   "hours": 2.18,
+   "max_cms": 1.234,
+   "volume_ml": 6.982,
+   "lon": 80.251303,
+   "lat": 13.017426,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N6617",
+   "hours": 1.88,
+   "max_cms": 1.627,
+   "volume_ml": 6.953,
+   "lon": 80.221387,
+   "lat": 13.012013,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4216",
+   "hours": 2.07,
+   "max_cms": 1.08,
+   "volume_ml": 6.81,
+   "lon": 80.237458,
+   "lat": 12.960185,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N214",
+   "hours": 2.02,
+   "max_cms": 1.07,
+   "volume_ml": 6.722,
+   "lon": 80.224503,
+   "lat": 12.978713,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4989",
+   "hours": 1.94,
+   "max_cms": 1.136,
+   "volume_ml": 6.712,
+   "lon": 80.189245,
+   "lat": 13.034708,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6760",
+   "hours": 1.92,
+   "max_cms": 1.559,
+   "volume_ml": 6.706,
+   "lon": 80.247095,
+   "lat": 13.021901,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N6584",
+   "hours": 1.82,
+   "max_cms": 1.536,
+   "volume_ml": 6.695,
+   "lon": 80.211662,
+   "lat": 13.010112,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4059",
+   "hours": 2.2,
+   "max_cms": 1.071,
+   "volume_ml": 6.68,
+   "lon": 80.235426,
+   "lat": 12.961362,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4697",
+   "hours": 2.08,
+   "max_cms": 1.493,
+   "volume_ml": 6.613,
+   "lon": 80.230977,
+   "lat": 12.937932,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N4823",
+   "hours": 2.02,
+   "max_cms": 1.054,
+   "volume_ml": 6.605,
+   "lon": 80.207343,
+   "lat": 13.048894,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N5739",
+   "hours": 4.45,
+   "max_cms": 1.668,
+   "volume_ml": 6.58,
+   "lon": 80.186774,
+   "lat": 13.018985,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N2360",
+   "hours": 4.69,
+   "max_cms": 1.005,
+   "volume_ml": 6.579,
+   "lon": 80.19411,
+   "lat": 12.986628,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4354",
+   "hours": 5.46,
+   "max_cms": 0.96,
+   "volume_ml": 6.571,
+   "lon": 80.207242,
+   "lat": 12.957925,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N2589",
+   "hours": 1.98,
+   "max_cms": 1.501,
+   "volume_ml": 6.542,
+   "lon": 80.179171,
+   "lat": 12.986192,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4449",
+   "hours": 1.91,
+   "max_cms": 1.137,
+   "volume_ml": 6.503,
+   "lon": 80.213425,
+   "lat": 12.962715,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3262",
+   "hours": 1.89,
+   "max_cms": 1.363,
+   "volume_ml": 6.447,
+   "lon": 80.24333,
+   "lat": 12.986127,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N6497",
+   "hours": 1.89,
+   "max_cms": 1.154,
+   "volume_ml": 6.428,
+   "lon": 80.202187,
+   "lat": 12.973921,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3324",
+   "hours": 2.03,
+   "max_cms": 1.039,
+   "volume_ml": 6.351,
+   "lon": 80.260237,
+   "lat": 12.989867,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N812",
+   "hours": 2.0,
+   "max_cms": 0.996,
+   "volume_ml": 6.339,
+   "lon": 80.263575,
+   "lat": 13.027453,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5738",
+   "hours": 1.86,
+   "max_cms": 1.244,
+   "volume_ml": 6.326,
+   "lon": 80.193369,
+   "lat": 13.008837,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N728",
+   "hours": 2.08,
+   "max_cms": 1.028,
+   "volume_ml": 6.295,
+   "lon": 80.267328,
+   "lat": 13.034705,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4349",
+   "hours": 2.02,
+   "max_cms": 1.145,
+   "volume_ml": 6.289,
+   "lon": 80.209195,
+   "lat": 12.957091,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6904",
+   "hours": 1.9,
+   "max_cms": 1.202,
+   "volume_ml": 6.287,
+   "lon": 80.259727,
+   "lat": 13.00036,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N3504",
+   "hours": 1.97,
+   "max_cms": 1.127,
+   "volume_ml": 6.276,
+   "lon": 80.24358,
+   "lat": 12.977455,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N2361",
+   "hours": 5.19,
+   "max_cms": 0.946,
+   "volume_ml": 6.254,
+   "lon": 80.193622,
+   "lat": 12.984938,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4689",
+   "hours": 2.11,
+   "max_cms": 1.025,
+   "volume_ml": 6.215,
+   "lon": 80.230379,
+   "lat": 12.933574,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N4708",
+   "hours": 2.03,
+   "max_cms": 1.055,
+   "volume_ml": 6.191,
+   "lon": 80.23417,
+   "lat": 12.941199,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N4990",
+   "hours": 5.84,
+   "max_cms": 0.826,
+   "volume_ml": 6.174,
+   "lon": 80.189273,
+   "lat": 13.035769,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N782",
+   "hours": 4.83,
+   "max_cms": 1.146,
+   "volume_ml": 6.17,
+   "lon": 80.276567,
+   "lat": 13.040728,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4221",
+   "hours": 5.95,
+   "max_cms": 1.007,
+   "volume_ml": 6.155,
+   "lon": 80.23491,
+   "lat": 12.964735,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1992",
+   "hours": 2.04,
+   "max_cms": 1.186,
+   "volume_ml": 6.142,
+   "lon": 80.191121,
+   "lat": 12.993151,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4416",
+   "hours": 1.93,
+   "max_cms": 1.014,
+   "volume_ml": 5.997,
+   "lon": 80.202089,
+   "lat": 12.965384,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3443",
+   "hours": 2.03,
+   "max_cms": 0.966,
+   "volume_ml": 5.973,
+   "lon": 80.25602,
+   "lat": 12.974096,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N395",
+   "hours": 3.0,
+   "max_cms": 1.101,
+   "volume_ml": 5.963,
+   "lon": 80.246207,
+   "lat": 13.048345,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6499",
+   "hours": 4.73,
+   "max_cms": 0.899,
+   "volume_ml": 5.756,
+   "lon": 80.206618,
+   "lat": 12.974197,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5966",
+   "hours": 2.04,
+   "max_cms": 0.928,
+   "volume_ml": 5.737,
+   "lon": 80.204138,
+   "lat": 12.990701,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N5170",
+   "hours": 5.17,
+   "max_cms": 0.788,
+   "volume_ml": 5.715,
+   "lon": 80.223866,
+   "lat": 13.032669,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1268",
+   "hours": 1.92,
+   "max_cms": 0.996,
+   "volume_ml": 5.693,
+   "lon": 80.211043,
+   "lat": 13.030172,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1302",
+   "hours": 1.83,
+   "max_cms": 1.123,
+   "volume_ml": 5.69,
+   "lon": 80.227397,
+   "lat": 13.023481,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N645",
+   "hours": 1.93,
+   "max_cms": 1.048,
+   "volume_ml": 5.663,
+   "lon": 80.260424,
+   "lat": 13.03779,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N286",
+   "hours": 4.86,
+   "max_cms": 0.863,
+   "volume_ml": 5.642,
+   "lon": 80.255201,
+   "lat": 12.993106,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N6556",
+   "hours": 1.77,
+   "max_cms": 1.106,
+   "volume_ml": 5.641,
+   "lon": 80.206232,
+   "lat": 13.021679,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5072",
+   "hours": 1.82,
+   "max_cms": 0.97,
+   "volume_ml": 5.618,
+   "lon": 80.226251,
+   "lat": 13.0441,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N7137",
+   "hours": 1.86,
+   "max_cms": 0.949,
+   "volume_ml": 5.569,
+   "lon": 80.211825,
+   "lat": 12.938122,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N6035",
+   "hours": 2.01,
+   "max_cms": 0.885,
+   "volume_ml": 5.527,
+   "lon": 80.188366,
+   "lat": 12.971433,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N88",
+   "hours": 1.98,
+   "max_cms": 0.908,
+   "volume_ml": 5.504,
+   "lon": 80.223065,
+   "lat": 12.97189,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4293",
+   "hours": 2.02,
+   "max_cms": 0.886,
+   "volume_ml": 5.498,
+   "lon": 80.201778,
+   "lat": 12.952408,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4883",
+   "hours": 2.0,
+   "max_cms": 1.332,
+   "volume_ml": 5.467,
+   "lon": 80.250138,
+   "lat": 13.024242,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N1219",
+   "hours": 2.21,
+   "max_cms": 0.93,
+   "volume_ml": 5.434,
+   "lon": 80.202322,
+   "lat": 13.043257,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1264",
+   "hours": 5.59,
+   "max_cms": 0.888,
+   "volume_ml": 5.377,
+   "lon": 80.210009,
+   "lat": 13.026206,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N7034",
+   "hours": 1.95,
+   "max_cms": 0.899,
+   "volume_ml": 5.376,
+   "lon": 80.190243,
+   "lat": 12.965134,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N182",
+   "hours": 1.87,
+   "max_cms": 1.007,
+   "volume_ml": 5.375,
+   "lon": 80.228882,
+   "lat": 12.985805,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3648",
+   "hours": 2.06,
+   "max_cms": 0.851,
+   "volume_ml": 5.291,
+   "lon": 80.244272,
+   "lat": 12.968278,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1415",
+   "hours": 1.85,
+   "max_cms": 1.038,
+   "volume_ml": 5.286,
+   "lon": 80.181078,
+   "lat": 13.042328,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1218",
+   "hours": 1.88,
+   "max_cms": 1.03,
+   "volume_ml": 5.265,
+   "lon": 80.20193,
+   "lat": 13.040699,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6783",
+   "hours": 1.91,
+   "max_cms": 1.044,
+   "volume_ml": 5.251,
+   "lon": 80.253035,
+   "lat": 13.020599,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N5516",
+   "hours": 1.87,
+   "max_cms": 0.943,
+   "volume_ml": 5.242,
+   "lon": 80.182119,
+   "lat": 13.028245,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5756",
+   "hours": 1.87,
+   "max_cms": 0.908,
+   "volume_ml": 5.22,
+   "lon": 80.203727,
+   "lat": 13.002445,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N894",
+   "hours": 4.95,
+   "max_cms": 0.862,
+   "volume_ml": 5.218,
+   "lon": 80.21297,
+   "lat": 13.039791,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N226",
+   "hours": 1.87,
+   "max_cms": 1.15,
+   "volume_ml": 5.187,
+   "lon": 80.253564,
+   "lat": 13.009576,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N1345",
+   "hours": 4.18,
+   "max_cms": 1.072,
+   "volume_ml": 5.179,
+   "lon": 80.177408,
+   "lat": 13.041888,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N596",
+   "hours": 1.92,
+   "max_cms": 0.963,
+   "volume_ml": 5.153,
+   "lon": 80.263579,
+   "lat": 13.044525,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3083",
+   "hours": 2.15,
+   "max_cms": 0.726,
+   "volume_ml": 5.091,
+   "lon": 80.209505,
+   "lat": 12.982945,
+   "bad_drain": true,
+   "near": "Velachery"
+  },
+  {
+   "node": "N82",
+   "hours": 1.88,
+   "max_cms": 0.892,
+   "volume_ml": 5.062,
+   "lon": 80.219679,
+   "lat": 12.972289,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N2854",
+   "hours": 2.08,
+   "max_cms": 0.79,
+   "volume_ml": 5.037,
+   "lon": 80.193011,
+   "lat": 12.981257,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1138",
+   "hours": 1.99,
+   "max_cms": 0.848,
+   "volume_ml": 5.023,
+   "lon": 80.238468,
+   "lat": 13.042091,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6699",
+   "hours": 1.85,
+   "max_cms": 1.081,
+   "volume_ml": 4.981,
+   "lon": 80.240945,
+   "lat": 13.025221,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N6723",
+   "hours": 1.91,
+   "max_cms": 0.932,
+   "volume_ml": 4.959,
+   "lon": 80.242758,
+   "lat": 13.018174,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N5200",
+   "hours": 1.98,
+   "max_cms": 0.8,
+   "volume_ml": 4.925,
+   "lon": 80.230876,
+   "lat": 13.030202,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4470",
+   "hours": 1.99,
+   "max_cms": 0.875,
+   "volume_ml": 4.905,
+   "lon": 80.20566,
+   "lat": 12.944237,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N663",
+   "hours": 1.84,
+   "max_cms": 0.871,
+   "volume_ml": 4.87,
+   "lon": 80.256705,
+   "lat": 13.02417,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3391",
+   "hours": 1.99,
+   "max_cms": 0.778,
+   "volume_ml": 4.825,
+   "lon": 80.254398,
+   "lat": 12.971238,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N604",
+   "hours": 1.88,
+   "max_cms": 0.827,
+   "volume_ml": 4.82,
+   "lon": 80.267762,
+   "lat": 13.039747,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6252",
+   "hours": 1.83,
+   "max_cms": 0.868,
+   "volume_ml": 4.769,
+   "lon": 80.183437,
+   "lat": 12.972501,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4294",
+   "hours": 1.98,
+   "max_cms": 0.836,
+   "volume_ml": 4.753,
+   "lon": 80.204842,
+   "lat": 12.952198,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6191",
+   "hours": 2.22,
+   "max_cms": 0.742,
+   "volume_ml": 4.726,
+   "lon": 80.187202,
+   "lat": 12.980086,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5171",
+   "hours": 1.85,
+   "max_cms": 0.87,
+   "volume_ml": 4.655,
+   "lon": 80.223946,
+   "lat": 13.033641,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N777",
+   "hours": 1.78,
+   "max_cms": 0.907,
+   "volume_ml": 4.631,
+   "lon": 80.267474,
+   "lat": 13.0294,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5021",
+   "hours": 1.89,
+   "max_cms": 0.86,
+   "volume_ml": 4.616,
+   "lon": 80.1898,
+   "lat": 13.042435,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N748",
+   "hours": 1.9,
+   "max_cms": 0.777,
+   "volume_ml": 4.598,
+   "lon": 80.271929,
+   "lat": 13.030257,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N696",
+   "hours": 5.81,
+   "max_cms": 0.703,
+   "volume_ml": 4.542,
+   "lon": 80.260152,
+   "lat": 13.030378,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3248",
+   "hours": 1.71,
+   "max_cms": 0.902,
+   "volume_ml": 4.517,
+   "lon": 80.234205,
+   "lat": 12.981351,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N3257",
+   "hours": 5.14,
+   "max_cms": 0.83,
+   "volume_ml": 4.496,
+   "lon": 80.238151,
+   "lat": 12.982632,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N1461",
+   "hours": 1.88,
+   "max_cms": 0.788,
+   "volume_ml": 4.426,
+   "lon": 80.180131,
+   "lat": 13.038411,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5556",
+   "hours": 1.73,
+   "max_cms": 1.085,
+   "volume_ml": 4.416,
+   "lon": 80.187723,
+   "lat": 13.028449,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4436",
+   "hours": 2.01,
+   "max_cms": 0.799,
+   "volume_ml": 4.414,
+   "lon": 80.210479,
+   "lat": 12.960462,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4559",
+   "hours": 1.94,
+   "max_cms": 0.777,
+   "volume_ml": 4.402,
+   "lon": 80.260855,
+   "lat": 12.95411,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1851",
+   "hours": 5.19,
+   "max_cms": 0.71,
+   "volume_ml": 4.393,
+   "lon": 80.200086,
+   "lat": 12.998656,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N210",
+   "hours": 2.02,
+   "max_cms": 0.721,
+   "volume_ml": 4.374,
+   "lon": 80.221932,
+   "lat": 12.975934,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N3425",
+   "hours": 5.37,
+   "max_cms": 0.658,
+   "volume_ml": 4.332,
+   "lon": 80.25811,
+   "lat": 12.968959,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4588",
+   "hours": 2.15,
+   "max_cms": 0.691,
+   "volume_ml": 4.321,
+   "lon": 80.255784,
+   "lat": 12.949483,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4231",
+   "hours": 3.48,
+   "max_cms": 0.665,
+   "volume_ml": 4.264,
+   "lon": 80.236381,
+   "lat": 12.963176,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1122",
+   "hours": 1.8,
+   "max_cms": 0.781,
+   "volume_ml": 4.193,
+   "lon": 80.23177,
+   "lat": 13.040651,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N3477",
+   "hours": 1.98,
+   "max_cms": 0.666,
+   "volume_ml": 4.192,
+   "lon": 80.24637,
+   "lat": 12.972718,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6854",
+   "hours": 1.69,
+   "max_cms": 1.096,
+   "volume_ml": 4.187,
+   "lon": 80.267683,
+   "lat": 13.019045,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3349",
+   "hours": 1.95,
+   "max_cms": 0.686,
+   "volume_ml": 4.159,
+   "lon": 80.254129,
+   "lat": 12.967467,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N2994",
+   "hours": 2.18,
+   "max_cms": 0.622,
+   "volume_ml": 4.046,
+   "lon": 80.199498,
+   "lat": 12.978081,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1233",
+   "hours": 2.44,
+   "max_cms": 0.756,
+   "volume_ml": 4.038,
+   "lon": 80.208492,
+   "lat": 13.030424,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N34",
+   "hours": 1.97,
+   "max_cms": 0.653,
+   "volume_ml": 4.007,
+   "lon": 80.223444,
+   "lat": 12.974362,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N6582",
+   "hours": 2.08,
+   "max_cms": 0.733,
+   "volume_ml": 3.995,
+   "lon": 80.215378,
+   "lat": 13.01603,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3612",
+   "hours": 1.87,
+   "max_cms": 1.028,
+   "volume_ml": 3.973,
+   "lon": 80.242394,
+   "lat": 12.966168,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N5052",
+   "hours": 1.59,
+   "max_cms": 0.787,
+   "volume_ml": 3.958,
+   "lon": 80.195937,
+   "lat": 13.04755,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1909",
+   "hours": 5.07,
+   "max_cms": 0.653,
+   "volume_ml": 3.933,
+   "lon": 80.204479,
+   "lat": 12.993777,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4712",
+   "hours": 1.76,
+   "max_cms": 0.731,
+   "volume_ml": 3.931,
+   "lon": 80.23866,
+   "lat": 12.93223,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N3604",
+   "hours": 2.64,
+   "max_cms": 0.828,
+   "volume_ml": 3.882,
+   "lon": 80.241242,
+   "lat": 12.965499,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4353",
+   "hours": 1.91,
+   "max_cms": 0.745,
+   "volume_ml": 3.83,
+   "lon": 80.207185,
+   "lat": 12.957612,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6654",
+   "hours": 4.35,
+   "max_cms": 0.538,
+   "volume_ml": 3.811,
+   "lon": 80.225783,
+   "lat": 13.027825,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4622",
+   "hours": 2.1,
+   "max_cms": 0.605,
+   "volume_ml": 3.81,
+   "lon": 80.248978,
+   "lat": 12.938809,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1971",
+   "hours": 2.01,
+   "max_cms": 0.66,
+   "volume_ml": 3.803,
+   "lon": 80.186627,
+   "lat": 12.989584,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4965",
+   "hours": 1.84,
+   "max_cms": 0.739,
+   "volume_ml": 3.773,
+   "lon": 80.245824,
+   "lat": 13.034248,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N4280",
+   "hours": 1.82,
+   "max_cms": 0.657,
+   "volume_ml": 3.741,
+   "lon": 80.20093,
+   "lat": 12.95511,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N703",
+   "hours": 1.9,
+   "max_cms": 0.732,
+   "volume_ml": 3.711,
+   "lon": 80.263809,
+   "lat": 13.033858,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N571",
+   "hours": 1.44,
+   "max_cms": 0.99,
+   "volume_ml": 3.695,
+   "lon": 80.279828,
+   "lat": 13.046365,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N1505",
+   "hours": 2.09,
+   "max_cms": 0.522,
+   "volume_ml": 3.693,
+   "lon": 80.173107,
+   "lat": 13.030164,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6836",
+   "hours": 1.88,
+   "max_cms": 0.955,
+   "volume_ml": 3.666,
+   "lon": 80.271033,
+   "lat": 13.019918,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N860",
+   "hours": 1.55,
+   "max_cms": 0.723,
+   "volume_ml": 3.656,
+   "lon": 80.209789,
+   "lat": 13.032371,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6969",
+   "hours": 5.24,
+   "max_cms": 0.666,
+   "volume_ml": 3.636,
+   "lon": 80.25707,
+   "lat": 12.985738,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N6506",
+   "hours": 4.03,
+   "max_cms": 0.531,
+   "volume_ml": 3.581,
+   "lon": 80.20468,
+   "lat": 12.965782,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1506",
+   "hours": 1.81,
+   "max_cms": 0.676,
+   "volume_ml": 3.545,
+   "lon": 80.174357,
+   "lat": 13.029861,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N247",
+   "hours": 1.62,
+   "max_cms": 0.944,
+   "volume_ml": 3.503,
+   "lon": 80.254656,
+   "lat": 13.002128,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N6318",
+   "hours": 2.1,
+   "max_cms": 0.55,
+   "volume_ml": 3.5,
+   "lon": 80.192779,
+   "lat": 12.971861,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3006",
+   "hours": 2.12,
+   "max_cms": 0.572,
+   "volume_ml": 3.483,
+   "lon": 80.199719,
+   "lat": 12.979448,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5071",
+   "hours": 2.11,
+   "max_cms": 0.504,
+   "volume_ml": 3.482,
+   "lon": 80.225664,
+   "lat": 13.042039,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N5638",
+   "hours": 2.24,
+   "max_cms": 0.977,
+   "volume_ml": 3.455,
+   "lon": 80.187229,
+   "lat": 13.010061,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N5294",
+   "hours": 1.75,
+   "max_cms": 0.95,
+   "volume_ml": 3.425,
+   "lon": 80.172373,
+   "lat": 13.046263,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5093",
+   "hours": 4.04,
+   "max_cms": 0.56,
+   "volume_ml": 3.418,
+   "lon": 80.225427,
+   "lat": 13.038701,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N5479",
+   "hours": 1.87,
+   "max_cms": 0.661,
+   "volume_ml": 3.418,
+   "lon": 80.171523,
+   "lat": 13.03608,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5736",
+   "hours": 2.09,
+   "max_cms": 0.582,
+   "volume_ml": 3.412,
+   "lon": 80.191118,
+   "lat": 13.01823,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N1364",
+   "hours": 3.52,
+   "max_cms": 0.674,
+   "volume_ml": 3.362,
+   "lon": 80.18048,
+   "lat": 13.039797,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1370",
+   "hours": 1.84,
+   "max_cms": 0.638,
+   "volume_ml": 3.3,
+   "lon": 80.177406,
+   "lat": 13.040894,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4893",
+   "hours": 2.42,
+   "max_cms": 0.59,
+   "volume_ml": 3.225,
+   "lon": 80.248968,
+   "lat": 13.027905,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N1167",
+   "hours": 4.67,
+   "max_cms": 0.71,
+   "volume_ml": 3.195,
+   "lon": 80.233338,
+   "lat": 13.045519,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6779",
+   "hours": 1.8,
+   "max_cms": 1.044,
+   "volume_ml": 3.185,
+   "lon": 80.243674,
+   "lat": 13.002401,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N6101",
+   "hours": 1.96,
+   "max_cms": 0.523,
+   "volume_ml": 3.183,
+   "lon": 80.184928,
+   "lat": 12.973716,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3108",
+   "hours": 1.83,
+   "max_cms": 0.571,
+   "volume_ml": 3.134,
+   "lon": 80.208305,
+   "lat": 12.994181,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6655",
+   "hours": 1.65,
+   "max_cms": 0.623,
+   "volume_ml": 3.128,
+   "lon": 80.22553,
+   "lat": 13.026821,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4274",
+   "hours": 1.82,
+   "max_cms": 0.601,
+   "volume_ml": 3.058,
+   "lon": 80.197822,
+   "lat": 12.955973,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1893",
+   "hours": 1.86,
+   "max_cms": 0.567,
+   "volume_ml": 3.024,
+   "lon": 80.20402,
+   "lat": 12.996885,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6821",
+   "hours": 1.89,
+   "max_cms": 0.869,
+   "volume_ml": 3.014,
+   "lon": 80.26593,
+   "lat": 13.023192,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N974",
+   "hours": 1.84,
+   "max_cms": 0.553,
+   "volume_ml": 2.996,
+   "lon": 80.217819,
+   "lat": 13.035504,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1162",
+   "hours": 1.89,
+   "max_cms": 0.512,
+   "volume_ml": 2.984,
+   "lon": 80.235373,
+   "lat": 13.043427,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N862",
+   "hours": 1.5,
+   "max_cms": 0.719,
+   "volume_ml": 2.974,
+   "lon": 80.212279,
+   "lat": 13.03469,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4023",
+   "hours": 2.07,
+   "max_cms": 0.455,
+   "volume_ml": 2.948,
+   "lon": 80.233871,
+   "lat": 12.965883,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N2147",
+   "hours": 1.94,
+   "max_cms": 0.513,
+   "volume_ml": 2.897,
+   "lon": 80.195463,
+   "lat": 12.993639,
+   "bad_drain": true,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6572",
+   "hours": 1.73,
+   "max_cms": 0.624,
+   "volume_ml": 2.893,
+   "lon": 80.205929,
+   "lat": 13.007843,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6494",
+   "hours": 1.85,
+   "max_cms": 0.527,
+   "volume_ml": 2.892,
+   "lon": 80.205549,
+   "lat": 12.976003,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N7125",
+   "hours": 1.96,
+   "max_cms": 0.468,
+   "volume_ml": 2.866,
+   "lon": 80.213764,
+   "lat": 12.941157,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1463",
+   "hours": 1.75,
+   "max_cms": 0.694,
+   "volume_ml": 2.858,
+   "lon": 80.183993,
+   "lat": 13.04388,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5062",
+   "hours": 1.78,
+   "max_cms": 0.549,
+   "volume_ml": 2.844,
+   "lon": 80.222482,
+   "lat": 13.045039,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N5009",
+   "hours": 1.85,
+   "max_cms": 0.51,
+   "volume_ml": 2.832,
+   "lon": 80.189878,
+   "lat": 13.047897,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N287",
+   "hours": 1.55,
+   "max_cms": 0.654,
+   "volume_ml": 2.828,
+   "lon": 80.255123,
+   "lat": 12.990891,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N4308",
+   "hours": 1.93,
+   "max_cms": 0.554,
+   "volume_ml": 2.801,
+   "lon": 80.202103,
+   "lat": 12.955621,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3532",
+   "hours": 5.84,
+   "max_cms": 0.403,
+   "volume_ml": 2.796,
+   "lon": 80.232482,
+   "lat": 12.961364,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1224",
+   "hours": 1.94,
+   "max_cms": 0.452,
+   "volume_ml": 2.778,
+   "lon": 80.197151,
+   "lat": 13.039217,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N11",
+   "hours": 1.07,
+   "max_cms": 1.132,
+   "volume_ml": 2.758,
+   "lon": 80.211999,
+   "lat": 13.004112,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N5497",
+   "hours": 1.39,
+   "max_cms": 0.79,
+   "volume_ml": 2.72,
+   "lon": 80.178825,
+   "lat": 13.027334,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4247",
+   "hours": 1.77,
+   "max_cms": 0.508,
+   "volume_ml": 2.714,
+   "lon": 80.190385,
+   "lat": 12.954696,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4514",
+   "hours": 1.94,
+   "max_cms": 0.45,
+   "volume_ml": 2.686,
+   "lon": 80.249219,
+   "lat": 12.942794,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4894",
+   "hours": 1.92,
+   "max_cms": 0.544,
+   "volume_ml": 2.643,
+   "lon": 80.245474,
+   "lat": 13.027019,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N3507",
+   "hours": 1.86,
+   "max_cms": 0.574,
+   "volume_ml": 2.603,
+   "lon": 80.248448,
+   "lat": 12.97805,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N6363",
+   "hours": 1.91,
+   "max_cms": 0.45,
+   "volume_ml": 2.594,
+   "lon": 80.196279,
+   "lat": 12.969455,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3834",
+   "hours": 2.05,
+   "max_cms": 0.398,
+   "volume_ml": 2.563,
+   "lon": 80.253618,
+   "lat": 12.959544,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4886",
+   "hours": 2.36,
+   "max_cms": 0.536,
+   "volume_ml": 2.554,
+   "lon": 80.247874,
+   "lat": 13.024711,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N4616",
+   "hours": 1.98,
+   "max_cms": 0.474,
+   "volume_ml": 2.543,
+   "lon": 80.246069,
+   "lat": 12.935748,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4706",
+   "hours": 1.69,
+   "max_cms": 0.649,
+   "volume_ml": 2.489,
+   "lon": 80.232263,
+   "lat": 12.941783,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N3404",
+   "hours": 1.89,
+   "max_cms": 0.424,
+   "volume_ml": 2.485,
+   "lon": 80.25454,
+   "lat": 12.969878,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N482",
+   "hours": 1.88,
+   "max_cms": 0.419,
+   "volume_ml": 2.481,
+   "lon": 80.242302,
+   "lat": 13.034912,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N3884",
+   "hours": 2.22,
+   "max_cms": 0.354,
+   "volume_ml": 2.469,
+   "lon": 80.25264,
+   "lat": 12.961528,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4300",
+   "hours": 1.63,
+   "max_cms": 0.605,
+   "volume_ml": 2.463,
+   "lon": 80.20859,
+   "lat": 12.953766,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1985",
+   "hours": 1.94,
+   "max_cms": 0.414,
+   "volume_ml": 2.456,
+   "lon": 80.188602,
+   "lat": 12.993006,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N2301",
+   "hours": 1.87,
+   "max_cms": 0.423,
+   "volume_ml": 2.456,
+   "lon": 80.188488,
+   "lat": 12.985796,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1462",
+   "hours": 1.98,
+   "max_cms": 0.367,
+   "volume_ml": 2.446,
+   "lon": 80.180052,
+   "lat": 13.039736,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6791",
+   "hours": 2.76,
+   "max_cms": 0.494,
+   "volume_ml": 2.44,
+   "lon": 80.272398,
+   "lat": 13.01922,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4252",
+   "hours": 5.81,
+   "max_cms": 0.372,
+   "volume_ml": 2.41,
+   "lon": 80.193379,
+   "lat": 12.953396,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4830",
+   "hours": 1.79,
+   "max_cms": 0.604,
+   "volume_ml": 2.402,
+   "lon": 80.261115,
+   "lat": 13.042767,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6780",
+   "hours": 1.93,
+   "max_cms": 0.682,
+   "volume_ml": 2.398,
+   "lon": 80.243681,
+   "lat": 13.001215,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N3203",
+   "hours": 1.8,
+   "max_cms": 0.449,
+   "volume_ml": 2.351,
+   "lon": 80.209239,
+   "lat": 12.977953,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N1742",
+   "hours": 1.97,
+   "max_cms": 0.448,
+   "volume_ml": 2.338,
+   "lon": 80.184508,
+   "lat": 13.022315,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N2071",
+   "hours": 1.89,
+   "max_cms": 0.397,
+   "volume_ml": 2.303,
+   "lon": 80.194036,
+   "lat": 12.986735,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5035",
+   "hours": 3.59,
+   "max_cms": 0.668,
+   "volume_ml": 2.302,
+   "lon": 80.192857,
+   "lat": 13.03796,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3798",
+   "hours": 1.85,
+   "max_cms": 0.496,
+   "volume_ml": 2.275,
+   "lon": 80.24834,
+   "lat": 12.96022,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1229",
+   "hours": 4.74,
+   "max_cms": 0.441,
+   "volume_ml": 2.258,
+   "lon": 80.209135,
+   "lat": 13.026861,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1292",
+   "hours": 2.41,
+   "max_cms": 0.327,
+   "volume_ml": 2.234,
+   "lon": 80.216113,
+   "lat": 13.028505,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3535",
+   "hours": 1.95,
+   "max_cms": 0.505,
+   "volume_ml": 2.23,
+   "lon": 80.231922,
+   "lat": 12.961349,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4096",
+   "hours": 1.94,
+   "max_cms": 0.333,
+   "volume_ml": 2.19,
+   "lon": 80.240867,
+   "lat": 12.961414,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N3117",
+   "hours": 0.53,
+   "max_cms": 1.421,
+   "volume_ml": 2.127,
+   "lon": 80.215025,
+   "lat": 12.988947,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4019",
+   "hours": 1.44,
+   "max_cms": 0.628,
+   "volume_ml": 2.122,
+   "lon": 80.26122,
+   "lat": 12.965379,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1722",
+   "hours": 1.23,
+   "max_cms": 0.869,
+   "volume_ml": 2.119,
+   "lon": 80.175577,
+   "lat": 13.013945,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N2740",
+   "hours": 1.99,
+   "max_cms": 0.467,
+   "volume_ml": 2.116,
+   "lon": 80.178874,
+   "lat": 12.975928,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5184",
+   "hours": 3.36,
+   "max_cms": 0.325,
+   "volume_ml": 2.109,
+   "lon": 80.223982,
+   "lat": 13.031226,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N424",
+   "hours": 1.79,
+   "max_cms": 0.435,
+   "volume_ml": 2.1,
+   "lon": 80.240129,
+   "lat": 13.048656,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N3770",
+   "hours": 1.88,
+   "max_cms": 0.387,
+   "volume_ml": 2.093,
+   "lon": 80.247084,
+   "lat": 12.96159,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N516",
+   "hours": 1.61,
+   "max_cms": 0.426,
+   "volume_ml": 1.976,
+   "lon": 80.256431,
+   "lat": 13.044474,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N2518",
+   "hours": 1.55,
+   "max_cms": 0.451,
+   "volume_ml": 1.962,
+   "lon": 80.204596,
+   "lat": 12.981567,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N5709",
+   "hours": 1.29,
+   "max_cms": 0.495,
+   "volume_ml": 1.948,
+   "lon": 80.19305,
+   "lat": 13.008637,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N503",
+   "hours": 1.92,
+   "max_cms": 0.33,
+   "volume_ml": 1.916,
+   "lon": 80.251737,
+   "lat": 13.039529,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5145",
+   "hours": 1.57,
+   "max_cms": 0.421,
+   "volume_ml": 1.874,
+   "lon": 80.220811,
+   "lat": 13.035376,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1863",
+   "hours": 1.83,
+   "max_cms": 0.34,
+   "volume_ml": 1.864,
+   "lon": 80.205645,
+   "lat": 13.001841,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4067",
+   "hours": 5.62,
+   "max_cms": 0.274,
+   "volume_ml": 1.864,
+   "lon": 80.237426,
+   "lat": 12.962169,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4002",
+   "hours": 1.79,
+   "max_cms": 0.376,
+   "volume_ml": 1.844,
+   "lon": 80.251894,
+   "lat": 12.966257,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N3191",
+   "hours": 1.93,
+   "max_cms": 0.303,
+   "volume_ml": 1.843,
+   "lon": 80.216346,
+   "lat": 12.97207,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N4406",
+   "hours": 1.82,
+   "max_cms": 0.325,
+   "volume_ml": 1.822,
+   "lon": 80.201835,
+   "lat": 12.963768,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4753",
+   "hours": 2.0,
+   "max_cms": 0.494,
+   "volume_ml": 1.81,
+   "lon": 80.230284,
+   "lat": 12.933687,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N5199",
+   "hours": 1.77,
+   "max_cms": 0.335,
+   "volume_ml": 1.802,
+   "lon": 80.231417,
+   "lat": 13.02619,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1350",
+   "hours": 1.8,
+   "max_cms": 0.327,
+   "volume_ml": 1.793,
+   "lon": 80.174542,
+   "lat": 13.039675,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N869",
+   "hours": 1.72,
+   "max_cms": 0.537,
+   "volume_ml": 1.784,
+   "lon": 80.208597,
+   "lat": 13.038702,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6920",
+   "hours": 1.95,
+   "max_cms": 0.322,
+   "volume_ml": 1.77,
+   "lon": 80.258854,
+   "lat": 13.0052,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N5003",
+   "hours": 1.9,
+   "max_cms": 0.3,
+   "volume_ml": 1.728,
+   "lon": 80.188846,
+   "lat": 13.046977,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1576",
+   "hours": 1.4,
+   "max_cms": 0.449,
+   "volume_ml": 1.724,
+   "lon": 80.175438,
+   "lat": 13.033898,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N607",
+   "hours": 2.04,
+   "max_cms": 0.238,
+   "volume_ml": 1.7,
+   "lon": 80.264724,
+   "lat": 13.044515,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N289",
+   "hours": 1.25,
+   "max_cms": 0.563,
+   "volume_ml": 1.689,
+   "lon": 80.255934,
+   "lat": 12.99312,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N3310",
+   "hours": 1.73,
+   "max_cms": 0.378,
+   "volume_ml": 1.685,
+   "lon": 80.244432,
+   "lat": 12.995122,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N3428",
+   "hours": 2.02,
+   "max_cms": 0.237,
+   "volume_ml": 1.648,
+   "lon": 80.256223,
+   "lat": 12.970235,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4718",
+   "hours": 1.75,
+   "max_cms": 0.324,
+   "volume_ml": 1.636,
+   "lon": 80.241307,
+   "lat": 12.931865,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1848",
+   "hours": 1.58,
+   "max_cms": 0.407,
+   "volume_ml": 1.584,
+   "lon": 80.200373,
+   "lat": 12.998662,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N1101",
+   "hours": 1.79,
+   "max_cms": 0.31,
+   "volume_ml": 1.582,
+   "lon": 80.233835,
+   "lat": 13.036485,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6930",
+   "hours": 1.82,
+   "max_cms": 0.295,
+   "volume_ml": 1.578,
+   "lon": 80.257792,
+   "lat": 12.974595,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N3084",
+   "hours": 1.61,
+   "max_cms": 0.347,
+   "volume_ml": 1.512,
+   "lon": 80.20951,
+   "lat": 12.982035,
+   "bad_drain": true,
+   "near": "Velachery"
+  },
+  {
+   "node": "N5183",
+   "hours": 1.21,
+   "max_cms": 0.47,
+   "volume_ml": 1.504,
+   "lon": 80.22397,
+   "lat": 13.028905,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5118",
+   "hours": 1.87,
+   "max_cms": 0.265,
+   "volume_ml": 1.498,
+   "lon": 80.218919,
+   "lat": 13.036489,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5781",
+   "hours": 1.98,
+   "max_cms": 0.298,
+   "volume_ml": 1.45,
+   "lon": 80.203766,
+   "lat": 13.004123,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N5986",
+   "hours": 5.91,
+   "max_cms": 0.265,
+   "volume_ml": 1.45,
+   "lon": 80.185777,
+   "lat": 12.970384,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N795",
+   "hours": 1.34,
+   "max_cms": 0.363,
+   "volume_ml": 1.417,
+   "lon": 80.276419,
+   "lat": 13.028608,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N848",
+   "hours": 1.8,
+   "max_cms": 0.298,
+   "volume_ml": 1.386,
+   "lon": 80.263411,
+   "lat": 13.027105,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3879",
+   "hours": 1.88,
+   "max_cms": 0.212,
+   "volume_ml": 1.385,
+   "lon": 80.25208,
+   "lat": 12.961588,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1270",
+   "hours": 1.79,
+   "max_cms": 0.269,
+   "volume_ml": 1.375,
+   "lon": 80.215965,
+   "lat": 13.027145,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N24",
+   "hours": 1.2,
+   "max_cms": 0.397,
+   "volume_ml": 1.363,
+   "lon": 80.212899,
+   "lat": 13.007106,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N1850",
+   "hours": 1.03,
+   "max_cms": 0.605,
+   "volume_ml": 1.355,
+   "lon": 80.198581,
+   "lat": 12.998592,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N3390",
+   "hours": 4.87,
+   "max_cms": 0.171,
+   "volume_ml": 1.342,
+   "lon": 80.254564,
+   "lat": 12.972697,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6754",
+   "hours": 1.08,
+   "max_cms": 0.579,
+   "volume_ml": 1.337,
+   "lon": 80.245553,
+   "lat": 13.001133,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N7096",
+   "hours": 1.9,
+   "max_cms": 0.238,
+   "volume_ml": 1.307,
+   "lon": 80.20829,
+   "lat": 12.939468,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N5185",
+   "hours": 1.24,
+   "max_cms": 0.359,
+   "volume_ml": 1.29,
+   "lon": 80.230002,
+   "lat": 13.035038,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N7006",
+   "hours": 4.56,
+   "max_cms": 0.245,
+   "volume_ml": 1.275,
+   "lon": 80.192554,
+   "lat": 12.961248,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4951",
+   "hours": 1.0,
+   "max_cms": 0.48,
+   "volume_ml": 1.265,
+   "lon": 80.241797,
+   "lat": 13.028628,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N4196",
+   "hours": 1.72,
+   "max_cms": 0.244,
+   "volume_ml": 1.259,
+   "lon": 80.243325,
+   "lat": 12.959906,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N5715",
+   "hours": 1.36,
+   "max_cms": 0.439,
+   "volume_ml": 1.236,
+   "lon": 80.192318,
+   "lat": 13.010812,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N605",
+   "hours": 1.37,
+   "max_cms": 0.36,
+   "volume_ml": 1.231,
+   "lon": 80.275984,
+   "lat": 13.046734,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3429",
+   "hours": 1.79,
+   "max_cms": 0.226,
+   "volume_ml": 1.146,
+   "lon": 80.257511,
+   "lat": 12.970147,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N975",
+   "hours": 1.46,
+   "max_cms": 0.234,
+   "volume_ml": 1.105,
+   "lon": 80.218765,
+   "lat": 13.035466,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N4695",
+   "hours": 5.92,
+   "max_cms": 0.108,
+   "volume_ml": 1.089,
+   "lon": 80.233388,
+   "lat": 12.939869,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N686",
+   "hours": 1.43,
+   "max_cms": 0.293,
+   "volume_ml": 1.074,
+   "lon": 80.256542,
+   "lat": 13.030817,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5108",
+   "hours": 1.7,
+   "max_cms": 0.239,
+   "volume_ml": 1.074,
+   "lon": 80.221137,
+   "lat": 13.038558,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6790",
+   "hours": 1.47,
+   "max_cms": 0.276,
+   "volume_ml": 1.063,
+   "lon": 80.275318,
+   "lat": 13.020672,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5148",
+   "hours": 1.1,
+   "max_cms": 0.356,
+   "volume_ml": 1.061,
+   "lon": 80.225529,
+   "lat": 13.031282,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1973",
+   "hours": 1.38,
+   "max_cms": 0.302,
+   "volume_ml": 1.059,
+   "lon": 80.185528,
+   "lat": 12.989748,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1123",
+   "hours": 1.83,
+   "max_cms": 0.207,
+   "volume_ml": 1.038,
+   "lon": 80.228984,
+   "lat": 13.041287,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N1344",
+   "hours": 1.4,
+   "max_cms": 0.23,
+   "volume_ml": 1.019,
+   "lon": 80.172264,
+   "lat": 13.040594,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6853",
+   "hours": 1.8,
+   "max_cms": 0.209,
+   "volume_ml": 1.019,
+   "lon": 80.272667,
+   "lat": 13.023047,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N1735",
+   "hours": 1.92,
+   "max_cms": 0.292,
+   "volume_ml": 0.993,
+   "lon": 80.183887,
+   "lat": 13.022883,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N2609",
+   "hours": 1.72,
+   "max_cms": 0.218,
+   "volume_ml": 0.992,
+   "lon": 80.179702,
+   "lat": 12.980916,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N4908",
+   "hours": 0.91,
+   "max_cms": 0.405,
+   "volume_ml": 0.991,
+   "lon": 80.251623,
+   "lat": 13.027859,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4536",
+   "hours": 1.88,
+   "max_cms": 0.18,
+   "volume_ml": 0.972,
+   "lon": 80.250204,
+   "lat": 12.952022,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4599",
+   "hours": 2.2,
+   "max_cms": 0.187,
+   "volume_ml": 0.964,
+   "lon": 80.248684,
+   "lat": 12.948594,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1246",
+   "hours": 1.54,
+   "max_cms": 0.224,
+   "volume_ml": 0.954,
+   "lon": 80.207177,
+   "lat": 13.029532,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5376",
+   "hours": 1.45,
+   "max_cms": 0.263,
+   "volume_ml": 0.937,
+   "lon": 80.181778,
+   "lat": 13.046577,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1658",
+   "hours": 0.78,
+   "max_cms": 0.47,
+   "volume_ml": 0.917,
+   "lon": 80.179483,
+   "lat": 13.012962,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6717",
+   "hours": 1.61,
+   "max_cms": 0.229,
+   "volume_ml": 0.905,
+   "lon": 80.247086,
+   "lat": 13.012551,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N7021",
+   "hours": 2.23,
+   "max_cms": 0.151,
+   "volume_ml": 0.904,
+   "lon": 80.193918,
+   "lat": 12.962029,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5644",
+   "hours": 1.02,
+   "max_cms": 0.441,
+   "volume_ml": 0.892,
+   "lon": 80.184676,
+   "lat": 13.011698,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N5853",
+   "hours": 1.79,
+   "max_cms": 0.172,
+   "volume_ml": 0.875,
+   "lon": 80.207035,
+   "lat": 12.999913,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N633",
+   "hours": 1.29,
+   "max_cms": 0.263,
+   "volume_ml": 0.867,
+   "lon": 80.254455,
+   "lat": 13.03115,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5755",
+   "hours": 1.91,
+   "max_cms": 0.125,
+   "volume_ml": 0.846,
+   "lon": 80.204333,
+   "lat": 13.00106,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N779",
+   "hours": 1.66,
+   "max_cms": 0.202,
+   "volume_ml": 0.839,
+   "lon": 80.270477,
+   "lat": 13.031251,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N1499",
+   "hours": 1.25,
+   "max_cms": 0.281,
+   "volume_ml": 0.837,
+   "lon": 80.174017,
+   "lat": 13.028319,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5032",
+   "hours": 1.75,
+   "max_cms": 0.16,
+   "volume_ml": 0.819,
+   "lon": 80.192334,
+   "lat": 13.048132,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6519",
+   "hours": 1.16,
+   "max_cms": 0.287,
+   "volume_ml": 0.803,
+   "lon": 80.203229,
+   "lat": 12.968426,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N1448",
+   "hours": 1.35,
+   "max_cms": 0.208,
+   "volume_ml": 0.801,
+   "lon": 80.183948,
+   "lat": 13.041409,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N629",
+   "hours": 1.46,
+   "max_cms": 0.212,
+   "volume_ml": 0.771,
+   "lon": 80.253906,
+   "lat": 13.029017,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N811",
+   "hours": 1.22,
+   "max_cms": 0.233,
+   "volume_ml": 0.761,
+   "lon": 80.264104,
+   "lat": 13.029344,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N1733",
+   "hours": 0.97,
+   "max_cms": 0.297,
+   "volume_ml": 0.742,
+   "lon": 80.182322,
+   "lat": 13.021232,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6719",
+   "hours": 1.05,
+   "max_cms": 0.305,
+   "volume_ml": 0.742,
+   "lon": 80.246149,
+   "lat": 13.011561,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N2852",
+   "hours": 2.17,
+   "max_cms": 0.096,
+   "volume_ml": 0.734,
+   "lon": 80.192904,
+   "lat": 12.981019,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3870",
+   "hours": 1.74,
+   "max_cms": 0.157,
+   "volume_ml": 0.703,
+   "lon": 80.251008,
+   "lat": 12.961627,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N5656",
+   "hours": 3.94,
+   "max_cms": 0.144,
+   "volume_ml": 0.703,
+   "lon": 80.187371,
+   "lat": 13.012107,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N697",
+   "hours": 1.88,
+   "max_cms": 0.12,
+   "volume_ml": 0.679,
+   "lon": 80.260279,
+   "lat": 13.031669,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N788",
+   "hours": 0.9,
+   "max_cms": 0.285,
+   "volume_ml": 0.667,
+   "lon": 80.277057,
+   "lat": 13.043437,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N992",
+   "hours": 1.7,
+   "max_cms": 0.133,
+   "volume_ml": 0.664,
+   "lon": 80.222014,
+   "lat": 13.042928,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N5435",
+   "hours": 1.79,
+   "max_cms": 0.163,
+   "volume_ml": 0.661,
+   "lon": 80.171167,
+   "lat": 13.033041,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N564",
+   "hours": 1.37,
+   "max_cms": 0.186,
+   "volume_ml": 0.652,
+   "lon": 80.251438,
+   "lat": 13.049117,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5153",
+   "hours": 1.47,
+   "max_cms": 0.166,
+   "volume_ml": 0.648,
+   "lon": 80.222187,
+   "lat": 13.031705,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6855",
+   "hours": 1.22,
+   "max_cms": 0.235,
+   "volume_ml": 0.634,
+   "lon": 80.261242,
+   "lat": 13.0188,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N3506",
+   "hours": 1.97,
+   "max_cms": 0.133,
+   "volume_ml": 0.619,
+   "lon": 80.247715,
+   "lat": 12.975214,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4623",
+   "hours": 2.15,
+   "max_cms": 0.085,
+   "volume_ml": 0.592,
+   "lon": 80.249804,
+   "lat": 12.938647,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N2141",
+   "hours": 1.92,
+   "max_cms": 0.116,
+   "volume_ml": 0.589,
+   "lon": 80.194862,
+   "lat": 12.993887,
+   "bad_drain": true,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6614",
+   "hours": 0.94,
+   "max_cms": 0.288,
+   "volume_ml": 0.589,
+   "lon": 80.207786,
+   "lat": 13.017684,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N7036",
+   "hours": 1.9,
+   "max_cms": 0.094,
+   "volume_ml": 0.565,
+   "lon": 80.189998,
+   "lat": 12.966228,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3821",
+   "hours": 1.52,
+   "max_cms": 0.162,
+   "volume_ml": 0.552,
+   "lon": 80.25039,
+   "lat": 12.959536,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N695",
+   "hours": 0.8,
+   "max_cms": 0.299,
+   "volume_ml": 0.524,
+   "lon": 80.260263,
+   "lat": 13.031326,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6507",
+   "hours": 1.47,
+   "max_cms": 0.141,
+   "volume_ml": 0.502,
+   "lon": 80.204984,
+   "lat": 12.967246,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N859",
+   "hours": 1.34,
+   "max_cms": 0.313,
+   "volume_ml": 0.498,
+   "lon": 80.215775,
+   "lat": 13.031484,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N284",
+   "hours": 0.93,
+   "max_cms": 0.226,
+   "volume_ml": 0.495,
+   "lon": 80.250918,
+   "lat": 12.993832,
+   "bad_drain": false,
+   "near": "Taramani"
+  },
+  {
+   "node": "N2950",
+   "hours": 5.09,
+   "max_cms": 0.056,
+   "volume_ml": 0.482,
+   "lon": 80.196495,
+   "lat": 12.974193,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5579",
+   "hours": 0.89,
+   "max_cms": 0.185,
+   "volume_ml": 0.465,
+   "lon": 80.181639,
+   "lat": 13.02426,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5860",
+   "hours": 1.0,
+   "max_cms": 0.143,
+   "volume_ml": 0.451,
+   "lon": 80.201187,
+   "lat": 12.994211,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N5672",
+   "hours": 0.79,
+   "max_cms": 0.245,
+   "volume_ml": 0.409,
+   "lon": 80.190508,
+   "lat": 13.018322,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N6834",
+   "hours": 0.72,
+   "max_cms": 0.188,
+   "volume_ml": 0.397,
+   "lon": 80.259822,
+   "lat": 13.018731,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N5079",
+   "hours": 1.29,
+   "max_cms": 0.099,
+   "volume_ml": 0.387,
+   "lon": 80.220829,
+   "lat": 13.035175,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6640",
+   "hours": 0.8,
+   "max_cms": 0.219,
+   "volume_ml": 0.383,
+   "lon": 80.238729,
+   "lat": 13.018499,
+   "bad_drain": true,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N4440",
+   "hours": 1.31,
+   "max_cms": 0.109,
+   "volume_ml": 0.382,
+   "lon": 80.212782,
+   "lat": 12.961177,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N7026",
+   "hours": 1.93,
+   "max_cms": 0.062,
+   "volume_ml": 0.379,
+   "lon": 80.194222,
+   "lat": 12.960733,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N6196",
+   "hours": 5.58,
+   "max_cms": 0.06,
+   "volume_ml": 0.336,
+   "lon": 80.186964,
+   "lat": 12.977987,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N5304",
+   "hours": 1.07,
+   "max_cms": 0.119,
+   "volume_ml": 0.324,
+   "lon": 80.174801,
+   "lat": 13.045735,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5954",
+   "hours": 4.14,
+   "max_cms": 0.113,
+   "volume_ml": 0.317,
+   "lon": 80.203155,
+   "lat": 12.992105,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N677",
+   "hours": 0.93,
+   "max_cms": 0.135,
+   "volume_ml": 0.31,
+   "lon": 80.256273,
+   "lat": 13.028005,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6180",
+   "hours": 0.86,
+   "max_cms": 0.124,
+   "volume_ml": 0.299,
+   "lon": 80.180108,
+   "lat": 12.980791,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3448",
+   "hours": 1.09,
+   "max_cms": 0.097,
+   "volume_ml": 0.258,
+   "lon": 80.263962,
+   "lat": 12.971876,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N373",
+   "hours": 1.21,
+   "max_cms": 0.083,
+   "volume_ml": 0.251,
+   "lon": 80.256183,
+   "lat": 13.04827,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N5759",
+   "hours": 0.88,
+   "max_cms": 0.109,
+   "volume_ml": 0.251,
+   "lon": 80.202017,
+   "lat": 13.002938,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N602",
+   "hours": 1.71,
+   "max_cms": 0.054,
+   "volume_ml": 0.239,
+   "lon": 80.266873,
+   "lat": 13.04448,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N522",
+   "hours": 1.12,
+   "max_cms": 0.085,
+   "volume_ml": 0.23,
+   "lon": 80.25419,
+   "lat": 13.042082,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N6787",
+   "hours": 0.75,
+   "max_cms": 0.13,
+   "volume_ml": 0.222,
+   "lon": 80.261886,
+   "lat": 13.018748,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N6945",
+   "hours": 0.55,
+   "max_cms": 0.117,
+   "volume_ml": 0.219,
+   "lon": 80.258138,
+   "lat": 12.978875,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N1110",
+   "hours": 5.82,
+   "max_cms": 0.218,
+   "volume_ml": 0.211,
+   "lon": 80.229527,
+   "lat": 13.035239,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N6851",
+   "hours": 0.68,
+   "max_cms": 0.132,
+   "volume_ml": 0.211,
+   "lon": 80.263211,
+   "lat": 13.021521,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N3295",
+   "hours": 2.57,
+   "max_cms": 0.145,
+   "volume_ml": 0.2,
+   "lon": 80.254553,
+   "lat": 12.987177,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N2949",
+   "hours": 1.05,
+   "max_cms": 0.057,
+   "volume_ml": 0.191,
+   "lon": 80.196452,
+   "lat": 12.974191,
+   "bad_drain": true,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3517",
+   "hours": 1.31,
+   "max_cms": 0.053,
+   "volume_ml": 0.189,
+   "lon": 80.251504,
+   "lat": 12.967744,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6634",
+   "hours": 0.91,
+   "max_cms": 0.086,
+   "volume_ml": 0.182,
+   "lon": 80.229398,
+   "lat": 13.018933,
+   "bad_drain": true,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N438",
+   "hours": 0.94,
+   "max_cms": 0.076,
+   "volume_ml": 0.164,
+   "lon": 80.233306,
+   "lat": 13.048194,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N4737",
+   "hours": 1.26,
+   "max_cms": 0.047,
+   "volume_ml": 0.162,
+   "lon": 80.237847,
+   "lat": 12.933853,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N4815",
+   "hours": 1.16,
+   "max_cms": 0.047,
+   "volume_ml": 0.147,
+   "lon": 80.250002,
+   "lat": 12.939422,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N6711",
+   "hours": 0.57,
+   "max_cms": 0.111,
+   "volume_ml": 0.129,
+   "lon": 80.245144,
+   "lat": 13.021371,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N598",
+   "hours": 0.7,
+   "max_cms": 0.057,
+   "volume_ml": 0.127,
+   "lon": 80.26707,
+   "lat": 13.044014,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4895",
+   "hours": 0.7,
+   "max_cms": 0.084,
+   "volume_ml": 0.122,
+   "lon": 80.245383,
+   "lat": 13.026706,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N311",
+   "hours": 0.57,
+   "max_cms": 0.085,
+   "volume_ml": 0.11,
+   "lon": 80.251692,
+   "lat": 12.997297,
+   "bad_drain": false,
+   "near": "Adyar"
+  },
+  {
+   "node": "N3300",
+   "hours": 0.99,
+   "max_cms": 0.043,
+   "volume_ml": 0.1,
+   "lon": 80.252357,
+   "lat": 12.988074,
+   "bad_drain": false,
+   "near": "Thiruvanmiyur"
+  },
+  {
+   "node": "N1225",
+   "hours": 0.77,
+   "max_cms": 0.052,
+   "volume_ml": 0.087,
+   "lon": 80.196977,
+   "lat": 13.038101,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6679",
+   "hours": 0.09,
+   "max_cms": 0.283,
+   "volume_ml": 0.083,
+   "lon": 80.226307,
+   "lat": 13.014535,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5172",
+   "hours": 0.09,
+   "max_cms": 0.58,
+   "volume_ml": 0.078,
+   "lon": 80.222245,
+   "lat": 13.033553,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N2767",
+   "hours": 0.82,
+   "max_cms": 0.589,
+   "volume_ml": 0.076,
+   "lon": 80.191167,
+   "lat": 12.975445,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N3605",
+   "hours": 0.28,
+   "max_cms": 0.113,
+   "volume_ml": 0.074,
+   "lon": 80.242263,
+   "lat": 12.965312,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4730",
+   "hours": 0.97,
+   "max_cms": 0.028,
+   "volume_ml": 0.07,
+   "lon": 80.237756,
+   "lat": 12.934851,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N5140",
+   "hours": 1.03,
+   "max_cms": 0.027,
+   "volume_ml": 0.07,
+   "lon": 80.222105,
+   "lat": 13.042835,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N1712",
+   "hours": 0.27,
+   "max_cms": 0.075,
+   "volume_ml": 0.04,
+   "lon": 80.172389,
+   "lat": 13.012087,
+   "bad_drain": false,
+   "near": "Guindy"
+  },
+  {
+   "node": "N4405",
+   "hours": 0.6,
+   "max_cms": 0.023,
+   "volume_ml": 0.033,
+   "lon": 80.198749,
+   "lat": 12.964691,
+   "bad_drain": false,
+   "near": "Madipakkam"
+  },
+  {
+   "node": "N7143",
+   "hours": 2.16,
+   "max_cms": 0.052,
+   "volume_ml": 0.033,
+   "lon": 80.208145,
+   "lat": 12.936937,
+   "bad_drain": false,
+   "near": "Pallikaranai"
+  },
+  {
+   "node": "N1384",
+   "hours": 0.58,
+   "max_cms": 0.028,
+   "volume_ml": 0.031,
+   "lon": 80.176701,
+   "lat": 13.037184,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N3869",
+   "hours": 1.74,
+   "max_cms": 0.032,
+   "volume_ml": 0.031,
+   "lon": 80.251229,
+   "lat": 12.962772,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N4991",
+   "hours": 0.05,
+   "max_cms": 0.376,
+   "volume_ml": 0.027,
+   "lon": 80.188746,
+   "lat": 13.035789,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N5132",
+   "hours": 0.12,
+   "max_cms": 0.069,
+   "volume_ml": 0.027,
+   "lon": 80.223579,
+   "lat": 13.040685,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N3074",
+   "hours": 5.86,
+   "max_cms": 0.056,
+   "volume_ml": 0.023,
+   "lon": 80.215589,
+   "lat": 12.985186,
+   "bad_drain": false,
+   "near": "Velachery"
+  },
+  {
+   "node": "N1352",
+   "hours": 0.03,
+   "max_cms": 0.426,
+   "volume_ml": 0.021,
+   "lon": 80.178434,
+   "lat": 13.040275,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N1137",
+   "hours": 0.14,
+   "max_cms": 0.131,
+   "volume_ml": 0.015,
+   "lon": 80.238266,
+   "lat": 13.040697,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N4239",
+   "hours": 0.5,
+   "max_cms": 0.008,
+   "volume_ml": 0.009,
+   "lon": 80.235944,
+   "lat": 12.964851,
+   "bad_drain": true,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N1205",
+   "hours": 0.26,
+   "max_cms": 0.01,
+   "volume_ml": 0.008,
+   "lon": 80.202329,
+   "lat": 13.043066,
+   "bad_drain": false,
+   "near": "Saidapet"
+  },
+  {
+   "node": "N6648",
+   "hours": 0.04,
+   "max_cms": 0.047,
+   "volume_ml": 0.006,
+   "lon": 80.237651,
+   "lat": 13.030103,
+   "bad_drain": false,
+   "near": "T. Nagar"
+  },
+  {
+   "node": "N4898",
+   "hours": 0.03,
+   "max_cms": 0.036,
+   "volume_ml": 0.003,
+   "lon": 80.245829,
+   "lat": 13.029461,
+   "bad_drain": false,
+   "near": "Kotturpuram"
+  },
+  {
+   "node": "N3723",
+   "hours": 0.01,
+   "max_cms": 0.104,
+   "volume_ml": 0.002,
+   "lon": 80.244788,
+   "lat": 12.972289,
+   "bad_drain": false,
+   "near": "Perungudi"
+  },
+  {
+   "node": "N515",
+   "hours": 0.02,
+   "max_cms": 0.043,
+   "volume_ml": 0.001,
+   "lon": 80.25622,
+   "lat": 13.041137,
+   "bad_drain": false,
+   "near": "Mylapore"
+  },
+  {
+   "node": "N4705",
+   "hours": 0.01,
+   "max_cms": 0.067,
+   "volume_ml": 0.001,
+   "lon": 80.234153,
+   "lat": 12.940371,
+   "bad_drain": true,
+   "near": "Pallikaranai"
+  }
+ ]
+}

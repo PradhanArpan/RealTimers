@@ -1,0 +1,8 @@
+{
+  "terrain_alone": 0.5861206141396939,
+  "downhill_routing": 0.6199806886651945,
+  "receivers": 899,
+  "spot_catchments": 119,
+  "spot_catchments_in_receivers": 58,
+  "receiver_land_share": 0.22277215522623467
+}

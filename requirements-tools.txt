@@ -5,3 +5,5 @@ rasterio
 pysheds
 shapely
 pyproj
+pyswmm
+scikit-learn

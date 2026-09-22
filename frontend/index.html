@@ -135,6 +135,9 @@
 <style>
   .mt-logo { position: fixed; left: 16px; bottom: 118px; z-index: 5; line-height: 0; display: none; }
   .mt-logo img { height: 22px; width: auto; }
+  /* The map credit must stay readable: keep it left of the corridor panel, above the timeline. */
+  .maplibregl-ctrl-bottom-right { right: 360px; bottom: 110px; }
+  @media (max-width: 860px) { .maplibregl-ctrl-bottom-right { right: 16px; bottom: 170px; } }
   @media (max-width: 860px) { .mt-logo { bottom: 170px; } }
 </style>
 <a class="mt-logo" id="mt-logo" href="https://www.maptiler.com" target="_blank" rel="noopener"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>

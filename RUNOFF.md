@@ -60,6 +60,25 @@ catchments, which is how a result gets fitted rather than found.
    overflow onto the valley floor downstream — with the method declared before
    it is scored.
 
+## The downhill test
+
+The next test was declared before it was scored, and run once
+(`tools/downhill_test.py`): the 100 mm stress storm; each catchment's overflow
+travels down the catchment graph to the first catchment with at least 20% of its
+ground within 1 m of the major drainage; lakes receiving water store it.
+
+| | Size-controlled AUC |
+|---|---:|
+| Terrain alone | 0.586 |
+| **Downhill routing** | **0.620** |
+
+The receiving catchments cover 22% of the land and hold 58 of the 119
+flood-spot catchments. Bootstrapped over 1,000 resamples, the improvement is
++0.035, better in 92% of resamples — but its 95% interval runs from -0.015 to
++0.083, so it could still be chance. Right direction, a real reversal of the
+failed test, not yet proof. The method is saved unchanged for when more flood
+data arrives.
+
 ## Assumptions, stated
 
 Hydrologic soil group C everywhere; curve numbers per WorldCover class from

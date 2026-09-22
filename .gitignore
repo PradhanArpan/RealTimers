@@ -22,3 +22,6 @@ data/terrain/*/rasters/
 
 # osmnx download cache (written by tools/ingest_roads.py)
 cache/
+
+# SWMM binary results -- regenerate with tools/build_swmm_chennai.py
+data/swmm/*/*.out
