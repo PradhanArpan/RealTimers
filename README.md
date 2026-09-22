@@ -1,59 +1,62 @@
-# RealTimers flood nowcast dashboard (scaffold)
+# RealTimers — urban flood nowcasting
 
-Runs today on mock depth data. Each real phase replaces one mock piece without touching the rest.
+**Smart India Hackathon 2026 · SIH26085 · Ministry of Earth Sciences / NCMRWF**
+
+**Live: https://realtimers.onrender.com** — Bengaluru, Chennai, Mumbai and Delhi
+
+RealTimers follows rain across the ground, into the drains and onto the streets,
+zero to three hours ahead: which drain corridors flood, when, how deep, and
+which way a two-wheeler, car or ambulance can still get through.
+
+## What is real, and what is not yet
+
+| | Status |
+|---|---|
+| Drain networks — BBMP's 6,839 drains; Chennai corporation register, 10,255 | ✅ real, public |
+| Terrain for all four cities — streams, micro-catchments, height above drainage | ✅ real, 10 m |
+| Bengaluru terrain vs BBMP's own flood spots | ✅ **AUC 0.70** |
+| Flood-safe routing on 81,003 OpenStreetMap road segments | ✅ live, Bengaluru |
+| Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
+| EPA SWMM on Chennai's real drains | ✅ continuity error 0.13% — not yet validated, see `SWMM.md` |
+| Real rain: Open-Meteo forecast shown live; past storms for the models | ✅ model rain, not radar |
+| **Depths on the map** | ⚠️ **a demonstration storm over real ground — labelled on screen** |
+| Radar nowcast, HEC-RAS 2D, surrogate model | planned |
+
+We report tests as they came out, including one that failed: in Bengaluru,
+without published drain sizes, runoff modelling could not beat terrain at
+locating flood spots. That is why the drainage physics runs in Chennai.
 
 ## Run it
+
 ```bash
+python -m venv .venv && .venv/Scripts/activate      # Windows; source .venv/bin/activate elsewhere
 pip install -r requirements.txt
-cd backend
-uvicorn main:app --reload --port 8000
-# open http://localhost:8000
+cd backend && uvicorn main:app --reload --port 8000  # http://localhost:8000/?city=chennai
 ```
-Needs internet in the browser (MapLibre and fonts load from CDNs).
 
-## What you get
-- Map with flood-depth overlay, 0-180 min time slider (15-min steps), play button
-- Staff-gauge legend; click the map to read depth in cm at that point
-- "Worst streets" list (click to fly there and jump to its peak time)
-- "Safe route": click start and end, choose vehicle; normal vs flood-safe route at the chosen time
-- Mock badge on screen so nobody mistakes demo data for a forecast
+Optional: set `MAPTILER_KEY` for the MapTiler basemap; without it the map uses OpenStreetMap tiles.
 
-## Files
-| File | Job | Replace when |
-|---|---|---|
-| `backend/config.py` | pilot bbox, lead times, depth limits per vehicle, colour scale | day 1: set your pilot area |
-| `backend/mock_physics.py` | fake depth cube | Phase E: load real surrogate output (same shape, see docstring) |
-| `backend/roads.py` | street network | set `ROADS_SOURCE = "osm"` for real streets |
-| `backend/routing.py` | depth per street, alerts, routing | rarely; tune thresholds in config |
-| `backend/main.py` | API + serves frontend | add endpoints (nodes, validation, areas) |
-| `frontend/index.html` | whole UI | add Area builder and Validation screens |
+## Rebuild and test
 
-## Swapping in real depth (Phase E)
-`load_depth_cube()` must return a float32 array shaped `(13, GRID, GRID)`: water depth in cm,
-row 0 = north edge of `BBOX`, column 0 = west edge, index i = `LEADS[i]` minutes ahead.
-Read your GeoTIFFs with rasterio, resample to GRID x GRID, stack, return. Nothing else changes.
-For large areas, replace the PNG overlay with TiTiler tiles.
+```bash
+pip install -r requirements-tools.txt
+python tools/build_terrain.py --city bengaluru          # terrain layer (needs data/ee/ exports)
+python tools/validate_terrain.py                        # AUC against BBMP flood spots
+python tools/catchment_runoff.py --uniform 60 --duration 120
+python tools/downhill_test.py                           # declared test, run once
+python tools/fetch_rain_event.py --city chennai --start 2023-12-03 --end 2023-12-04
+python tools/build_swmm_chennai.py --hyetograph data/rain/chennai_2023-12-03_2023-12-04.csv
+python tools/validate_swmm_chennai.py                   # needs the GCC flood KMLs, see the script
+```
 
-## Real data in the build
+## API
 
-The BBMP stormwater drain network is ingested and live: 6,839 drains, 1,988 km,
-served at `/v1/drains` and drawn on the map. See [DRAINS.md](DRAINS.md) for what
-the source contains, what it does not, and how that changes the pitch.
+`/v1/drains` · `/v1/terrain/status|streams|catchments?city=` · `/v1/opencity/{city}/{layer}` ·
+`/v1/rain/now?city=` · `/v1/swmm/chennai/flooding` · `/api/alerts|point|route?city=`
 
-## Deploying
+## Data and credits
 
-`render.yaml` is a Render blueprint — New > Blueprint > pick the repo, nothing
-else to configure. It pins Python, installs from `requirements.txt`, starts
-uvicorn on `$PORT` and health-checks `/v1/drains/status`.
-
-The free plan spins down after 15 minutes idle and takes about a minute to
-wake. Switch `plan: free` to `plan: starter` for the pitch window so a judge
-clicking the link doesn't wait through a cold start.
-
-## Known limits (be honest about these)
-- Depth here is a made-up function of rain, terrain lowness and drain capacity. It is not physics.
-- Tested: API endpoints, routing, JS syntax. NOT tested: the page in a real browser, and `ROADS_SOURCE = "osm"`
-  (no internet where this was written). Try both first and fix whatever breaks.
-- Routing ignores one-way rules only in the synthetic grid (OSM edges keep direction), uses a flat ETA speed,
-  and treats depth at one lead time as the whole trip.
-- Vehicle depth limits (15 / 30 / 45 cm) are assumptions. Cite a source or label them tunable.
+BBMP, Greater Chennai Corporation and GBA data via OpenCity (public domain) ·
+Copernicus GLO-30 · ESA WorldCover (CC BY 4.0) · Google Open Buildings ·
+OpenStreetMap contributors (ODbL) · © MapTiler · Weather data by Open-Meteo.com (CC BY 4.0) ·
+EPA SWMM via PySWMM. Notes: `DATA.md`, `TERRAIN.md`, `CITIES.md`, `RUNOFF.md`, `SWMM.md`.

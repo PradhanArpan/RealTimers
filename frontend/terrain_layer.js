@@ -160,6 +160,23 @@ const TerrainLayer = (() => {
 
     const drainCtl = drains ? await drains : null;
     card(map, status, {
+      // Chennai: EPA SWMM flooding from the corporation drain register. Not validated.
+      swmm: city !== 'chennai' ? null : (on) => {
+        if (!map.getSource('swmm')) {
+          map.addSource('swmm', { type: 'geojson', data: '/v1/swmm/chennai/flooding' });
+          map.addLayer({ id: 'swmm-pts', type: 'circle', source: 'swmm', paint: {
+            'circle-color': '#7f0000', 'circle-opacity': 0.8, 'circle-stroke-color': '#fff', 'circle-stroke-width': 0.8,
+            'circle-radius': ['interpolate', ['linear'], ['sqrt', ['get', 'volume_ml']], 0, 2.5, 5.3, 11] } });
+          map.on('click', 'swmm-pts', (e) => {
+            const p = e.features[0].properties;
+            new maplibregl.Popup({ closeButton: false }).setLngLat(e.lngLat).setHTML(
+              `<b>SWMM junction ${p.node}</b> \u00b7 near ${p.near}<br>${Number(p.volume_ml).toFixed(2)} million litres over ${Number(p.hours).toFixed(1)} h` +
+              (p.bad_drain === true || p.bad_drain === 'true' ? '<br>next to a drain the register marks Bad' : '') +
+              '<br><i>100 mm in 2 h \u00b7 not yet validated</i>').addTo(map);
+          });
+        }
+        map.setLayoutProperty('swmm-pts', 'visibility', on ? 'visible' : 'none');
+      },
       drains: drainCtl ? (on) => drainCtl.toggle(on) : null,
       streams: (on) => map.setLayoutProperty('streams', 'visibility', on ? 'visible' : 'none'),
       catchments: (on) => {
@@ -230,6 +247,7 @@ const TerrainLayer = (() => {
       ['spots', 'BBMP flood spots', false],
       ['lakes', 'Lakes', false],
       ['admin', 'Corporations and zones', false],
+      ['swmm', 'SWMM flooded junctions', false],
     ].filter(([k]) => toggles[k]);
 
     const v = status.validation;

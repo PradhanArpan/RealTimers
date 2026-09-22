@@ -1,0 +1,14 @@
+# Keeps the free Render service awake so a judge's first visit is instant.
+# GitHub may delay scheduled runs by a few minutes at busy times, and disables
+# them after 60 days without a commit -- re-enable under Actions if that happens.
+name: keep-alive
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: curl -fsS --max-time 120 https://realtimers.onrender.com/v1/drains/status -o /dev/null && echo awake

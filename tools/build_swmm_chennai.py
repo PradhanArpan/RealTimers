@@ -46,7 +46,7 @@ def fnum(v, lo=None, hi=None):
     return x
 
 
-def build(rain_mm: float, duration_min: float) -> Path:
+def build(rain_mm: float, duration_min: float, hyetograph: str = "") -> Path:
     W, S, E, N = CITIES[CITY]["bbox"]
     out = ROOT / "data" / "swmm" / CITY; out.mkdir(parents=True, exist_ok=True)
     utm = Transformer.from_crs("EPSG:4326", "EPSG:32644", always_xy=True).transform
@@ -121,13 +121,20 @@ def build(rain_mm: float, duration_min: float) -> Path:
         subs.append((k, j, area_ha[k], f_imp[k] * 100, max(area_ha[k] * 1e4 / max(l_m, 10), 5), max(slp[k], 0.3), cn[k]))
 
     # ---- write the .inp -----------------------------------------------------
-    steps = int(duration_min // 5)
-    inten = rain_mm / (duration_min / 60.0)
+    if hyetograph:                     # a real storm: minutes,mm_per_h (tools/fetch_rain_event.py)
+        rows = [l.split(",") for l in Path(hyetograph).read_text().strip().splitlines()[1:]]
+        series = [(int(float(t)), float(v)) for t, v in rows]
+        rain_mm = sum(v * (t1 - t0) / 60 for (t0, v), (t1, _) in zip(series, series[1:])); duration_min = series[-1][0]
+    else:
+        steps = int(duration_min // 5); inten = rain_mm / (duration_min / 60.0)
+        series = [(t * 5, inten if t < steps else 0.0) for t in range(steps + 2)]
+    end_min = int(duration_min) + 180
+    end_date, end_time = f"01/{1 + end_min // 1440:02d}/2026", f"{end_min % 1440 // 60:02d}:{end_min % 60:02d}:00"
     J = lambda i: f"N{i}"
     lines = ["[TITLE]", f"RealTimers Chennai pilot: {rain_mm:g} mm in {duration_min:g} min, from the GCC drain register", "",
              "[OPTIONS]", "FLOW_UNITS CMS", "INFILTRATION CURVE_NUMBER", "FLOW_ROUTING DYNWAVE", "LINK_OFFSETS DEPTH",
              "START_DATE 01/01/2026", "START_TIME 00:00:00", "REPORT_START_DATE 01/01/2026", "REPORT_START_TIME 00:00:00",
-             "END_DATE 01/01/2026", "END_TIME 06:00:00", "REPORT_STEP 00:05:00", "WET_STEP 00:01:00", "DRY_STEP 00:05:00",
+             f"END_DATE {end_date}", f"END_TIME {end_time}", "REPORT_STEP 00:05:00", "WET_STEP 00:01:00", "DRY_STEP 00:05:00",
              "ROUTING_STEP 0:00:05", "ALLOW_PONDING NO", "INERTIAL_DAMPING PARTIAL", "VARIABLE_STEP 0.75",
              "LENGTHENING_STEP 10", "MIN_SURFAREA 1.167", "NORMAL_FLOW_LIMITED BOTH", "HEAD_TOLERANCE 0.0015",
              "MAX_TRIALS 8", "MINIMUM_STEP 0.5", "THREADS 1", "",
@@ -145,7 +152,7 @@ def build(rain_mm: float, duration_min: float) -> Path:
                      f"{l['a'] - nodes[l['u']]['elev']:.3f} {l['b'] - nodes[l['v']]['elev']:.3f} 0 0")
     lines += ["", "[XSECTIONS]"] + [f"C{i} {'RECT_CLOSED' if l['closed'] else 'RECT_OPEN'} {l['d']:.3f} {l['w']:.3f} 0 0 1"
                                      for i, l in enumerate(links)]
-    lines += ["", "[TIMESERIES]"] + [f"STORM {t * 5 // 60}:{t * 5 % 60:02d} {inten if t < steps else 0:.3f}" for t in range(steps + 2)]
+    lines += ["", "[TIMESERIES]"] + [f"STORM {t // 60}:{t % 60:02d} {v:.3f}" for t, v in series]
     lines += ["", "[REPORT]", "INPUT NO", "CONTROLS NO", "SUBCATCHMENTS NONE", "NODES NONE", "LINKS NONE", "",
               "[COORDINATES]"] + [f"{J(i)} {n['x']:.2f} {n['y']:.2f}" for i, n in enumerate(nodes)]
     inp = out / "chennai.inp"; inp.write_text("\n".join(lines) + "\n")
@@ -183,8 +190,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--rain", type=float, default=100.0, help="total rainfall, mm")
     ap.add_argument("--duration", type=float, default=120.0, help="minutes")
+    ap.add_argument("--hyetograph", default="", help="CSV minutes,mm_per_h from tools/fetch_rain_event.py")
     a = ap.parse_args()
-    inp = build(a.rain, a.duration)
+    inp = build(a.rain, a.duration, a.hyetograph)
     res = run(inp)
     net = {n["id"]: n for n in json.loads((inp.parent / "network.json").read_text())["nodes"]}
     for fl in res["flooded"]:

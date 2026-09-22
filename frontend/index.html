@@ -147,6 +147,7 @@
   <nav id="cities" aria-label="City" style="display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 8px"></nav>
   <span class="demo">Demo data, not a forecast</span>
   <p id="city-note" style="margin:8px 0 0;font-size:12px;line-height:1.4;color:#5a6b78"></p>
+  <p id="rain-now" style="margin:6px 0 0;font-size:12px;line-height:1.4;color:#123e6b;display:none"></p>
 </header>
 
 <section class="float gauge" aria-label="Water depth scale">
@@ -208,6 +209,14 @@
       if (r.left < br.right && r.right > br.left && r.top < br.bottom + 8) el.style.top = (br.bottom + 12) + "px";
     }
   }
+  // Real rain beside the demonstration: Open-Meteo forecast at the pilot centre.
+  fetch("/v1/rain/now?" + Q).then((r) => r.json()).then((r) => {
+    if (!r.available) return;
+    const el = $("rain-now");
+    el.innerHTML = "<b>Rain, real forecast:</b> " + r.past_6h_mm + " mm in the last 6 h \u00b7 " + r.next_6h_mm +
+      " mm in the next 6 h <span style='color:#5a6b78'>(Open-Meteo model, kilometre scale; not yet driving the depths)</span>";
+    el.style.display = "block"; clearOfBrand();
+  }).catch(() => {});
   clearOfBrand();
   window.addEventListener("resize", clearOfBrand);
   window.__clearOfBrand = clearOfBrand;

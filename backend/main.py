@@ -32,6 +32,8 @@ from routing import Router
 from drains import router as drains_router
 from terrain import router as terrain_router
 from opencity import router as opencity_router
+from rain import router as rain_router
+from swmm_api import router as swmm_router
 
 app = FastAPI(title="RealTimers Urban Flood Nowcast")
 
@@ -157,5 +159,7 @@ def route(from_lat: float, from_lon: float, to_lat: float, to_lon: float,
 app.include_router(drains_router)
 app.include_router(terrain_router)
 app.include_router(opencity_router)
+app.include_router(rain_router)
+app.include_router(swmm_router)
 
 app.mount("/", StaticFiles(directory=Path(__file__).parent.parent / "frontend", html=True), name="ui")
