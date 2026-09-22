@@ -208,6 +208,13 @@
       const r = el.getBoundingClientRect();
       if (r.left < br.right && r.right > br.left && r.top < br.bottom + 8) el.style.top = (br.bottom + 12) + "px";
     }
+    // The MapTiler logo must stay visible: if the depth scale has come down over it, move it beside the scale.
+    const lg = document.getElementById("mt-logo"), g = document.querySelector(".gauge");
+    if (lg && g) {
+      lg.style.left = "";
+      const a = lg.getBoundingClientRect(), b = g.getBoundingClientRect();
+      if (a.width && a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top) lg.style.left = (b.right + 12) + "px";
+    }
   }
   // Real rain beside the demonstration: Open-Meteo forecast at the pilot centre.
   // Fetched by the browser first -- each visitor's own address, so a shared
@@ -242,7 +249,7 @@
       ? 'Flood-safe routing runs on OpenStreetMap streets. Run <code>tools/ingest_roads.py</code> once, commit <code>data/roads.geojson</code> and push, and this panel routes on real roads.'
       : 'Flood-safe routing needs each city\'s road network in memory, and this server has room for one. Switch to Bengaluru to see it.') + '</p>';
   }
-  if (meta.maptiler_key) $("mt-logo").style.display = "block";
+  if (meta.maptiler_key) { $("mt-logo").style.display = "block"; clearOfBrand(); }
   const [W, S, E, N] = meta.bbox;
   const LEADS = meta.leads;
   const state = { i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
