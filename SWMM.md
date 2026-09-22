@@ -39,7 +39,7 @@ Declared before any Chennai flood data was seen, run once
 a GCC-reported point lies within 150 m; junctions are scored by SWMM flood
 volume; drain density alone is the baseline to beat.
 
-| Against 850 GCC flooding, stagnation and hotspot points | AUC |
+| Against 570 unique GCC flooding, stagnation and hotspot points | AUC |
 |---|---:|
 | SWMM flood volume | **0.497 — chance** |
 | Drain density alone | 0.542 |
@@ -52,6 +52,10 @@ from rivers and canals backing up, and this network ends in 3,041 free
 outfalls, as if every drain emptied into open air. The records also mix river
 inundation, underpass stagnation and cyclone hotspots, while the model here is
 pipe capacity under uniform rain.
+
+A correction: an earlier count of 850 points included one dataset downloaded
+twice. Each point now counts once — 570 unique points — and the AUCs are
+unchanged, since duplicates mark the same junctions.
 
 ## Cyclone Michaung, on real rain
 

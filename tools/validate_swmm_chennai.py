@@ -31,12 +31,13 @@ RADIUS_M, DENSITY_M = 150.0, 300.0
 W, S, E, N = CITIES["chennai"]["bbox"]
 utm = Transformer.from_crs("EPSG:4326", "EPSG:32644", always_xy=True).transform
 
-pts = []
+pts, seen = [], set()
 for kml in sorted((ROOT / "data/opencity/chennai/validation").glob("*.kml")):
     n0 = len(pts)
     for block in re.findall(r"<Point>.*?<coordinates>(.*?)</coordinates>", kml.read_text(errors="ignore"), re.S):
         lon, lat = (float(v) for v in block.strip().split(",")[:2])
-        if W <= lon <= E and S <= lat <= N: pts.append(utm(lon, lat))
+        if W <= lon <= E and S <= lat <= N and (round(lon, 6), round(lat, 6)) not in seen:
+            seen.add((round(lon, 6), round(lat, 6))); pts.append(utm(lon, lat))     # a point reported twice counts once
     print(f"{kml.name}: {len(pts) - n0} points in the pilot box")
 if not pts: sys.exit("No points found. Put the OpenCity .kml files in data/opencity/chennai/validation/")
 

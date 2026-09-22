@@ -7,3 +7,5 @@ shapely
 pyproj
 pyswmm
 scikit-learn
+earthaccess
+h5py

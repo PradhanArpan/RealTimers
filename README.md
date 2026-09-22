@@ -18,7 +18,7 @@ which way a two-wheeler, car or ambulance can still get through.
 | Same test, unchanged, on 499 Chennai GCC records | ✅ **AUC 0.58** — weaker in a flat city, still far from chance |
 | Flood-safe routing on 81,003 OpenStreetMap road segments | ✅ live, Bengaluru |
 | Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
-| EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 850 GCC records: **no location skill yet**, see `SWMM.md` |
+| EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 570 GCC records: **no location skill yet**, see `SWMM.md` |
 | Real rain: Open-Meteo forecast shown live; past storms for the models | ✅ model rain, not radar |
 | **Depths on the map** | ⚠️ **a demonstration storm over real ground — labelled on screen** |
 | Radar nowcast, HEC-RAS 2D, surrogate model | planned |
