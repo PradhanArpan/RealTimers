@@ -65,6 +65,21 @@ continuity error 0.59%. That is right for the rain it was given, and shows the
 archive's weakness: at 25 km and hourly it smooths a cyclone's bursts. Observed
 rain — NASA IMERG, MOSDAC, KSNDMC gauges — is needed for real storms.
 
+**On observed rain.** `tools/fetch_imerg_event.py` reads NASA GPM IMERG Final
+(half-hourly, 0.1°) over the pilot box: 257.1 mm, wettest half-hour 21.3 mm/h at
+03:00 IST on 4 December — thirteen hours before the archive's peak. SWMM floods
+**101 junctions**, continuity 0.30%.
+
+| Run | Rain | Peak | Flooded junctions |
+|---|---|---|---:|
+| Michaung, ERA5 archive | 245 mm / 2 days | 16.5 mm in an hour | 75 |
+| Michaung, NASA IMERG | 257 mm / 2 days | 21.3 mm/h (half-hour) | 101 |
+| Design stress storm | 100 mm / 2 h | 50 mm/h | 449 |
+
+Almost the same total floods a third more junctions when it falls in sharper
+bursts, and a storm with less than half the total floods four times as many
+when it falls fast. Drains fail on intensity, not totals.
+
 ## What the two cities say together
 
 Terrain is the validated signal (AUC 0.70 in Bengaluru). Pipe capacity alone

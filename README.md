@@ -19,7 +19,7 @@ which way a two-wheeler, car or ambulance can still get through.
 | Flood-safe routing on 81,003 OpenStreetMap road segments | ✅ live, Bengaluru |
 | Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
 | EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 570 GCC records: **no location skill yet**, see `SWMM.md` |
-| Real rain: Open-Meteo forecast shown live; past storms for the models | ✅ model rain, not radar |
+| Real rain: Open-Meteo forecast live; ERA5 and NASA IMERG for past storms | ✅ IMERG is observed; Michaung run through SWMM |
 | **Depths on the map** | ⚠️ **a demonstration storm over real ground — labelled on screen** |
 | Radar nowcast, HEC-RAS 2D, surrogate model | planned |
 
