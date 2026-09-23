@@ -282,7 +282,7 @@
   if (meta.maptiler_key) { $("mt-logo").style.display = "block"; clearOfBrand(); }
   const [W, S, E, N] = meta.bbox;
   const LEADS = meta.leads;
-  const state = { i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
+  const state = { gen: 0, agen: 0, i: 0, mode: "car", tab: "alerts", start: null, end: null, timer: null, alerts: [], probe: null, marker: { s: null, e: null } };
 
   // ---- colour helpers (one scale, served by the backend) ------------------------------
   const vis = meta.color_scale.filter((s) => s.alpha > 0);
@@ -389,7 +389,11 @@
     const t = new Date(issued.getTime() + lead * 60000);
     $("at").textContent = t.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
     map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png?" + QD, coordinates: coords });
+    // Dragging the slider or switching rain mode leaves older requests in flight.
+    // Only the newest one may paint, or a stale reply can overwrite the current view.
+    const gen = ++state.gen;
     const fc = await (await fetch("/api/roads/flooded?lead=" + lead + "&" + QD)).json();
+    if (gen !== state.gen) return;
     map.getSource("flooded").setData(fc);
     $("count").textContent = fc.features.filter((f) => f.properties.max_depth_cm >= meta.flooded_cm).length;
     if (state.start && state.end) findRoute();
@@ -424,7 +428,10 @@
 
   // ---- worst streets tab ---------------------------------------------------------------------------
   async function loadAlerts() {
-    state.alerts = await (await fetch("/api/alerts?" + QD)).json();
+    const agen = ++state.agen;
+    const got = await (await fetch("/api/alerts?" + QD)).json();
+    if (agen !== state.agen) return;
+    state.alerts = got;
     const v = $("view-alerts");
     if (!state.alerts.length) {
       v.innerHTML = '<p class="empty">No street is expected to reach ' + meta.flooded_cm + " cm in the next 3 hours.</p>";
