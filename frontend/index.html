@@ -148,6 +148,7 @@
   <span class="demo">Demo data, not a forecast</span>
   <p id="city-note" style="margin:8px 0 0;font-size:12px;line-height:1.4;color:#5a6b78"></p>
   <p id="rain-now" style="margin:6px 0 0;font-size:12px;line-height:1.4;color:#123e6b;display:none"></p>
+  <button id="rain-mode" type="button" style="display:none;margin-top:8px;font:600 12.5px/1.2 inherit;padding:6px 10px;border:1px solid #123e6b;border-radius:6px;background:#fff;color:#123e6b;cursor:pointer"></button>
 </header>
 
 <section class="float gauge" aria-label="Water depth scale">
@@ -191,6 +192,7 @@
   const $ = (id) => document.getElementById(id);
   const CITY = (new URLSearchParams(location.search).get("city") || "bengaluru").toLowerCase();
   const Q = "city=" + encodeURIComponent(CITY);
+  let QD = Q;                    // depth requests: Q, plus a nowcast token when running on real rain
   const meta = await (await fetch("/api/meta?" + Q)).json();
   document.title = "RealTimers flood nowcast · " + meta.label;
   $("subtitle").textContent = meta.subtitle;
@@ -221,10 +223,13 @@
   // server address can't use up the free limit -- with the server as fallback.
   (async () => {
     const [bw, bs, be, bn] = meta.bbox;
+    let rainPast = 0, rainNext = 0, drivingDepths = false;
     const showRain = (past, next) => {
+      if (past !== undefined) { rainPast = past; rainNext = next; }
       const el = $("rain-now");
-      el.innerHTML = "<b>Rain, real forecast:</b> " + past + " mm in the last 6 h \u00b7 " + next +
-        " mm in the next 6 h <span style='color:#5a6b78'>(Open-Meteo model, kilometre scale; not yet driving the depths)</span>";
+      el.innerHTML = "<b>Rain, real forecast:</b> " + rainPast + " mm in the last 6 h \u00b7 " + rainNext +
+        " mm in the next 6 h <span style='color:#5a6b78'>(Open-Meteo model, kilometre scale; " +
+        (drivingDepths ? "driving the depths below" : "not driving the depths") + ")</span>";
       el.style.display = "block"; clearOfBrand();
     };
     try {
@@ -233,9 +238,34 @@
       const d = await (await fetch(u)).json();
       const times = d.hourly.time, mm = d.hourly.precipitation.map((v) => v || 0);
       const now = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 13) + ":00";   // the hour in India
-      let i = times.findIndex((x) => x >= now); if (i < 0) i = times.length - 1;
+      const i = times.findIndex((x) => x >= now);
+      if (i < 0) return;            // the forecast does not reach the current hour: say nothing rather than guess
       const sum = (arr) => Math.round(arr.reduce((a, v) => a + v, 0) * 10) / 10;
       showRain(sum(mm.slice(Math.max(0, i - 6), i)), sum(mm.slice(i, i + 6)));
+      // Offer the depth model on this real forecast instead of the demonstration storm.
+      const series = [0, 1, 2, 3].map((k) => ({ minutes: k * 60, mm_per_h: mm[i + k] ?? 0 }));
+      const nc = await (await fetch("/api/nowcast", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ city: CITY, series, source: "Open-Meteo forecast" }) })).json();
+      if (!nc.token) return;
+      const btn = $("rain-mode"), badge = document.querySelector(".demo");
+      const demoBadge = badge.textContent;
+      let on = false;
+      const paint = () => {
+        btn.textContent = on ? "Back to the demonstration storm" : `Run on the real forecast: ${nc.total_mm} mm in 3 h`;
+        badge.textContent = on ? "Real forecast rain \u00b7 kilometre scale" : demoBadge;
+        badge.style.borderColor = badge.style.color = on ? "#1b6fb5" : "";
+        drivingDepths = on; showRain();
+        $("city-note").textContent = on
+          ? `Depths from the real forecast: ${nc.total_mm} mm over 3 h, peak ${nc.peak_mm_per_h} mm/h, spread evenly over the pilot. ${nc.corridors_at_10cm} corridors reach 10 cm. The depth model is unchanged and not yet validated for depth.`
+          : meta.note;
+        clearOfBrand();
+      };
+      btn.style.display = "block"; paint();
+      btn.onclick = async () => {
+        on = !on; QD = on ? Q + "&token=" + nc.token : Q;
+        paint();
+        await loadAlerts(); await setLead(state.i);
+      };
     } catch (e) {
       try { const r = await (await fetch("/v1/rain/now?" + Q)).json(); if (r.available) showRain(r.past_6h_mm, r.next_6h_mm); } catch (e2) {}
     }
@@ -337,7 +367,7 @@
   const drains = CITY === "bengaluru" ? DrainLayer.attach(map, { chip: false }) : null;
   map.addSource("roads", { type: "geojson", data: "/api/roads?" + Q });
   map.addLayer({ id: "roads", type: "line", source: "roads", paint: { "line-color": "#9fb0ba", "line-width": 1.5 } });
-  map.addSource("flood", { type: "image", url: "/api/flood/0.png?" + Q, coordinates: coords });
+  map.addSource("flood", { type: "image", url: "/api/flood/0.png?" + QD, coordinates: coords });
   map.addLayer({ id: "flood", type: "raster", source: "flood", paint: { "raster-fade-duration": 0 } });
   map.addSource("flooded", { type: "geojson", data: empty });
   map.addLayer({ id: "flooded-casing", type: "line", source: "flooded", paint: { "line-color": "#12222e", "line-width": 6.5, "line-opacity": 0.55 } });
@@ -358,8 +388,8 @@
     $("lead").textContent = "T+" + lead + " min";
     const t = new Date(issued.getTime() + lead * 60000);
     $("at").textContent = t.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
-    map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png?" + Q, coordinates: coords });
-    const fc = await (await fetch("/api/roads/flooded?lead=" + lead + "&" + Q)).json();
+    map.getSource("flood").updateImage({ url: "/api/flood/" + lead + ".png?" + QD, coordinates: coords });
+    const fc = await (await fetch("/api/roads/flooded?lead=" + lead + "&" + QD)).json();
     map.getSource("flooded").setData(fc);
     $("count").textContent = fc.features.filter((f) => f.properties.max_depth_cm >= meta.flooded_cm).length;
     if (state.start && state.end) findRoute();
@@ -384,7 +414,7 @@
     if (!inside(ll)) return;
     state.probe = ll;
     const lead = LEADS[state.i];
-    const d = await (await fetch("/api/point?lat=" + ll.lat + "&lon=" + ll.lng + "&lead=" + lead + "&" + Q)).json();
+    const d = await (await fetch("/api/point?lat=" + ll.lat + "&lon=" + ll.lng + "&lead=" + lead + "&" + QD)).json();
     showReading(d.depth_cm);
     $("hint").textContent = "Reading at your last click, T+" + lead + " min.";
     if (popup) popup.remove();
@@ -394,7 +424,7 @@
 
   // ---- worst streets tab ---------------------------------------------------------------------------
   async function loadAlerts() {
-    state.alerts = await (await fetch("/api/alerts?" + Q)).json();
+    state.alerts = await (await fetch("/api/alerts?" + QD)).json();
     const v = $("view-alerts");
     if (!state.alerts.length) {
       v.innerHTML = '<p class="empty">No street is expected to reach ' + meta.flooded_cm + " cm in the next 3 hours.</p>";
@@ -440,7 +470,7 @@
   async function findRoute() {
     const q = new URLSearchParams({ from_lat: state.start.lat, from_lon: state.start.lng, to_lat: state.end.lat, to_lon: state.end.lng,
       mode: state.mode, lead: LEADS[state.i] });
-    const res = await fetch("/api/route?" + q + "&" + Q);
+    const res = await fetch("/api/route?" + q + "&" + QD);
     const out = $("route-out");
     if (!res.ok) {
       out.innerHTML = '<p class="verdict">' + (await res.json()).detail + '</p><button class="clear" id="clr">Clear points</button>';

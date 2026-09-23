@@ -17,11 +17,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import Body, FastAPI, HTTPException, Query
 from fastapi.responses import Response
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
 
+import hashlib
 import os
 
 from config import BBOX, LEADS, COLOR_SCALE, MODE_THRESHOLD_CM, FLOODED_CM, GRID, ROADS_SOURCE, CITIES, DEFAULT_CITY
@@ -62,6 +63,56 @@ def _city(city: str) -> dict:
     return CITY[c]
 
 
+# Nowcasts built from a real rain forecast the browser passes in. Render's
+# shared address is rate-limited by the weather service, so the browser fetches
+# the forecast and sends it here; the depth model then runs on real rain
+# instead of the demonstration storm. Kept briefly, by content, so repeat
+# visitors and the map's many layer requests share one computation.
+_NOWCAST: dict[str, dict] = {}
+_NOWCAST_MAX = 6
+
+
+@app.post("/api/nowcast")
+def nowcast(payload: dict = Body(...)):
+    city = (payload.get("city") or DEFAULT_CITY).lower()
+    base = _city(city)
+    pts = []
+    for p in payload.get("series") or []:
+        try:
+            pts.append((float(p["minutes"]), max(0.0, float(p["mm_per_h"]))))
+        except (KeyError, TypeError, ValueError):
+            continue
+    if len(pts) < 2:
+        raise HTTPException(422, "series needs at least two points of {minutes, mm_per_h}")
+    pts.sort()
+    mins = np.array([m for m, _ in pts]); mmh = np.array([v for _, v in pts])
+    token = hashlib.sha1(f"{city}|{np.round(mins, 1).tolist()}|{np.round(mmh, 2).tolist()}".encode()).hexdigest()[:12]
+    if token not in _NOWCAST:
+        cube = load_depth_cube(city, CITIES[city]["bbox"], rain=(mins, mmh))
+        _NOWCAST[token] = {"city": city, "cube": cube, "router": base["router"].with_cube(cube), "road_router": None}
+        for old in list(_NOWCAST)[:-_NOWCAST_MAX]:
+            _NOWCAST.pop(old, None)
+    e = _NOWCAST[token]
+    total = float(np.trapezoid(mmh, mins) / 60) if hasattr(np, "trapezoid") else float(np.trapz(mmh, mins) / 60)
+    return {"token": token, "city": city, "source": payload.get("source", "rain forecast supplied by the client"),
+            "total_mm": round(total, 1), "peak_mm_per_h": round(float(mmh.max()), 1),
+            "max_depth_cm": round(float(e["cube"].max()), 1),
+            "corridors_at_10cm": int((e["router"].depth.max(axis=0) >= FLOODED_CM).sum()),
+            "note": "Real forecast rain at kilometre scale, spread evenly over the pilot box; "
+                    "the depth model itself is unchanged and not yet validated for depth."}
+
+
+def _state(city: str, token: str | None) -> dict:
+    """The city's demonstration state, or a nowcast built from real rain."""
+    base = _city(city)
+    if not token:
+        return base
+    e = _NOWCAST.get(token)
+    if e is None or e["city"] != (city or DEFAULT_CITY).lower():
+        raise HTTPException(404, "Unknown or expired nowcast token; request /api/nowcast again.")
+    return e
+
+
 def _lead(lead: int) -> int:
     try:
         return ROUTER.lead_index(lead)
@@ -100,8 +151,8 @@ def meta(city: str = Query(DEFAULT_CITY)):
 
 
 @app.get("/api/flood/{lead}.png")
-def flood_png(lead: int, city: str = Query(DEFAULT_CITY)):
-    c = _city(city); li = _lead(lead); key = (city.lower(), li)
+def flood_png(lead: int, city: str = Query(DEFAULT_CITY), token: str = Query("")):
+    c = _state(city, token); li = _lead(lead); key = (city.lower(), token, li)
     if key not in _png_cache:
         img = Image.fromarray(_rgba(c["cube"][li]), "RGBA").resize((GRID * 3, GRID * 3), Image.BICUBIC)
         buf = io.BytesIO()
@@ -116,26 +167,26 @@ def roads_all(city: str = Query(DEFAULT_CITY)):
 
 
 @app.get("/api/roads/flooded")
-def roads_flooded(lead: int = Query(0), city: str = Query(DEFAULT_CITY)):
+def roads_flooded(lead: int = Query(0), city: str = Query(DEFAULT_CITY), token: str = Query("")):
     _lead(lead)
-    return _city(city)["router"].flooded_geojson(lead)
+    return _state(city, token)["router"].flooded_geojson(lead)
 
 
 @app.get("/api/alerts")
-def alerts(city: str = Query(DEFAULT_CITY)):
-    return _city(city)["router"].alerts()
+def alerts(city: str = Query(DEFAULT_CITY), token: str = Query("")):
+    return _state(city, token)["router"].alerts()
 
 
 @app.get("/api/point")
-def point(lat: float, lon: float, lead: int = 0, city: str = Query(DEFAULT_CITY)):
+def point(lat: float, lon: float, lead: int = 0, city: str = Query(DEFAULT_CITY), token: str = Query("")):
     _lead(lead)
     return {"lat": lat, "lon": lon, "lead_min": lead,
-            "depth_cm": round(_city(city)["router"].depth_at(lat, lon, lead), 1)}
+            "depth_cm": round(_state(city, token)["router"].depth_at(lat, lon, lead), 1)}
 
 
 @app.get("/api/route")
 def route(from_lat: float, from_lon: float, to_lat: float, to_lon: float,
-          mode: str = "car", lead: int = 0, city: str = Query(DEFAULT_CITY)):
+          mode: str = "car", lead: int = 0, city: str = Query(DEFAULT_CITY), token: str = Query("")):
     if mode not in MODE_THRESHOLD_CM:
         raise HTTPException(422, f"mode must be one of {list(MODE_THRESHOLD_CM)}")
     _lead(lead); _city(city)
@@ -148,7 +199,13 @@ def route(from_lat: float, from_lon: float, to_lat: float, to_lon: float,
             "Routing needs the road network. Run tools/ingest_roads.py once, commit "
             "data/roads.geojson and push; routing then runs on real OpenStreetMap streets.",
         )
-    res = ROAD_ROUTER.route(from_lat, from_lon, to_lat, to_lon, mode, lead)
+    router = ROAD_ROUTER
+    if token:                       # route on the real-rain depths too
+        e = _state(city, token)
+        if e.get("road_router") is None:
+            e["road_router"] = ROAD_ROUTER.with_cube(e["cube"])
+        router = e["road_router"]
+    res = router.route(from_lat, from_lon, to_lat, to_lon, mode, lead)
     if "error" in res:
         raise HTTPException(404, res["error"])
     return res

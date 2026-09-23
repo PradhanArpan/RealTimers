@@ -20,7 +20,7 @@ which way a two-wheeler, car or ambulance can still get through.
 | Runoff per micro-catchment, HEC-HMS method | ✅ built and tested — see `RUNOFF.md` |
 | EPA SWMM on Chennai's real drains | ✅ runs, continuity 0.13% — tested against 570 GCC records: **no location skill yet**, see `SWMM.md` |
 | Real rain: Open-Meteo forecast live; ERA5 and NASA IMERG for past storms | ✅ IMERG is observed; Michaung run through SWMM |
-| **Depths on the map** | ⚠️ **a demonstration storm over real ground — labelled on screen** |
+| **Depths on the map** | ⚠️ **a demonstration storm by default; a switch runs them on Open-Meteo's real forecast — both labelled on screen** |
 | Radar nowcast, HEC-RAS 2D, surrogate model | planned |
 
 We report tests as they came out, including one that failed: in Bengaluru,

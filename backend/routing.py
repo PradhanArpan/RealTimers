@@ -56,10 +56,28 @@ class Router:
         # In batches: one pass over 80,000 road segments creates ~1M sample points,
         # and the temporary arrays alone would push a 512 MB server to the edge.
         BATCH = 8000
+        self._idx = []                      # where each segment's samples sit on the grid
         for lo in range(0, L, BATCH):
-            self.depth[:, lo:min(L, lo + BATCH)] = self._sample_batch(self.edges[lo:lo + BATCH])
+            hi = min(L, lo + BATCH)
+            self._idx.append((lo, hi) + self._batch_index(self.edges[lo:hi]))
+        self._apply_cube(self.cube)
 
-    def _sample_batch(self, edges):
+    def _apply_cube(self, cube):
+        """Read depths at the stored sample positions -- the only work a new rain
+        forecast needs, so switching forecasts costs a gather, not a rebuild."""
+        for lo, hi, rows, cols, first in self._idx:
+            self.depth[:, lo:hi] = np.maximum.reduceat(cube[:, rows, cols], first, axis=1)
+
+    def with_cube(self, cube):
+        """A copy of this router reading a different depth cube (same network)."""
+        import copy
+        r = copy.copy(self)
+        r.cube = cube
+        r.depth = np.zeros_like(self.depth)
+        r._apply_cube(cube)
+        return r
+
+    def _batch_index(self, edges):
         STEP_M = SAMPLE_STEP_M
         L = len(edges)
         counts = np.fromiter((len(ed["coords"]) for ed in edges), dtype=np.int64, count=L)
@@ -83,11 +101,9 @@ class Router:
         W, S, E, N = self.bbox
         cols = np.clip(((lon - W) / (E - W) * GRID).astype(np.int64), 0, GRID - 1)
         rows = np.clip(((N - lat) / (N - S) * GRID).astype(np.int64), 0, GRID - 1)
-        vals = self.cube[:, rows, cols]                      # (leads, samples)
         order = np.argsort(owner, kind="stable")
-        owner_sorted = owner[order]
-        first = np.searchsorted(owner_sorted, np.arange(L))
-        return np.maximum.reduceat(vals[:, order], first, axis=1)
+        first = np.searchsorted(owner[order], np.arange(L))
+        return rows[order].astype(np.int32), cols[order].astype(np.int32), first
 
     def _build_graph(self):
         best = {}

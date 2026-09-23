@@ -60,7 +60,14 @@ def _terrain(rng):
     return x, y, lowness
 
 
-def load_depth_cube(city="bengaluru", bbox=None):
+def load_depth_cube(city="bengaluru", bbox=None, rain=None):
+    """Depth cube for a city.
+
+    rain=None runs the demonstration storm: a cell drifting east across the box.
+    rain=(minutes, mm_per_h) runs a real rain series instead, uniform over the
+    box -- which is all a kilometre-scale forecast can honestly say about where
+    it falls inside a 13 km pilot.
+    """
     rng = np.random.default_rng(7)
     x, y, lowness = _terrain(rng)
     imperv = 0.78 - 0.30 * np.exp(-(((x - 0.7) ** 2 + (y - 0.25) ** 2) / (2 * 0.08 ** 2)))
@@ -84,9 +91,12 @@ def load_depth_cube(city="bengaluru", bbox=None):
     storage = np.zeros((GRID, GRID))
     depth_at = {}
     for t in minutes:
-        cx, cy = 0.15 + 0.70 * t / 180, 0.55 + 0.05 * np.sin(t / 40)      # storm cell drifts east
-        g = np.exp(-(((x - cx) ** 2 + (y - cy) ** 2) / (2 * 0.22 ** 2)))
-        intensity = 6 + 145 * g * np.exp(-((t - 70) / 70) ** 2)             # mm/h
+        if rain is None:
+            cx, cy = 0.15 + 0.70 * t / 180, 0.55 + 0.05 * np.sin(t / 40)  # storm cell drifts east
+            g = np.exp(-(((x - cx) ** 2 + (y - cy) ** 2) / (2 * 0.22 ** 2)))
+            intensity = 6 + 145 * g * np.exp(-((t - 70) / 70) ** 2)         # mm/h
+        else:
+            intensity = float(np.interp(t, rain[0], rain[1], right=0.0))    # mm/h, uniform over the box
         inflow = intensity * imperv * dt_h
         outflow = cap * dt_h
         storage = np.maximum(0.0, storage + inflow - outflow)
